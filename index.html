@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Setup Sheet Helper — Studio session setup sheets, done right</title>
+<meta name="description" content="A desktop app for planning and printing recording studio session setup sheets — mic assignments, channel routing, visual room layouts, and PDF export." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="https://github.com/naliuj/SetupSheetHelper" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Free &amp; open for macOS</p>
+      <h1>Studio session setup sheets, done right.</h1>
+      <p class="lede">
+        Plan mic assignments, channel routing, and room layouts before the session starts —
+        then hand the engineer a clean PDF instead of a scribbled notepad.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/naliuj/SetupSheetHelper/releases/latest" target="_blank" rel="noopener">Download for macOS</a>
+        <a class="btn btn-ghost" href="https://github.com/naliuj/SetupSheetHelper" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+    <div class="hero-image reveal">
+      <img src="assets/screenshots/layout-mode.png" alt="Layout Mode: a drag-and-drop visual room layout on a real studio floor plan, with instrument blocks placed around the room." loading="eager" />
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2 class="section-title reveal">Everything a setup sheet needs</h2>
+    <div class="feature-grid">
+
+      <article class="feature-card reveal">
+        <h3>Full setup sheet editor</h3>
+        <p>Mic, 48V, outboard, channel, tie line, cue box, polarity, and notes — one row per source, all in one table.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Stereo-pair linking</h3>
+        <p>Link two rows and their mic, outboard, 48V, and channel settings stay in sync automatically.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Visual room layouts</h3>
+        <p>Drag and drop instruments onto a real building floor plan — see the room, not just a spreadsheet.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Channel presets</h3>
+        <p>Save a full channel configuration once, reuse it across every future session with that setup.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Customizable PDF export</h3>
+        <p>Grid lines, zebra striping, header shading, and accent color — print sheets that look like yours.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Bulk row tools</h3>
+        <p>Multi-select rows, apply sequential numbering, and color-code sections in a couple of clicks.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Studio gear catalog</h3>
+        <p>Track mics, outboard, and preamps per studio — plus a shared faculty-reserve pool for shared gear.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <h3>Built for daily use</h3>
+        <p>Customizable keybinds, dark/light theme, and automatic updates — a desktop app that stays out of your way.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="showcase" id="showcase">
+    <h2 class="section-title reveal">See it in action</h2>
+
+    <div class="showcase-row reveal">
+      <div class="showcase-image">
+        <img src="assets/screenshots/table-mode.png" alt="Table Mode showing a full drum kit and guitar setup sheet, with linked stereo pairs bracketed on the left and color-coded row sections." loading="lazy" />
+      </div>
+      <div class="showcase-copy">
+        <h3>Table Mode</h3>
+        <p>
+          The spreadsheet view every engineer already knows how to read — but with linked stereo
+          pairs, per-row colors, and inline gear pickers pulled straight from your studio's catalog.
+        </p>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-image">
+        <img src="assets/screenshots/pdf-export.png" alt="A printed PDF setup sheet with colored row sections, mic assignments, channel numbers, and tie lines." loading="lazy" />
+      </div>
+      <div class="showcase-copy">
+        <h3>Print-ready PDF export</h3>
+        <p>
+          Export a clean, printable sheet with the session date, engineer, and artist up top —
+          styled to match how your studio actually does paperwork.
+        </p>
+      </div>
+    </div>
+
+    <div class="showcase-row reveal">
+      <div class="showcase-image">
+        <img src="assets/screenshots/bulk-toolbar.png" alt="A selection toolbar showing 16 rows selected, with sequential tie-line numbering and color tools." loading="lazy" />
+      </div>
+      <div class="showcase-copy">
+        <h3>Fast bulk editing</h3>
+        <p>
+          Select a whole section of the sheet and apply sequential channel or tie-line numbers,
+          or a color, in one action instead of row by row.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Setup Sheet Helper — built with Electron. <a href="https://github.com/naliuj/SetupSheetHelper" target="_blank" rel="noopener">Source on GitHub</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
