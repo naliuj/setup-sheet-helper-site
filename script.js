@@ -45,7 +45,7 @@ function closeLightbox() {
   lightboxImg.src = ''
 }
 
-document.querySelectorAll('.hero-image img, .showcase-image img').forEach((img) => {
+document.querySelectorAll('.hero-image:not(.hero-icon) img, .showcase-image img').forEach((img) => {
   img.addEventListener('click', () => openLightbox(img))
 })
 

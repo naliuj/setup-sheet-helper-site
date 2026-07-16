@@ -177,6 +177,19 @@ a { color: inherit; }
   cursor: zoom-in;
 }
 
+.hero-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-icon img {
+  border: none;
+  border-radius: 20%;
+  cursor: default;
+  max-width: 380px;
+  width: 100%;
+}
+
 /* Section shared */
 
 .section-title {
