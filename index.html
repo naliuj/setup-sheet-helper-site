@@ -17,6 +17,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="#features">Features</a>
       <a href="#showcase">Showcase</a>
+      <a href="#contact">Contact</a>
       <a href="https://github.com/naliuj/setup-sheet-helper-releases/releases/latest" target="_blank" rel="noopener">Download</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -133,6 +134,35 @@
       </div>
     </div>
 
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title reveal">Get in touch</h2>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <label for="contactType">Type</label>
+        <select id="contactType" name="category">
+          <option>Feature Request</option>
+          <option>Bug Report</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="contactName">Name</label>
+        <input id="contactName" name="name" type="text" placeholder="Your name" required />
+      </div>
+      <div class="form-row">
+        <label for="contactEmail">Email</label>
+        <input id="contactEmail" name="email" type="email" placeholder="you@example.com" required />
+        <p class="form-hint">So I can reply if needed.</p>
+      </div>
+      <div class="form-row">
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" name="message" rows="6" placeholder="Describe the bug, feature idea, or anything else..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="contactSubmit">Send</button>
+      <p class="form-status" id="contactStatus" aria-live="polite"></p>
+    </form>
   </section>
 
 </main>

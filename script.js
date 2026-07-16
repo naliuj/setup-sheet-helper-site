@@ -56,3 +56,42 @@ lightbox.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox()
 })
+
+// Contact form — posts to Formspree directly (no CSP restriction on this static site, unlike
+// the app's own copy of this form) and shows an inline status instead of navigating away.
+const contactForm = document.getElementById('contactForm')
+const contactSubmit = document.getElementById('contactSubmit')
+const contactStatus = document.getElementById('contactStatus')
+
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault()
+  contactSubmit.disabled = true
+  contactSubmit.textContent = 'Sending…'
+  contactStatus.textContent = ''
+  contactStatus.className = 'form-status'
+
+  const formData = new FormData(contactForm)
+  try {
+    const response = await fetch('https://formspree.io/f/xreneagj', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: formData
+    })
+    if (response.ok) {
+      contactForm.reset()
+      contactStatus.textContent = 'Thanks — your message was sent.'
+      contactStatus.className = 'form-status success'
+    } else {
+      const body = await response.json().catch(() => null)
+      const detail = body?.errors?.map((err) => err.message).join(', ')
+      contactStatus.textContent = detail || 'Something went wrong. Please try again.'
+      contactStatus.className = 'form-status error'
+    }
+  } catch {
+    contactStatus.textContent = 'Network error. Please try again.'
+    contactStatus.className = 'form-status error'
+  } finally {
+    contactSubmit.disabled = false
+    contactSubmit.textContent = 'Send'
+  }
+})
