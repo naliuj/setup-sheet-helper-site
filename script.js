@@ -95,3 +95,33 @@ contactForm.addEventListener('submit', async (e) => {
     contactSubmit.textContent = 'Send'
   }
 })
+
+// Point the two download buttons straight at the latest release's .dmg files, so non-technical
+// visitors get a direct download instead of the releases page full of assets. The .dmg filenames
+// carry the version, so we can't hardcode a stable URL — instead we look up the latest release via
+// the GitHub API and pick the arm64 / x64 .dmg. Each button already has the releases page as its
+// href in the HTML, so if this lookup fails (offline, rate-limited) clicking still works.
+const RELEASES_REPO = 'naliuj/setup-sheet-helper-releases'
+
+async function wireDownloadButtons() {
+  const arm = document.getElementById('dlArm')
+  const intel = document.getElementById('dlIntel')
+  if (!arm || !intel) return
+  try {
+    const res = await fetch(`https://api.github.com/repos/${RELEASES_REPO}/releases/latest`, {
+      headers: { Accept: 'application/vnd.github+json' }
+    })
+    if (!res.ok) return // leave the releases-page fallback href in place
+    const data = await res.json()
+    const assets = data.assets || []
+    const find = (suffix) => assets.find((a) => a.name.endsWith(suffix))
+    const armDmg = find('-arm64.dmg')
+    const intelDmg = find('-x64.dmg')
+    if (armDmg) arm.href = armDmg.browser_download_url
+    if (intelDmg) intel.href = intelDmg.browser_download_url
+  } catch {
+    // Network/API error — the buttons keep their releases-page fallback.
+  }
+}
+
+wireDownloadButtons()
