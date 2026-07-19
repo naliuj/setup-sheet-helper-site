@@ -155,13 +155,6 @@ a { color: inherit; }
 
 .dl-hint em { font-style: normal; color: var(--color-text); }
 
-.dl-hint a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  white-space: nowrap;
-}
-
 /* Buttons — same shape/behavior as the app's .btn / .btn.primary: flat surface with a border,
    hover swaps the border to accent color rather than lightening the fill; primary variant fills
    solid accent with the app's --color-on-accent text. */
