@@ -1,0 +1,29 @@
+# Setup Sheet Helper
+
+> A free desktop app for macOS that plans and prints recording studio session setup sheets — mic assignments, channel routing, visual room layouts, and PDF export.
+
+Setup Sheet Helper replaces a scribbled notepad with a clean, printable setup sheet for recording sessions. It's built by Julian Rose, free, and runs on both Apple Silicon and Intel Macs.
+
+## Features
+
+- **Full setup sheet editor**: Mic, 48V, outboard, channel, tie line, cue box, polarity, and notes — one row per source, all in one table.
+- **Stereo-pair linking**: Link two rows and their mic, outboard, 48V, and channel settings stay in sync automatically.
+- **Visual room layouts**: Drag and drop instruments onto a real building floor plan — see the room, not just a spreadsheet.
+- **Channel presets**: Save a full channel configuration once, reuse it across every future session with that setup.
+- **Customizable PDF export**: Grid lines, zebra striping, header shading, and accent color — print sheets that look like yours, in color or black-and-white.
+- **Bulk row tools**: Multi-select rows, apply sequential numbering, and color-code sections in a couple of clicks.
+- **Studio gear catalog**: Track mics, outboard, and preamps per studio, plus a personal gear locker for your own equipment.
+- **Built for daily use**: Customizable keybinds, dark/light theme, and automatic updates.
+
+## Pricing
+
+Free.
+
+## Platform
+
+macOS (Apple Silicon and Intel).
+
+## Links
+
+- [Website](https://setupsheethelper.julianro.se/)
+- [Downloads](https://setupsheethelper.julianro.se/#download)
