@@ -1,5 +1,5 @@
 /* Design tokens copied directly from the app's own src/renderer/src/styles/global.css (dark
-   theme) — this page intentionally looks like an extension of the app, not a separate "marketing
+   theme); this page intentionally looks like an extension of the app, not a separate "marketing
    site" aesthetic. Sharp 2px radius, flat borders, hover-changes-border-not-background buttons,
    and the app's exact color values throughout. */
 :root {
@@ -155,7 +155,7 @@ a { color: inherit; }
 
 .dl-hint em { font-style: normal; color: var(--color-text); }
 
-/* Buttons — same shape/behavior as the app's .btn / .btn.primary: flat surface with a border,
+/* Buttons have the same shape/behavior as the app's .btn / .btn.primary: flat surface with a border,
    hover swaps the border to accent color rather than lightening the fill; primary variant fills
    solid accent with the app's --color-on-accent text. */
 .btn {
@@ -214,7 +214,7 @@ a { color: inherit; }
   margin: 0 0 48px;
 }
 
-/* Features — same card treatment as the app's .card (Home screen tiles): --color-surface-alt
+/* Features have the same card treatment as the app's .card (Home screen tiles): --color-surface-alt
    fill, 1px border, sharp radius, hover changes only the border color. */
 
 .features {

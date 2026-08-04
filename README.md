@@ -5,4 +5,4 @@ for planning and printing recording studio session setup sheets.
 
 Live at: https://naliuj.github.io/setup-sheet-helper-site/
 
-Plain HTML/CSS/JS, no build step — deployed via GitHub Pages from the `main` branch root.
+Plain HTML/CSS/JS, no build step, deployed via GitHub Pages from the `main` branch root.

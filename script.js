@@ -29,7 +29,7 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
 
-// Lightbox — click a hero/showcase screenshot to view it full size
+// Clicking a hero/showcase screenshot opens the lightbox at full size.
 const lightbox = document.getElementById('lightbox')
 const lightboxImg = document.getElementById('lightboxImg')
 const lightboxClose = document.getElementById('lightboxClose')
@@ -57,7 +57,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox()
 })
 
-// Contact form — posts to Formspree directly (no CSP restriction on this static site, unlike
+// The contact form posts to Formspree directly (no CSP restriction on this static site, unlike
 // the app's own copy of this form) and shows an inline status instead of navigating away.
 const contactForm = document.getElementById('contactForm')
 const contactSubmit = document.getElementById('contactSubmit')
@@ -79,7 +79,7 @@ contactForm.addEventListener('submit', async (e) => {
     })
     if (response.ok) {
       contactForm.reset()
-      contactStatus.textContent = 'Thanks — your message was sent.'
+      contactStatus.textContent = 'Thanks! Your message was sent.'
       contactStatus.className = 'form-status success'
     } else {
       const body = await response.json().catch(() => null)
@@ -98,7 +98,7 @@ contactForm.addEventListener('submit', async (e) => {
 
 // Point the two download buttons straight at the latest release's .dmg files, so non-technical
 // visitors get a direct download instead of the releases page full of assets. The .dmg filenames
-// carry the version, so we can't hardcode a stable URL — instead we look up the latest release via
+// carry the version, so we can't hardcode a stable URL. Instead, we look up the latest release via
 // the GitHub API and pick the arm64 / x64 .dmg. Each button already has the releases page as its
 // href in the HTML, so if this lookup fails (offline, rate-limited) clicking still works.
 const RELEASES_REPO = 'naliuj/setup-sheet-helper-releases'
@@ -120,7 +120,7 @@ async function wireDownloadButtons() {
     if (armDmg) arm.href = armDmg.browser_download_url
     if (intelDmg) intel.href = intelDmg.browser_download_url
   } catch {
-    // Network/API error — the buttons keep their releases-page fallback.
+    // On a network or API error, the buttons keep their releases-page fallback.
   }
 }
 
