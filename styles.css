@@ -155,6 +155,19 @@ a { color: inherit; }
 
 .dl-hint em { font-style: normal; color: var(--color-text); }
 
+.dl-github {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+}
+
+.dl-github a {
+  color: var(--color-text-dim);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.dl-github a:hover { color: var(--color-text); }
+
 /* Buttons have the same shape/behavior as the app's .btn / .btn.primary: flat surface with a border,
    hover swaps the border to accent color rather than lightening the fill; primary variant fills
    solid accent with the app's --color-on-accent text. */

@@ -101,7 +101,7 @@ contactForm.addEventListener('submit', async (e) => {
 // carry the version, so we can't hardcode a stable URL. Instead, we look up the latest release via
 // the GitHub API and pick the arm64 / x64 .dmg. Each button already has the releases page as its
 // href in the HTML, so if this lookup fails (offline, rate-limited) clicking still works.
-const RELEASES_REPO = 'naliuj/setup-sheet-helper-releases'
+const RELEASES_REPO = 'naliuj/SetupSheetHelper'
 
 async function wireDownloadButtons() {
   const arm = document.getElementById('dlArm')
