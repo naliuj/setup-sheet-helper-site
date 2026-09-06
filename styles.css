@@ -495,3 +495,207 @@ a { color: inherit; }
 .lightbox-close:hover {
   background: var(--color-surface-alt);
 }
+
+/* Studio Downloads page. Same vocabulary as the rest of the site: 2px radius, 24px gutters, hover
+   moves the border rather than the fill. The chip and tag classes are new here because the site had
+   no badge or pill until now. */
+.archive {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 96px;
+}
+
+.archive-title {
+  font-size: 1.7rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+
+.archive-controls {
+  margin: 28px 0 16px;
+}
+
+.archive-search {
+  width: 100%;
+  max-width: 420px;
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.archive-search:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.chip {
+  padding: 4px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-dim);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.chip.is-active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.archive-bulk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+
+.btn-small {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.archive-count {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+}
+
+.city-heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  margin: 24px 0 8px;
+}
+
+.city-heading:first-child {
+  margin-top: 8px;
+}
+
+.studio-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.studio-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.studio-name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.studio-city {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text-dim);
+}
+
+.studio-meta {
+  margin-top: 3px;
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+}
+
+.tag {
+  padding: 1px 7px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-dim);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.tag.is-accent {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.archive-note {
+  margin: 20px 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+  max-width: 60ch;
+}
+
+/* Sits above the footer so a long selection is always one click from downloading. The [hidden]
+   rule is load-bearing: display:flex below outranks the browser's own display:none for the hidden
+   attribute, so without it the bar shows with nothing selected. */
+.selection-bar[hidden] {
+  display: none;
+}
+
+.selection-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 24px;
+  background: rgba(20, 22, 26, 0.94);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--color-border);
+}
+
+.selection-summary {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+}
+
+.nav-links a.is-active {
+  color: var(--color-text);
+}
+
+@media (max-width: 620px) {
+  .studio-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .studio-main {
+    flex-basis: calc(100% - 40px);
+  }
+
+  .studio-row .btn {
+    margin-left: 28px;
+  }
+
+  .selection-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

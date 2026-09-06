@@ -27,3 +27,4 @@ macOS (Apple Silicon and Intel).
 
 - [Website](https://setupsheethelper.julianro.se/)
 - [Downloads](https://setupsheethelper.julianro.se/#download)
+- [Studio Downloads](https://setupsheethelper.julianro.se/studio-downloads.html)
