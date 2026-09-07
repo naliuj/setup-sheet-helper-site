@@ -600,6 +600,44 @@ a { color: inherit; }
   border-bottom: 1px solid var(--color-border);
 }
 
+/* The checkbox is the one control here the browser would draw itself, and a stock tick belongs to
+   no part of this site. Rebuilt from the same pieces as .chip and .btn-primary: flat surface with a
+   border, accent border on hover, solid accent fill when on. The tick is a background image rather
+   than a mask so the border survives; its color is --color-on-accent written out, since a custom
+   property cannot be interpolated into a data URI. */
+input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+input[type='checkbox']:hover {
+  border-color: var(--color-accent);
+}
+
+input[type='checkbox']:focus-visible {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(61, 155, 255, 0.35);
+}
+
+input[type='checkbox']:checked {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%2304203f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.4l3.1 3.1L12.5 5.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+
 .studio-main {
   flex: 1;
   min-width: 0;
