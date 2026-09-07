@@ -24,10 +24,17 @@ if (listEl) {
 
   const formatSize = (bytes) => (bytes < 1024 * 1024 ? Math.round(bytes / 1024) + ' KB' : (bytes / 1024 / 1024).toFixed(1) + ' MB')
 
+  // Model names carry punctuation inconsistently, and nobody types it the way the label spells it:
+  // the same mic is "SM-57" in one locker and gets searched for as "sm57" or "sm 57". Comparing a
+  // stripped copy of both sides catches all three. The plain substring check stays first so a
+  // multi-word query like "audio technica" still behaves.
+  const strip = (text) => text.toLowerCase().replace(/[^a-z0-9]/g, '')
+
   const matches = (studio, query) => {
     if (city !== 'All' && studio.city !== city) return false
     if (!query) return true
-    return (studio.name + ' ' + studio.city + ' ' + studio.note + ' ' + studio.gear).toLowerCase().includes(query)
+    const haystack = (studio.name + ' ' + studio.city + ' ' + studio.note + ' ' + studio.gear).toLowerCase()
+    return haystack.includes(query) || strip(haystack).includes(strip(query))
   }
 
   function visible() {
@@ -79,7 +86,6 @@ if (listEl) {
     where.textContent = studio.city
     title.appendChild(where)
     if (studio.roomLayout) title.appendChild(tag('Room layout', 'is-accent'))
-    if (studio.builtIn) title.appendChild(tag('Ships with the app', ''))
 
     const meta = document.createElement('div')
     meta.className = 'studio-meta'

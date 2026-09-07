@@ -1,124 +1,21 @@
 {
-  "generatedAt": "2026-09-06",
+  "generatedAt": "2026-09-07",
   "studios": [
     {
-      "id": "berklee-150-studio-a",
-      "name": "Berklee 150, Studio A",
+      "id": "the-record-co-studio-a",
+      "name": "The Record Co Studio A",
       "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-150-studio-a.json",
-      "bytes": 66909,
+      "note": "",
+      "added": "2026-09-07",
+      "file": "studios/the-record-co-studio-a.json",
+      "bytes": 245968,
       "counts": {
-        "mics": 41,
-        "outboard": 21,
-        "preamps": 2
+        "mics": 87,
+        "outboard": 14,
+        "preamps": 12
       },
       "roomLayout": true,
-      "gear": "013 fet 4007 4011 adk adx-51 ae-2500 akg api api 2500 api 525 api 560 at-3032 at4050/cm5 audio technica audix avalon b&k beta 52a beta 57a c414 xl c414 xls c451 eb c460b w/ ck1 c460b w/ ck61-uls c535 eb chandler limited chandler limited tg1 countryman crown custom vienna 12au cx-212 d-112 d6 dbx dbx 165a drawmer drawmer ds-201 e902 earthworks electro-voice empirical labs empirical labs el8-x distressor eventide eventide ddl 500 gml gml 8200 jdi jensen ksm27 ksm44 lexicon lexicon 224x lexicon pcm-42 md 421 md 441-u neumann neve neve 1073 neve 33609/j pultec pultec eqp-1 pzm 6-lpb r-121 re-15 re-20 re-55 royer sennheiser shure skrm-100 subkick sm-57 sm-58 sm-7b sm-81 soyuz studio technologies studio technologies echoplate ii tc electronic tc electronic m3000 tc-30k tech 21 tech 21 sansamp psa-1 type 85 u47 fet u5 di u89 universal audio universal audio 1176 universal audio 6176 universal audio la-2a universal audio la-3a urei urei 1176ln wa-84 warm yamaha"
-    },
-    {
-      "id": "berklee-150-studio-a76",
-      "name": "Berklee 150, Studio A76",
-      "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-150-studio-a76.json",
-      "bytes": 2872,
-      "counts": {
-        "mics": 13,
-        "outboard": 5,
-        "preamps": 1
-      },
-      "roomLayout": false,
-      "gear": "akg api api 525 api 550b api 560 beta 52a beta 56a beyerdynamic broadcaster countryman d-112 electro-voice eventide eventide eclipse kms 105 ksm-32 ksm141 m88 neumann re-20 rode shure sm-57 sm-58 sm-7b true systems true systems precision8 type 85 universal audio universal audio 1176ln"
-    },
-    {
-      "id": "berklee-150-studio-b",
-      "name": "Berklee 150, Studio B",
-      "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-150-studio-b.json",
-      "bytes": 43596,
-      "counts": {
-        "mics": 37,
-        "outboard": 17,
-        "preamps": 2
-      },
-      "roomLayout": true,
-      "gear": "013 fet 4007 4011 adk adx-51 ae-2500 akg api api 2500 api 525 api 550a api 560 at-4050 atm-87r atm-89r audio technica audix avalon b&k berlin 47 beta 52a blue blueberry bricasti design bricasti design m7 reverb c414 xlii c414eb c451 eb c535 eb cardinal countryman crowley and tripp d-112 d6 dbx dbx 1066 dbx 160 drawmer drawmer 1961 drawmer ds-201 e902 electro-voice gml gml 8200 jdi passive ksm44 lexicon lexicon pcm-42 md 421 md 441-u naked eye nd-408 neumann neve neve 1084 r-121 radial re-20 roland roland sde 3000 royer sennheiser shure skrm-100 subkick sm-57 sm-58 sm-7b soyuz summit audio summit audio tla-50 tc electronic tc electronic d-two tc electronic m-one xl tlm 170 r type 85 u47 fet u5 u89 universal audio universal audio 6176 urei urei 1176ln wa-84 warm yamaha"
-    },
-    {
-      "id": "berklee-150-studio-e",
-      "name": "Berklee 150, Studio E",
-      "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-150-studio-e.json",
-      "bytes": 32421,
-      "counts": {
-        "mics": 41,
-        "outboard": 18,
-        "preamps": 1
-      },
-      "roomLayout": true,
-      "gear": "013 4007 4011 ae-2500 akg api api 2500 api 525 api 560 at-3032 audio technica audix b&k beta 52a beta 57a beta 91 beta 98 blue blueberry bricasti design bricasti design m7 reverb c414 b-uls c414 xls c451 c535 eb countryman cx-212 d-112 d6 dbx dbx 165a drawmer drawmer 1961 drawmer ds-201 e-cv451e e902 earthworks ecm-23f electro-voice ev-308 gml gml 8200 groove tubes gt55 jdi jensen kms 105 ksm141 ksm44 lexicon lexicon 224x lexicon mpx-500 lexicon pcm-80 lexicon primetime ii md 421 md 441-u neumann neve neve 1084 ntk-1 r-121 re-16 re-20 re-55 rode royer scx-one sennheiser shure sm-57 sm-58 sm-7b sony soyuz summit audio summit audio tla-50 tc electronic tc electronic d-two tc electronic m-one tc40 tech 21 tech 21 sansamp psa-1 type 85 u47 fet universal audio universal audio 1176ln universal audio la-3a wa-84 warm"
-    },
-    {
-      "id": "berklee-160-studio-1",
-      "name": "Berklee 160, Studio 1",
-      "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-160-studio-1.json",
-      "bytes": 224126,
-      "counts": {
-        "mics": 42,
-        "outboard": 22,
-        "preamps": 3
-      },
-      "roomLayout": true,
-      "gear": "013 fet 4006c omni 4011c cardioid 4038 aea akg api api 2500 api 512c api 550b api 560 at4041 at4060 at5047 atm250 audio technica audix avalon beta 52a beyerdynamic brauner bricasti design bricasti design m7 reverb with remote c414 xlii c451b chandler limited chandler limited tg1 chandler limited zener limiter cmc6 mk2 cmc6 mk4 co-100 omni coles countryman crane song crane song stc-8 d-112 d6 dpa e902 electro-voice empirical labs empirical labs el8-x distressor gml gml 8200 jdi passive di box kerwax kerwax replica km184 ksm44 lexicon lexicon pcm-42 m-149 tube m160 m201 m88 md 421 md 441-u millennia media millennia media stt-1 mkh40 neumann neve neve 33609/j r-121 r-122 r84 radial re-20 royer sanken schoeps sennheiser sf-24 shure skrm-100 subkick sm-57 sm-58 sm-7b soyuz ssl ssl g-comp summit audio summit audio tla-100a tech 21 tech 21 sansamp psa-1 tlm 170 r tube-tech tube-tech cl-1b tube-tech pe-1c type 85 u47 fet u5 di u87 ai undertone audio undertone audio unfairchild 670 universal audio universal audio 1176ln universal audio 6176 universal audio la-3a vma tube microphone yamaha"
-    },
-    {
-      "id": "berklee-160-studio-2",
-      "name": "Berklee 160, Studio 2",
-      "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-160-studio-2.json",
-      "bytes": 260728,
-      "counts": {
-        "mics": 41,
-        "outboard": 16,
-        "preamps": 4
-      },
-      "roomLayout": true,
-      "gear": "013 fet 4006c omni 4011c cardioid 4038 aea akg api api 2500 api 512c api 550b api 560 at-4040 at-4050 at5047 atm250 atm710 audio technica audix avalon beta 52a beyerdynamic brauner bricasti design bricasti design m7 reverb with remote c414 xlii c451b chandler limited chandler limited tg1 cmc6 mk2 cmc6 mk4 co-100 omni coles countryman crane song crane song stc-8 d-112 d6 dpa e902 electro-voice gml gml 2020 gml 8200 jdi passive km184 ksm44 lexicon lexicon pcm-42 m-149 tube m160 m201 md 421 md 441-u millennia media millennia media stt-1 neumann neve neve 33609/j r-121 r-122 r84 radial re-20 royer sanken schoeps sennheiser sf-24 shure skrm-100 subkick sm-57 sm-58 sm-7b soyuz ssl ssl stereo bus compressor summit audio summit audio tla-100a tlm 170 r tube-tech tube-tech cl-1b tube-tech pe-1c type 85 u47 fet u5 u87 ai universal audio universal audio 1176ln universal audio 6176 vma tube yamaha"
-    },
-    {
-      "id": "berklee-160-studio-3",
-      "name": "Berklee 160, Studio 3",
-      "city": "Boston",
-      "note": "Berklee College of Music",
-      "builtIn": true,
-      "added": "2026-09-06",
-      "file": "studios/berklee-160-studio-3.json",
-      "bytes": 273757,
-      "counts": {
-        "mics": 34,
-        "outboard": 23,
-        "preamps": 4
-      },
-      "roomLayout": true,
-      "gear": "013 fet 4006c omni 4011c cardioid 4038 akg api api 2500 api 512c api 525 api 550b api 560 at-4050 at5047 audio technica audix avalon beta 52a beyerdynamic brauner bricasti design bricasti design m7 reverb with remote c414 xlii c451b chandler limited chandler limited tg1 cmc6 mk4 cardioid co-100 omni coles countryman d-112 d6 dpa drawmer drawmer ds-201 e902 electro-voice empirical labs empirical labs el8-x distressor eventide eventide h3500 gml gml 8200 jdi passive km184 ksm44 lexicon lexicon 480l reverb with remote lexicon pcm-42 m-149 tube m160 m201 md 421 md 441-u millennia media millennia media stt-1 neumann neve neve 1084 neve 33609 r-121 radial re-20 royer sanken schoeps sennheiser sf-24 shure skrm-100 subkick sm-57 sm-58 sm-7b soyuz summit audio summit audio eqp-200a summit audio tla-100a tech 21 tech 21 sansamp psa-1 tube-tech tube-tech cl-1b tube-tech lca-2b type 85 u47 fet u5 u87 ai universal audio universal audio 1176ln universal audio 6176 universal audio la-2a universal audio la-3a vma tube yamaha"
+      "gear": "160xt 610 99 ae-2500 ae-3000 akg aphex aphex exciter at-2020 at-2021 at-2050 at-4047 at-4049 at-4050 at-4053b at-4081 at4060 atm450 atm510 atm650 audio technica audix avalon avalon 737 bae bae 1073 beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad calrec colares console countryman crown d-112 d112 d6 db delphos ii distressor diyre dk7 drum kit system e901 e902 e906 earthworks electro-voice elop+ empirical labs empirical labs el8 distressor encore 100 encore 100i encore 200 eqp-wa ev-635a fe di fe2 di focusrite focusrite isa two focusrite octopre gml gml 8200 grace design grace design m101 groove tubes gt55 gxl3000 hummingbird imp splitter isa 828 j48 ksm-32 la-4 lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon lexicon primetime ii line2amp luna ii m-audio m801 manley md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann nt-5 pcc 160 pm40 piano system pq15 prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 rode roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b sound workshop sr25 st31 sterling audio studio projects tlm 102 tlm 107 turner type 85 universal audio universal audio 1176 universal audio la-2a urei valvet wa-14 wa-251 wa-2a wa-47 wa-47 jr wa-84 wa-87 r2 wa273 warm warm wa-412 whirlwind yamaha yamaha spx90"
     }
   ]
 }

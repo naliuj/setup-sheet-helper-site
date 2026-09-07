@@ -2,7 +2,7 @@
 //
 // Everything measurable is derived from the pack files themselves, so gear counts, file sizes and
 // the room-layout flag can never drift from what people actually download. The descriptive fields
-// are yours: city, note, added and builtIn are read back out of the existing manifest and written
+// are yours: city, note and added are read back out of the existing manifest and written
 // through untouched, so re-running this after adding a pack never clobbers what you typed.
 //
 // A new pack appears with "city": "TODO". Fill that in, then re-run or just leave it; the script
@@ -15,7 +15,7 @@ import path from 'node:path'
 
 const DIR = 'studios'
 const MANIFEST = path.join(DIR, 'index.json')
-const MANUAL = ['city', 'note', 'added', 'builtIn']
+const MANUAL = ['city', 'note', 'added']
 
 const today = new Date().toISOString().slice(0, 10)
 
@@ -66,7 +66,6 @@ const studios = files.map((file) => {
     name: pack.studios[0].name,
     city: carried.city ?? 'TODO',
     note: carried.note ?? '',
-    builtIn: carried.builtIn ?? false,
     added: carried.added ?? today,
     file: full,
     bytes: fs.statSync(full).size,
