@@ -3,6 +3,10 @@
    site" aesthetic. Sharp 2px radius, flat borders, hover-changes-border-not-background buttons,
    and the app's exact color values throughout. */
 :root {
+  /* Without this, browsers draw every native control in their light theme: a white checkbox, a
+     white select dropdown, light scrollbars and a dark caret, all on a dark page. */
+  color-scheme: dark;
+
   --color-bg: #14161a;
   --color-surface: #1c1f25;
   --color-surface-alt: #232830;
