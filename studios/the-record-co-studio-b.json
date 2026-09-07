@@ -517,37 +517,37 @@
       ],
       "outboardGear": [
         {
-          "name": "Aphex Exciter",
+          "name": "Exciter",
           "manufacturer": "Aphex",
           "category": null,
           "quantity": 1
         },
         {
-          "name": "Empirical Labs EL8 Distressor",
+          "name": "EL8 Distressor",
           "manufacturer": "Empirical Labs",
           "category": null,
           "quantity": 1
         },
         {
-          "name": "Lexicon PrimeTime II",
+          "name": "PrimeTime II",
           "manufacturer": "Lexicon",
           "category": null,
           "quantity": 2
         },
         {
-          "name": "Universal Audio 1176",
+          "name": "1176",
           "manufacturer": "Universal Audio",
           "category": null,
           "quantity": 1
         },
         {
-          "name": "Universal Audio LA-2A",
+          "name": "LA-2A",
           "manufacturer": "Universal Audio",
           "category": null,
           "quantity": 1
         },
         {
-          "name": "Yamaha SPX90",
+          "name": "SPX90",
           "manufacturer": "Yamaha",
           "category": null,
           "quantity": 1
@@ -609,25 +609,25 @@
       ],
       "preamps": [
         {
-          "name": "Avalon 737",
+          "name": "737",
           "manufacturer": "Avalon",
           "category": null,
           "channels": 1
         },
         {
-          "name": "BAE 1073",
+          "name": "1073",
           "manufacturer": "BAE",
           "category": null,
           "channels": 1
         },
         {
-          "name": "Focusrite ISA Two",
+          "name": "ISA Two",
           "manufacturer": "Focusrite",
           "category": null,
           "channels": 2
         },
         {
-          "name": "Focusrite OctoPre",
+          "name": "OctoPre",
           "manufacturer": "Focusrite",
           "category": null,
           "channels": 8
@@ -639,7 +639,7 @@
           "channels": 2
         },
         {
-          "name": "Warm WA-412",
+          "name": "WA-412",
           "manufacturer": "Warm",
           "category": null,
           "channels": 8
