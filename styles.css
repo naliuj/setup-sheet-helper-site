@@ -310,6 +310,51 @@ a { color: inherit; }
   max-width: 42ch;
 }
 
+/* Studio downloads band. Same card treatment as .feature-card (surface-alt fill, 1px border,
+   border-only hover) so it reads as part of the page rather than an ad, but laid out as a row with
+   the action on the right. The nav link alone was not enough: nothing in the page itself said
+   downloadable rooms exist. */
+
+.callout {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.callout-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: border-color 0.15s ease;
+}
+
+.callout-card:hover { border-color: var(--color-accent); }
+
+.callout-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.callout-copy h2 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+}
+
+.callout-copy p {
+  margin: 0;
+  color: var(--color-text-dim);
+  max-width: 60ch;
+}
+
+.callout-card .btn {
+  flex-shrink: 0;
+}
+
 /* Contact */
 
 .contact {
@@ -433,6 +478,11 @@ a { color: inherit; }
 
 @media (max-width: 620px) {
   .feature-grid { grid-template-columns: 1fr; }
+
+  .callout-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .nav-links {
     position: absolute;
