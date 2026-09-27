@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07",
+  "generatedAt": "2026-09-27",
   "studios": [
     {
       "id": "the-record-co-studio-a",
@@ -8,14 +8,14 @@
       "note": "",
       "added": "2026-09-07",
       "file": "studios/the-record-co-studio-a.json",
-      "bytes": 245851,
+      "bytes": 245564,
       "counts": {
-        "mics": 87,
+        "mics": 85,
         "outboard": 14,
         "preamps": 12
       },
       "roomLayout": true,
-      "gear": "1073 1176 160xt 610 737 99 ae-2500 ae-3000 akg aphex at-2020 at-2021 at-2050 at-4047 at-4049 at-4050 at-4053b at-4081 at4060 atm450 atm510 atm650 audio technica audix avalon bae beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad calrec colares console countryman crown d-112 d112 d6 db delphos ii distressor diyre dk7 drum kit system e901 e902 e906 earthworks el8 distressor electro-voice elop+ empirical labs encore 100 encore 100i encore 200 eqp-wa ev-635a exciter fe di fe2 di focusrite gml gml 8200 grace design groove tubes gt55 gxl3000 hummingbird imp splitter isa 828 isa two j48 ksm-32 la-2a la-4 lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon line2amp luna ii m-audio m101 m801 manley md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann nt-5 octopre pcc 160 pm40 piano system pq15 primetime ii prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 rode roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b sound workshop spx90 sr25 st31 sterling audio studio projects tlm 102 tlm 107 turner type 85 universal audio urei valvet wa-14 wa-251 wa-2a wa-412 wa-47 wa-47 jr wa-84 wa-87 r2 wa273 warm whirlwind yamaha"
+      "gear": "1073 1176 160xt 610 737 99 ae-2500 ae-3000 akg aphex at2020 at2021 at2050 at4047 at4049 at4050 at4053b at4060 at4081 atm450 atm510 atm650 audio-technica audix avalon bae beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad calrec colares console countryman crown d112 d6 db delphos ii distressor diyre dk7 drum kit system e901 e902 e906 earthworks el8 distressor electro-voice elop+ empirical labs encore 100 encore 100i encore 200 eqp-wa ev-635a exciter fe di fe2 di focusrite gml gml 8200 grace design groove tubes gt55 gxl3000 hummingbird imp splitter isa 828 isa two j48 ksm-32 la-2a la-4 lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon line2amp luna ii m-audio m101 m801 manley md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann nt-5 octopre pcc 160 pm40 piano system pq15 primetime ii prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 rode roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b sound workshop spx90 sr25 st31 sterling audio studio projects tlm 102 tlm 107 turner type 85 universal audio urei valvet wa-14 wa-251 wa-2a wa-412 wa-47 wa-47 jr wa-84 wa-87 r2 wa273 warm whirlwind yamaha"
     },
     {
       "id": "the-record-co-studio-b",
@@ -24,14 +24,14 @@
       "note": "",
       "added": "2026-09-07",
       "file": "studios/the-record-co-studio-b.json",
-      "bytes": 173687,
+      "bytes": 173678,
       "counts": {
         "mics": 85,
         "outboard": 15,
         "preamps": 11
       },
       "roomLayout": true,
-      "gear": "1073 1176 610 737 99 ae-2500 ae-3000 akg aphex at-2020 at-2021 at-2050 at-4040 at-4049 at-4050 at-4053b at-4081 at4060 atm450 atm510 atm650 audio technica audix avalon bae beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad chandler limited colares countryman crown d-112 d6 delphos ii distressor diyre dk7 drum kit system e901 e902 e906 earthworks el8 distressor electra 500 electro-voice elysia empirical labs encore 100 encore 100i encore 200 eq eqp-wa eqp5 ev-635a exciter fe di fe2 di focusrite germanium grace design groove tubes gt55 gxl3000 hummingbird imp splitter isa 428 isa two j48 john hardy ksm-32 kush la-2a lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon line2amp luna ii m-1 m-audio m101 m801 maag md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann nt-5 octopre pcc 160 pm40 piano system primetime ii prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 rode roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b spx90 sr25 st31 sterling audio studio projects tlm 102 tlm 107 tonelux turner type 85 universal audio valvet wa-14 wa-251 wa-2a wa-412 wa-47 wa-47 jr wa-84 wa-87 r2 wa273 warm whirlwind xpressor yamaha"
+      "gear": "1073 1176 610 737 99 ae-2500 ae-3000 akg aphex at2020 at2021 at2050 at4040 at4049 at4050 at4053b at4060 at4081 atm450 atm510 atm650 audio-technica audix avalon bae beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad chandler limited colares countryman crown d112 d6 delphos ii distressor diyre dk7 drum kit system e901 e902 e906 earthworks el8 distressor electra 500 electro-voice elysia empirical labs encore 100 encore 100i encore 200 eq eqp-wa eqp5 ev-635a exciter fe di fe2 di focusrite germanium grace design groove tubes gt55 gxl3000 hummingbird imp splitter isa 428 isa two j48 john hardy ksm-32 kush la-2a lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon line2amp luna ii m-1 m-audio m101 m801 maag md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann nt-5 octopre pcc 160 pm40 piano system primetime ii prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 rode roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b spx90 sr25 st31 sterling audio studio projects tlm 102 tlm 107 tonelux turner type 85 universal audio valvet wa-14 wa-251 wa-2a wa-412 wa-47 wa-47 jr wa-84 wa-87 r2 wa273 warm whirlwind xpressor yamaha"
     },
     {
       "id": "the-record-co-studio-cd",
@@ -40,14 +40,14 @@
       "note": "",
       "added": "2026-09-07",
       "file": "studios/the-record-co-studio-cd.json",
-      "bytes": 430967,
+      "bytes": 430960,
       "counts": {
         "mics": 82,
         "outboard": 8,
         "preamps": 8
       },
       "roomLayout": true,
-      "gear": "1073 1176 610 737 99 ae-2500 ae-3000 akg aphex at-2020 at-2021 at-2050 at-4049 at-4053b at-4081 at4060 atm450 atm510 atm650 audio technica audix avalon bae beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad colares countryman crown d-112 d6 delphos ii diyre dk7 drum kit system e901 e902 e906 earthworks el8 distressor electro-voice empirical labs encore 100 encore 100i encore 200 eqp-wa ev-635a exciter fe di fe2 di focusrite grace design groove tubes gt55 gxl3000 hummingbird imp splitter isa 428 isa two j48 ksm-32 la-2a lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon line2amp luna ii m-audio m101 md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann octopre pcc 160 pm40 piano system primetime ii prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b spx90 sr25 st31 sterling audio studio projects tlm 102 tlm 107 turner type 85 universal audio valvet wa-14 wa-251 wa-412 wa-47 wa-47 jr wa-84 wa-87 r2 warm whirlwind yamaha"
+      "gear": "1073 1176 610 737 99 ae-2500 ae-3000 akg aphex at2020 at2021 at2050 at4049 at4053b at4060 at4081 atm450 atm510 atm650 audio-technica audix avalon bae beta 52a big noise mpg blue brauner bus-comp c1 c414 xlii c414 xls c451b cad colares countryman crown d112 d6 delphos ii diyre dk7 drum kit system e901 e902 e906 earthworks el8 distressor electro-voice empirical labs encore 100 encore 100i encore 200 eqp-wa ev-635a exciter fe di fe2 di focusrite grace design groove tubes gt55 gxl3000 hummingbird imp splitter isa 428 isa two j48 ksm-32 la-2a lct 140 air lct 440 pure lct 540 s lct 640 ts lct 840 lewitt lexicon line2amp luna ii m-audio m101 md 421 md 441-u meg 14-40 w/ shure bases mini k47 mini k87 mke 200 mke 600 mkh 8020 mkh 8090 mtp 440 dm mxl neumann octopre pcc 160 pm40 piano system primetime ii prod2 prodi prormp pzm 30rb qtc30 r144 r40 radial re-20 roswell s-direct samson se electronics se2200a ii sennheiser sescom shure sm-1a sm-57 sm-7b spx90 sr25 st31 sterling audio studio projects tlm 102 tlm 107 turner type 85 universal audio valvet wa-14 wa-251 wa-412 wa-47 wa-47 jr wa-84 wa-87 r2 warm whirlwind yamaha"
     }
   ]
 }

@@ -23,80 +23,80 @@
           "quantity": 4
         },
         {
-          "name": "D-112",
+          "name": "D112",
           "manufacturer": "AKG",
           "category": null,
           "quantity": 2
         },
         {
           "name": "AE-2500",
-          "manufacturer": "Audio Technica",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 1
         },
         {
           "name": "AE-3000",
-          "manufacturer": "Audio Technica",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 2
         },
         {
-          "name": "AT-2020",
-          "manufacturer": "Audio Technica",
+          "name": "AT2020",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 3
         },
         {
-          "name": "AT-2021",
-          "manufacturer": "Audio Technica",
+          "name": "AT2021",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 4
         },
         {
-          "name": "AT-2050",
-          "manufacturer": "Audio Technica",
+          "name": "AT2050",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 2
         },
         {
-          "name": "AT-4049",
-          "manufacturer": "Audio Technica",
+          "name": "AT4049",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 2
         },
         {
-          "name": "AT-4053b",
-          "manufacturer": "Audio Technica",
+          "name": "AT4053b",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 1
         },
         {
-          "name": "AT-4081",
-          "manufacturer": "Audio Technica",
+          "name": "AT4081",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 4
         },
         {
           "name": "AT4060",
-          "manufacturer": "Audio Technica",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 1
         },
         {
           "name": "ATM450",
-          "manufacturer": "Audio Technica",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 4
         },
         {
           "name": "ATM510",
-          "manufacturer": "Audio Technica",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 1
         },
         {
           "name": "ATM650",
-          "manufacturer": "Audio Technica",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 1
         },
@@ -497,14 +497,14 @@
           "quantity": 2
         },
         {
-          "name": "AT-4050",
-          "manufacturer": "Audio Technica",
+          "name": "AT4050",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 2
         },
         {
-          "name": "AT-4040",
-          "manufacturer": "Audio Technica",
+          "name": "AT4040",
+          "manufacturer": "Audio-Technica",
           "category": null,
           "quantity": 2
         },
