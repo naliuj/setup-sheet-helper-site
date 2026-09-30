@@ -8,11 +8,11 @@ Setup Sheet Helper replaces a scribbled notepad with a clean, printable setup sh
 
 - **Full setup sheet editor**: Mic, 48V, outboard, channel, tie line, cue box, polarity, and notes. One row per source, all in one table.
 - **Stereo-pair linking**: Link two rows and their mic, outboard, 48V, and channel settings stay in sync automatically.
-- **Visual room layouts**: Drag and drop instruments onto a real building floor plan. See the room, not just a spreadsheet.
+- **Visual room layouts**: Drag and drop instruments onto a real building floor plan, then circle gear and draw arrows right on top of it. Markup works with a tablet, mouse, or trackpad, and prints with the sheet.
 - **Channel presets**: Save a full channel configuration once, reuse it across every future session with that setup.
 - **Customizable PDF export**: Grid lines, zebra striping, header shading, and accent color. Print sheets that look like yours, in color or black-and-white.
 - **Bulk row tools**: Multi-select rows, apply sequential numbering, and color-code sections in a couple of clicks.
-- **Studio gear catalog**: Track mics, outboard, and preamps per studio, plus a personal gear locker for your own equipment.
+- **Build your own studios**: Enter each room's mic locker, outboard rack, and preamps once, from the built-in gear catalog, a CSV or spreadsheet paste, or another room you already have. Add a floor plan (PDF, PNG, JPEG, GIF, WebP, BMP or SVG) and the room is ready for every session. Also includes a personal gear locker for your own equipment.
 - **Built for daily use**: Customizable keybinds, dark/light theme, and automatic updates.
 
 ## Pricing
