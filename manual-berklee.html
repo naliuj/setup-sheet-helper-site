@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Berklee features. Setup Sheet Helper Manual</title>
+<meta name="description" content="What Setup Sheet Helper's Berklee features add: Berklee buildings and studios, building office gear, the faculty reserve, and what happens when you turn them off." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-berklee.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-berklee.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="Berklee features. Setup Sheet Helper Manual" />
+<meta property="og:description" content="What Setup Sheet Helper's Berklee features add: Berklee buildings and studios, building office gear, the faculty reserve, and what happens when you turn them off." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Berklee features. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="What Setup Sheet Helper's Berklee features add: Berklee buildings and studios, building office gear, the faculty reserve, and what happens when you turn them off." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Berklee features. Setup Sheet Helper Manual",
+  "description": "What Setup Sheet Helper's Berklee features add: Berklee buildings and studios, building office gear, the faculty reserve, and what happens when you turn them off.",
+  "url": "https://setupsheethelper.julianro.se/manual-berklee.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html">1. Start here</a></li>
+      <li><a href="manual-table-mode.html">2. Building the setup sheet</a></li>
+      <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
+      <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
+      <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
+      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">7. Working faster</a></li>
+      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
+      <li><a href="manual-berklee.html" aria-current="page">9. Berklee features</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#what-it-adds">What Berklee features add</a></li>
+          <li><a href="#turning-on">Turning them on</a></li>
+          <li><a href="#finding-rooms">Finding a Berklee room</a></li>
+          <li><a href="#building-office">Building office gear</a></li>
+          <li><a href="#faculty-reserve">The faculty reserve</a></li>
+          <li><a href="#read-only">Berklee studios are read-only</a></li>
+          <li><a href="#turning-off">Turning them off</a></li>
+        </ol>
+      </li>
+      <li><a href="manual-settings.html">10. Settings reference</a></li>
+      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 9</p>
+    <h1>Berklee features</h1>
+    <p class="lede">If you work in Berklee's studios, the app can load every building, room and gear list for you. This part covers what that adds, how the shared gear pools work, and what happens if you turn it off again.</p>
+
+    <h2 id="what-it-adds">What Berklee features add</h2>
+    <p>With Berklee features on, the app gives you:</p>
+    <ul>
+      <li><strong>Buildings and studios.</strong> Every Berklee recording room, grouped by building, ready to start a setup from.</li>
+      <li><strong>Gear lists.</strong> Each room's mics, outboard and preamps, so the pickers show what is really in the room.</li>
+      <li><strong>Building office gear.</strong> Each building's shared stock, offered in every room in that building.</li>
+      <li><strong>The faculty reserve.</strong> Berklee's faculty pool, which you can switch on for any setup, plus a <span class="manual-ui">Faculty Reserve</span> tab in Settings.</li>
+      <li><strong>A switch in the New setup dialog.</strong> <span class="manual-ui">Show Berklee faculty reserve mics</span> appears under the Artist field.</li>
+    </ul>
+
+    <h2 id="turning-on">Turning them on</h2>
+    <p>The first time the app opens, it asks <span class="manual-ui">Pre-load Berklee studios and gear?</span> Choose <span class="manual-ui">Yes, pre-load Berklee</span> and everything above loads straight away.</p>
+    <p>If you chose <span class="manual-ui">No, start blank</span>, or want to change your mind later:</p>
+    <ol class="manual-steps">
+      <li>
+        <h3>Open Settings</h3>
+        <p>Press <kbd>⌘</kbd><kbd>,</kbd>, or click <span class="manual-ui">Settings</span> at the top right of the window.</p>
+      </li>
+      <li>
+        <h3>Flip the switch</h3>
+        <p>On the <span class="manual-ui">General</span> tab, turn on <span class="manual-ui">Berklee features</span>. The <span class="manual-ui">Faculty Reserve</span> tab appears beside <span class="manual-ui">Personal Gear Locker</span> as soon as you do.</p>
+      </li>
+    </ol>
+
+    <h2 id="finding-rooms">Finding a Berklee room</h2>
+    <p>On the home screen, Berklee's rooms live in a <span class="manual-ui">Berklee</span> folder under <span class="manual-ui">New Setup From Studio Template</span>. Open it to see one folder per building.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/berklee-folder.png" alt="The home screen inside the Berklee folder, with the breadcrumb Top / Berklee and two building folders, 150 and 160." loading="lazy" />
+      <figcaption>The Berklee folder holds one folder per building.</figcaption>
+    </figure>
+    <p>Open a building to see its studios. Each card reads <span class="manual-ui">Berklee Studio</span>. Click one to start a new setup in that room, exactly as you would with your own studio.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/berklee-building.png" alt="Inside building 150: four studio cards, Studio A, Studio A76, Studio B and Studio E, each labeled Berklee Studio, with the breadcrumb Top / Berklee / 150." loading="lazy" />
+      <figcaption>The studios in building 150.</figcaption>
+    </figure>
+    <p>Use the breadcrumb above the cards to go back up. In the other home screen layouts (File tree, Two-pane and Columns), the Berklee folder opens the same way as any other folder. <a href="manual-organizing.html#home-layouts">Part 8</a> covers the layouts.</p>
+
+    <h2 id="building-office">Building office gear</h2>
+    <p>Each Berklee building has a building office: a shared stock of gear that any room in the building can borrow. In a gear picker it has its own group, <span class="manual-ui">Building Office</span>, listed after <span class="manual-ui">This Studio</span> and <span class="manual-ui">This Session</span>.</p>
+    <p>When you search, a model stocked both in the room and in the building office shows up once, with the two counts added together. If Studio A has four SM-57s and the building office has two, the search result reads <span class="manual-ui">0/6 in use</span>, with a hint naming both places.</p>
+    <p>Picking that result uses the room's own copies first. The app only reaches for the building office's copies once the room's are all on other rows, so shared gear stays free for other sessions as long as possible.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p>Want a building office copy specifically? Skip the search and open the <span class="manual-ui">Building Office</span> group in the picker instead. Each group lists its own gear separately.</p>
+    </div>
+    <p>Picking gear from the building office adds <span class="manual-ui">[Building Office]</span> to the end of that row's Notes, so whoever sets up the session knows to fetch it.</p>
+
+    <h2 id="faculty-reserve">The faculty reserve</h2>
+    <p>The faculty reserve is Berklee's shared faculty pool of mics, outboard and preamps. It's off for a setup unless you switch it on, so most sessions never see it.</p>
+
+    <h3>Switching it on for a setup</h3>
+    <p>There are two places to do it:</p>
+    <ul>
+      <li><strong>When you create the setup.</strong> Turn on <span class="manual-ui">Show Berklee faculty reserve mics</span> in the <span class="manual-ui">New setup</span> dialog.</li>
+      <li><strong>Any time afterward.</strong> Click <span class="manual-ui">Setup settings</span> in the editor's toolbar (<kbd>⌘</kbd><kbd>G</kbd>), and use the same switch on the <span class="manual-ui">General</span> tab.</li>
+    </ul>
+    <p>The pickers update straight away. Faculty gear appears in its own <span class="manual-ui">Faculty Reserve</span> group, last in the list, and picking it adds <span class="manual-ui">[Faculty Reserve]</span> to that row's Notes. Despite the switch's name, it covers faculty outboard and preamps too.</p>
+    <p>Changing the switch can be undone with <kbd>⌘</kbd><kbd>Z</kbd>, like any other edit to the setup.</p>
+
+    <h3>Editing the faculty pool</h3>
+    <p><span class="manual-ui">Settings → Faculty Reserve</span> lists everything in the pool, in three sections: Mics, Outboard gear and Preamps. You can change a manufacturer, name or quantity in place, remove items, and add new ones with the row at the bottom of each section. <a href="manual-settings.html#faculty-reserve">Part 10</a> has the details.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/settings-faculty-reserve.png" alt="Settings, Faculty Reserve tab: a Mics list with manufacturer, name, category and quantity columns and a Remove button on each row, and a Factory reset button at the top right." loading="lazy" />
+    </figure>
+    <p>If the mic list gets out of hand, <span class="manual-ui">Factory reset</span> puts it back to Berklee's original set. Keep in mind:</p>
+    <ul>
+      <li>It replaces <strong>every</strong> faculty reserve mic, including any you've added or edited.</li>
+      <li>It only touches mics. Faculty outboard gear and preamps stay as they are.</li>
+      <li>It can't be undone. The app asks you to confirm first.</li>
+    </ul>
+
+    <h2 id="read-only">Berklee studios are read-only</h2>
+    <p>Berklee rooms don't have an <span class="manual-ui">Edit inventory</span> button. Their gear lists come from Berklee and stay as shipped, so every engineer sees the same room.</p>
+    <p>If you need a changed version of a room, build your own copy:</p>
+    <ol class="manual-steps">
+      <li>
+        <h3>Create a studio</h3>
+        <p>Click <span class="manual-ui">+ New studio</span> on the home screen and give it a name.</p>
+      </li>
+      <li>
+        <h3>Copy the Berklee room's gear</h3>
+        <p>In the studio editor, click <span class="manual-ui">Import gear from another studio…</span>, choose the Berklee room, and tick what to copy.</p>
+      </li>
+      <li>
+        <h3>Change what you need</h3>
+        <p>Edit quantities, add gear, then click <span class="manual-ui">Save studio</span>.</p>
+      </li>
+    </ol>
+    <p><a href="manual-studios.html#copy-from-studio">Part 6</a> covers copying gear from another studio. For one-off borrowed gear, Session Gear in <span class="manual-ui">Setup settings</span> is quicker; see <a href="manual-power-features.html#session-gear">Part 7</a>.</p>
+
+    <h2 id="turning-off">Turning them off</h2>
+    <p>Turn off <span class="manual-ui">Settings → General → Berklee features</span> and the app hides everything Berklee: the Berklee folder, the gear lists, the <span class="manual-ui">Faculty Reserve</span> tab and the faculty reserve switch.</p>
+    <p>Nothing is deleted. Setups you've already made stay in your saved setups, and if you turn the switch back on, the rooms and the faculty pool return exactly as you left them, including any edits you made to the pool.</p>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual-organizing.html"><small>Previous</small>Organizing your work</a>
+      <a class="is-next" href="manual-settings.html"><small>Next</small>Settings reference</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>

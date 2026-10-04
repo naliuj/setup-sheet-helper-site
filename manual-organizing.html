@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Organizing your work. Setup Sheet Helper Manual</title>
+<meta name="description" content="The Setup Sheet Helper home screen, its four layouts, folders for studios, setups and presets, and the Manage studios, setups and presets dialogs." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-organizing.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-organizing.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="Organizing your work. Setup Sheet Helper Manual" />
+<meta property="og:description" content="The Setup Sheet Helper home screen, its four layouts, folders for studios, setups and presets, and the Manage studios, setups and presets dialogs." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Organizing your work. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="The Setup Sheet Helper home screen, its four layouts, folders for studios, setups and presets, and the Manage studios, setups and presets dialogs." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Organizing your work. Setup Sheet Helper Manual",
+  "description": "The Setup Sheet Helper home screen, its four layouts, folders for studios, setups and presets, and the Manage studios, setups and presets dialogs.",
+  "url": "https://setupsheethelper.julianro.se/manual-organizing.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html">1. Start here</a></li>
+      <li><a href="manual-table-mode.html">2. Building the setup sheet</a></li>
+      <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
+      <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
+      <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
+      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">7. Working faster</a></li>
+      <li><a href="manual-organizing.html" aria-current="page">8. Organizing your work</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#home-screen">The home screen</a></li>
+          <li><a href="#home-layouts">Home screen layouts</a></li>
+          <li><a href="#folders">Folders</a></li>
+          <li><a href="#managers">Manage studios, setups and presets</a></li>
+          <li><a href="#deleting">Deleting things</a></li>
+        </ol>
+      </li>
+      <li><a href="manual-berklee.html">9. Berklee features</a></li>
+      <li><a href="manual-settings.html">10. Settings reference</a></li>
+      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 8</p>
+    <h1>Organizing your work</h1>
+    <p class="lede">After a few months you'll have a lot of setups, and maybe several rooms. This part covers the home screen, how to change its layout, and how to file, reorder and delete things with folders and the Manage dialogs.</p>
+
+    <h2 id="home-screen">The home screen</h2>
+    <p>The home screen has two sections.</p>
+    <ul>
+      <li><strong><span class="manual-ui">New Setup From Studio Template</span></strong> is where new setups start. It lists your studios (labeled <span class="manual-ui">Studio</span>), any templates you've saved (labeled <span class="manual-ui">Gear list</span>), and the <span class="manual-ui">Berklee</span> folder if Berklee features are on. Its header has <span class="manual-ui">+ New studio</span> and <span class="manual-ui">Manage studios</span>.</li>
+      <li><strong><span class="manual-ui">Saved Setups</span></strong> lists the setups you've made, each with its session date, or <span class="manual-ui">no date</span>. Click one to open it. Its header has <span class="manual-ui">Manage setups</span>.</li>
+    </ul>
+    <p>Between the two is <span class="manual-ui">Start a quick setup →</span>, for a one-off sheet with no studio behind it. <a href="manual-quick-start.html#quick-setup">Part 1</a> explains it.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/quick-start-home.png" alt="The home screen in the Blocks layout: a Berklee folder and The Record Co Studio A under New Setup From Studio Template, the Start a quick setup link, and two saved setups below." loading="lazy" />
+      <figcaption>The home screen in the Blocks layout.</figcaption>
+    </figure>
+    <p>Studios and setups each have their own folders. A folder you make for studios only appears in the top section, and a folder for setups only appears under <span class="manual-ui">Saved Setups</span>. Channel presets have a third set of folders of their own.</p>
+    <p>To change a studio's gear, click <span class="manual-ui">Edit inventory</span> on its card. <a href="manual-studios.html#editing-later">Part 6</a> covers the studio editor.</p>
+
+    <h2 id="home-layouts">Home screen layouts</h2>
+    <p>The home screen can show your folders four ways. Open Settings (<kbd>⌘</kbd><kbd>,</kbd>), stay on the <span class="manual-ui">General</span> tab, and choose under <span class="manual-ui">Home screen layout</span>. Both sections use the layout you pick.</p>
+    <h3>Blocks</h3>
+    <p>The default. Folders and items are cards in a grid. Click a folder to open it, and use the path above the cards (starting at <span class="manual-ui">Top</span>) to go back. Each studio card has its own <span class="manual-ui">Edit inventory</span> button. The screenshot above shows Blocks.</p>
+    <h3>File tree</h3>
+    <p>The whole hierarchy at once, as a list. Click the arrow beside a folder to expand or collapse it. Good when you know exactly where things are.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/organize-home-filetree.png" alt="The home screen in the File tree layout: the Berklee folder expanded to show buildings 150 and 160 and their studios, each labeled Berklee Studio, then The Record Co Studio A labeled Studio, and the saved setups listed with their dates." loading="lazy" />
+    </figure>
+    <h3>Two-pane</h3>
+    <p>Folders on the left and the chosen folder's contents on the right. Choose <span class="manual-ui">All</span> at the top of the folder list to see everything.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/organize-home-twopane.png" alt="The home screen in the Two-pane layout: each section has a folder list on the left (All, Berklee, 150, 160) and its contents on the right, such as The Record Co Studio A, and Demo Setup and Orchestral Date, Cues 1-8 with their dates." loading="lazy" />
+    </figure>
+    <h3>Columns</h3>
+    <p>Cascading columns, like the column view in Finder. Each folder you click opens the next column to its right.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/organize-home-columns.png" alt="The home screen in the Columns layout: the first column holds the Berklee folder with an arrow and The Record Co Studio A, and the saved setups are listed in a column below." loading="lazy" />
+    </figure>
+    <p>In the File tree, Two-pane and Columns layouts, a studio's <span class="manual-ui">Edit inventory</span> button is a pencil icon at the end of its row.</p>
+
+    <h2 id="folders">Folders</h2>
+    <p>You can make a folder wherever you're asked to choose one, or in the Manage dialogs.</p>
+    <ul>
+      <li><strong>Setup folders:</strong> in the <span class="manual-ui">New setup</span> dialog's folder picker, or in <span class="manual-ui">Manage setups</span>.</li>
+      <li><strong>Studio folders:</strong> in the studio editor's <span class="manual-ui">Folder</span> picker, in the <span class="manual-ui">Save as Studio</span> dialog, or in <span class="manual-ui">Manage studios</span>.</li>
+      <li><strong>Preset folders:</strong> in the <span class="manual-ui">Save channel preset</span> dialog, or in <span class="manual-ui">Manage presets</span>.</li>
+    </ul>
+    <p>In a folder picker, click <span class="manual-ui">+ New folder…</span>, type a name and click <span class="manual-ui">Add</span>. To put a folder inside another, click the <span class="manual-ui">+</span> on the parent folder's row instead. Folders can go as deep as you like.</p>
+    <p>In a Manage dialog, click <span class="manual-ui">+ New folder</span> under the folder list. Point at a folder there to show its three buttons: <span class="manual-ui">New Subfolder</span>, <span class="manual-ui">Rename</span> and <span class="manual-ui">Delete</span>.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p>A simple scheme works well: one setup folder per client or project, and one studio folder per building or city.</p>
+    </div>
+
+    <h2 id="managers">Manage studios, setups and presets</h2>
+    <p>Three dialogs share one design:</p>
+    <ul>
+      <li><span class="manual-ui">Manage studios</span>, on the home screen, for your studios and gear lists. Berklee rooms aren't listed.</li>
+      <li><span class="manual-ui">Manage setups</span>, on the home screen, for your saved setups.</li>
+      <li><span class="manual-ui">Manage presets</span>, from <span class="manual-ui">Presets → Manage presets…</span> in the editor or <span class="manual-ui">Manage channel presets…</span> in <span class="manual-ui">Settings → General</span>.</li>
+    </ul>
+    <p>Folders are on the left, with <span class="manual-ui">(No folder)</span> at the top for anything that isn't filed. Click a folder to see what's in it on the right. If you have a lot of folders, type in <span class="manual-ui">Search folders</span> to find one.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/organize-manage-setups.png" alt="The Manage setups dialog: (No folder) and a + New folder button on the left. On the right, Select all and Deselect all buttons above two setups, Demo Setup and Orchestral Date, Cues 1-8, each with a checkbox, a drag handle, and Duplicate and Delete buttons. A Done button is at the bottom right." loading="lazy" />
+    </figure>
+    <h3>Reordering and filing</h3>
+    <ul>
+      <li><strong>Reorder:</strong> drag an item by its handle (the dots beside its name). The home screen shows items in this order.</li>
+      <li><strong>File in a folder:</strong> drag an item onto a folder on the left. Drag it onto <span class="manual-ui">(No folder)</span> to take it out of every folder.</li>
+      <li><strong>Several at once:</strong> tick the checkboxes, or use <span class="manual-ui">Select all</span> and <span class="manual-ui">Deselect all</span>. Then drag any ticked item onto a folder and they all move together.</li>
+    </ul>
+    <h3>Buttons on each item</h3>
+    <ul>
+      <li><span class="manual-ui">Delete</span>, on every item.</li>
+      <li><span class="manual-ui">Duplicate</span>, in <span class="manual-ui">Manage setups</span> only. <a href="manual-power-features.html#duplicating">Part 7</a> explains it.</li>
+      <li><span class="manual-ui">Edit</span>, in <span class="manual-ui">Manage presets</span> only, to change a preset's name and description.</li>
+    </ul>
+    <p>Click <span class="manual-ui">Done</span> when you're finished. Moves and reorders take effect straight away.</p>
+
+    <h2 id="deleting">Deleting things</h2>
+    <p>Every delete asks you to confirm first and warns you: <span class="manual-ui">This can't be undone.</span> If you might want something back, export a copy first. <a href="manual-sharing.html">Part 11</a> shows how.</p>
+    <h3>Several items at once</h3>
+    <p>Tick the items, then click <span class="manual-ui">Delete 3 selected</span> (the number matches how many you ticked).</p>
+    <h3>Deleting a studio</h3>
+    <p>Deleting a studio also deletes every setup and gear list made from it. The confirmation says how many, for example <span class="manual-ui">This also deletes 3 setups and 1 template in this studio.</span> Check the count before you click <span class="manual-ui">Delete</span>.</p>
+    <h3>Deleting a folder</h3>
+    <p>The confirmation first counts what's inside, for example <span class="manual-ui">This folder contains 2 subfolders, 3 studios, and 5 setups.</span> Then you choose:</p>
+    <ul>
+      <li><span class="manual-ui">Move contents up</span> deletes only the folder. Everything directly inside it moves up one level, into the folder that held it. Nothing else is deleted.</li>
+      <li><span class="manual-ui">Delete everything</span> deletes the folder, its subfolders and everything in them. For a studio folder, that includes the setups made from those studios, even ones filed in a setup folder somewhere else. The count above includes them.</li>
+    </ul>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p>When in doubt, choose <span class="manual-ui">Move contents up</span>. It never deletes a studio, setup or preset, and you can tidy up afterward.</p>
+    </div>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual-power-features.html"><small>Previous</small>Working faster</a>
+      <a class="is-next" href="manual-berklee.html"><small>Next</small>Berklee features</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>

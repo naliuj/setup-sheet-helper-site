@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building the setup sheet. Setup Sheet Helper Manual</title>
+<meta name="description" content="Build a setup sheet in Table Mode: the header, adding sources, choosing gear, selecting and numbering rows, warnings, undo and autosave." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-table-mode.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-table-mode.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="Building the setup sheet. Setup Sheet Helper Manual" />
+<meta property="og:description" content="Build a setup sheet in Table Mode: the header, adding sources, choosing gear, selecting and numbering rows, warnings, undo and autosave." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Building the setup sheet. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="Build a setup sheet in Table Mode: the header, adding sources, choosing gear, selecting and numbering rows, warnings, undo and autosave." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Building the setup sheet. Setup Sheet Helper Manual",
+  "description": "Build a setup sheet in Table Mode: the header, adding sources, choosing gear, selecting and numbering rows, warnings, undo and autosave.",
+  "url": "https://setupsheethelper.julianro.se/manual-table-mode.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html">1. Start here</a></li>
+      <li><a href="manual-table-mode.html" aria-current="page">2. Building the setup sheet</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#header">The header</a></li>
+          <li><a href="#adding-sources">Adding sources</a></li>
+          <li><a href="#choosing-gear">Choosing gear</a></li>
+          <li><a href="#other-cells">The other cells</a></li>
+          <li><a href="#quick-setups">Quick setups</a></li>
+          <li><a href="#selecting-rows">Selecting rows</a></li>
+          <li><a href="#selection-bar">The selection bar</a></li>
+          <li><a href="#reordering">Moving, duplicating and deleting</a></li>
+          <li><a href="#warnings">Warnings</a></li>
+          <li><a href="#undo-and-saving">Undo and saving</a></li>
+        </ol>
+      </li>
+      <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
+      <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
+      <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
+      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">7. Working faster</a></li>
+      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">9. Berklee features</a></li>
+      <li><a href="manual-settings.html">10. Settings reference</a></li>
+      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 2</p>
+    <h1>Building the setup sheet</h1>
+    <p class="lede">Table Mode is where you spend most of a session: typing in sources, choosing mics and preamps, and numbering channels and tie lines. This part covers everything on that screen, starting with what you'll use every time.</p>
+
+    <h2 id="header">The header</h2>
+    <p>The strip across the top of the editor holds the setup's details. Click any of them to edit it in place.</p>
+    <ul>
+      <li><strong>Setup name.</strong> The large box on the left. It becomes the title of the PDF and the suggested file name when you export.</li>
+      <li><strong>Session date.</strong> Click the calendar icon to pick a date, or type one. New setups start with today's date.</li>
+      <li><strong><span class="manual-ui">Engineer</span> and <span class="manual-ui">Artist</span>.</strong> Both are optional. They print on the line under the title.</li>
+    </ul>
+    <p>If you fill in the same engineer name every time, set <span class="manual-ui">Default engineer name</span> in <span class="manual-ui">Settings → General</span>. Every new setup then starts with it filled in.</p>
+
+    <h3>Session notes</h3>
+    <p>The button with the page icon, just right of the Artist box, opens <span class="manual-ui">Session notes</span>. Use it for anything that applies to the whole session rather than one source: a tuning reference, mic-array spacing, a reminder about the talkback. Click anywhere outside the box to close it.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/table-session-notes.png" alt="The Session notes box open below the notes button in the header, showing its placeholder text about tuning reference and mic-array spacing, over the top rows of the setup sheet." loading="lazy" />
+      <figcaption>Session notes print under the title of the PDF.</figcaption>
+    </figure>
+    <p>When a setup has notes, the icon on the button turns the accent color, so you can tell at a glance that there's something to read.</p>
+
+    <h2 id="adding-sources">Adding sources</h2>
+    <p>Each row of the sheet is one source: a mic, a DI, a line input. There are three ways to add one.</p>
+    <ul>
+      <li><strong>Type and press <kbd>Return</kbd>.</strong> Click the <span class="manual-ui">Add a source</span> box above the sheet, type a name such as <em>Lead Vocal</em>, and press <kbd>Return</kbd> (or click <span class="manual-ui">Add source</span>). The box clears and stays ready, so you can type a whole input list in one go.</li>
+      <li><strong>Press <kbd>⌘</kbd><kbd>N</kbd>.</strong> This adds an empty row that you can name afterward.</li>
+      <li><strong>Double-click blank space</strong> below the table, or the message on an empty sheet. This also adds an empty row.</li>
+    </ul>
+    <p>New rows go to the bottom of the sheet. To rename a source, click its <span class="manual-ui">Source name</span> cell and type.</p>
+
+    <h2 id="choosing-gear">Choosing gear</h2>
+    <p>The <span class="manual-ui">Mic</span>, <span class="manual-ui">Preamp</span> and <span class="manual-ui">Outboard</span> cells each open a picker. Click the cell to open it.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/quick-start-mic-picker.png" alt="The mic picker open on the Vocals row, with a Search box, No Mic and Custom options, This Studio expanded into manufacturers, and AKG open to show C414 XLII at 2/5 in use and C451B at 0/2 in use." loading="lazy" />
+      <figcaption>The mic picker. Each model shows how many are already on the sheet.</figcaption>
+    </figure>
+
+    <h3>Where gear comes from</h3>
+    <p>Gear is grouped by where it lives, always in this order. You only see the groups that have something in them.</p>
+    <ol>
+      <li><span class="manual-ui">This Studio</span>: the room's own gear list.</li>
+      <li><span class="manual-ui">This Session</span>: gear borrowed for this setup only, added in <span class="manual-ui">Setup settings → Session Gear</span>.</li>
+      <li><span class="manual-ui">Building Office</span>: a Berklee building's shared pool.</li>
+      <li><span class="manual-ui">Personal Gear Locker</span>: your own gear, from <span class="manual-ui">Settings → Personal Gear Locker</span>. It's offered in every studio.</li>
+      <li><span class="manual-ui">Faculty Reserve</span>: Berklee's faculty pool, when the setup has it switched on.</li>
+    </ol>
+    <p>Inside each group, gear is listed by manufacturer. Point at a manufacturer to see its models, then click one.</p>
+
+    <h3>Finding a model quickly</h3>
+    <ul>
+      <li><strong>Search.</strong> Start typing in the <span class="manual-ui">Search…</span> box at the top of the picker. Results replace the browsing list. If the same model is stocked in more than one place, it appears once with the combined count, and the studio's own copies are used first.</li>
+      <li><strong>Keyboard.</strong> Use <kbd>↑</kbd> and <kbd>↓</kbd> to move, <kbd>→</kbd> to open a group, <kbd>←</kbd> to back out, and <kbd>Return</kbd> to pick.</li>
+      <li><strong><span class="manual-ui">No Mic</span></strong> (or <span class="manual-ui">No Preamp</span>, <span class="manual-ui">No Outboard</span>) empties the cell.</li>
+      <li><strong><span class="manual-ui">Custom…</span></strong> lets you type any name, for gear that isn't on any list. Enter it under <span class="manual-ui">Gear name</span> and click <span class="manual-ui">Save</span>. A custom name isn't counted against anything.</li>
+    </ul>
+
+    <h3>How double-booking is prevented</h3>
+    <p>Every model in the picker shows a count such as <span class="manual-ui">2/5 in use</span>: two are already on other rows, out of five the room has. When all of them are taken, the model is grayed out and can't be picked. You can't put the same mic on more rows than there are mics.</p>
+    <p>A few units are both a preamp and a processor, such as the UA 6176 or the Millennia STT-1. They appear in both the Preamp and Outboard pickers, but they share one count, so two 6176s can't turn into four. On a single row, a unit you've picked as the preamp isn't offered again as outboard. Patching it once already gives you both halves.</p>
+
+    <h3>Automatic notes tags</h3>
+    <p>When you pick gear from <span class="manual-ui">Building Office</span>, <span class="manual-ui">Faculty Reserve</span> or <span class="manual-ui">Personal Gear Locker</span>, the app adds a tag such as <span class="manual-ui">[Faculty Reserve]</span> to the end of that row's Notes. It reminds whoever sets up the room that the item has to be fetched. Anything you typed in Notes is left alone, and the tag changes or disappears if you pick something else.</p>
+
+    <h2 id="other-cells">The other cells</h2>
+    <dl>
+      <dt>48V</dt>
+      <dd>Tick for phantom power. It prints as ✓.</dd>
+      <dt>Channel</dt>
+      <dd>The console channel, as a whole number from 1 up.</dd>
+      <dt>Tie line</dt>
+      <dd>The tie line or wall-box input, also a whole number. Two rows with the same tie line get a warning (see <a href="#warnings">Warnings</a>).</dd>
+      <dt>Cue box</dt>
+      <dd>Free text, so a stereo cue like <em>1-2</em> works as well as a single number.</dd>
+      <dt>Polarity</dt>
+      <dd>Tick to flip polarity. It prints as Ø.</dd>
+      <dt>Notes</dt>
+      <dd>Anything else about this source: placement, a pad, a reminder.</dd>
+      <dt>Outboard</dt>
+      <dd>Starts as one column. Use the <span class="manual-ui">−</span> and <span class="manual-ui">+</span> buttons next to the column count in the toolbar to add more outboard columns, one per piece of gear in the chain. Removing a column takes away the last one and clears it on every row. There's always at least one.</dd>
+    </dl>
+    <p>To hide columns you don't use or change their order, open <span class="manual-ui">Columns</span> in the toolbar. <a href="manual-power-features.html">Part 7</a> covers it, along with stereo pairs: the small link icons between rows join two rows into a pair that stays in step.</p>
+
+    <h2 id="quick-setups">Quick setups</h2>
+    <p>A quick setup (from <span class="manual-ui">Start a quick setup →</span> on the home screen) has no studio behind it, so there's no gear list to pick from. Its Mic, Outboard and Preamp cells are plain text boxes instead, with the placeholders <span class="manual-ui">Mic</span>, <span class="manual-ui">Outboard</span> and <span class="manual-ui">Preamp</span>.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/table-quick-setup.png" alt="A quick setup called Jam with Kick and Snare rows. The letter D is typed in Kick's Mic box and a suggestion list below it shows ADK Berlin 47, AKG D-112, Audio-Technica AE-2500 and more. The Outboard and Preamp cells are plain text boxes." loading="lazy" />
+      <figcaption>In a quick setup, gear cells suggest names as you type.</figcaption>
+    </figure>
+    <ul>
+      <li>Start typing and a list of matching gear appears, drawn from every studio and gear list in the app. It shows up to 20 matches.</li>
+      <li>Click a suggestion, or use <kbd>↑</kbd> and <kbd>↓</kbd> and press <kbd>Return</kbd>. The list shows the manufacturer to help you find the right one, but only the model name goes in the cell.</li>
+      <li>You don't have to pick a suggestion. Whatever you type stays exactly as typed. Press <kbd>Esc</kbd> to close the list.</li>
+    </ul>
+    <p>Because there's no stock to count, a quick setup shows no "in use" counts and doesn't stop you from using a name twice.</p>
+
+    <h2 id="selecting-rows">Selecting rows</h2>
+    <p>Selecting rows lets you number, color, move, duplicate or delete several at once. Each row has a gutter at its left edge, where the grip handle is. Click the gutter, not the cells, to select.</p>
+    <ul>
+      <li><strong>Click</strong> a row's gutter to select that row.</li>
+      <li><strong><kbd>⇧</kbd>-click</strong> another row to select everything in between.</li>
+      <li><strong><kbd>⌘</kbd>-click</strong> to add or remove one row without touching the rest.</li>
+      <li><strong><kbd>⌘</kbd><kbd>A</kbd></strong> selects every row (when you're not typing in a box).</li>
+      <li><strong><kbd>Esc</kbd></strong> clears the selection.</li>
+    </ul>
+    <p>Selected rows get a blue bar along the left edge of the sheet, and the selection bar appears above the table.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Power user</span>
+      <p>You can select without the mouse. Press <kbd>Tab</kbd> until a row's gutter has focus, then use <kbd>↑</kbd> and <kbd>↓</kbd> to move between rows and <kbd>⇧</kbd><kbd>↑</kbd> or <kbd>⇧</kbd><kbd>↓</kbd> to extend the selection. <kbd>Space</kbd> or <kbd>Return</kbd> selects the focused row.</p>
+    </div>
+
+    <h2 id="selection-bar">The selection bar</h2>
+    <p>The selection bar appears whenever rows are selected. It says how many, such as <span class="manual-ui">4 rows selected</span>, and everything on it acts on those rows only.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/table-selection.png" alt="Demo Setup with four rows selected (Overhead L and R, Piano L and R), marked by a blue bar at the left edge. Above the table the selection bar reads 4 rows selected, then Number Channel from 1 with an Apply button, Color, Save as preset, Delete, and a close button." loading="lazy" />
+      <figcaption>The selection bar, with the overheads and piano selected.</figcaption>
+    </figure>
+
+    <h3>Number</h3>
+    <p>Number fills in a run of channels, tie lines or cue boxes for you.</p>
+    <ol>
+      <li>Select the rows to number.</li>
+      <li>Next to <span class="manual-ui">Number</span>, choose <span class="manual-ui">Channel</span>, <span class="manual-ui">Tie line</span> or <span class="manual-ui">Cue box</span>.</li>
+      <li>In the <span class="manual-ui">from</span> box, type the first number.</li>
+      <li>Click <span class="manual-ui">Apply</span>, or press <kbd>Return</kbd> in the number box.</li>
+    </ol>
+    <p>The selected rows are numbered from top to bottom: 17, 18, 19 and so on. Anything already in that column on those rows is replaced.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p>Press <kbd>⌘</kbd><kbd>⇧</kbd><kbd>N</kbd> with rows selected to jump straight to the number box. Type the start number and press <kbd>Return</kbd>.</p>
+    </div>
+
+    <h3>Color, Save as preset, Delete</h3>
+    <ul>
+      <li><strong><span class="manual-ui">Color</span></strong> opens a palette of swatches. Pick one to tint every selected row, which helps group drums, keys and vocals at a glance. <span class="manual-ui">No color</span> removes the tint. Row colors also appear in the PDF (when <span class="manual-ui">Colored</span> is on) and in spreadsheets.</li>
+      <li><strong><span class="manual-ui">Save as preset</span></strong> saves the selected rows as a channel preset you can load into other setups. See <a href="manual-power-features.html">Part 7</a>.</li>
+      <li><strong><span class="manual-ui">Delete</span></strong> deletes the selected rows.</li>
+      <li>The <strong>×</strong> at the right end clears the selection.</li>
+    </ul>
+
+    <h2 id="reordering">Moving, duplicating and deleting</h2>
+    <ul>
+      <li><strong>Move.</strong> Drag a row by its grip handle. If you drag one of several selected rows, the whole selection moves together. Dragging either row of a stereo pair moves both.</li>
+      <li><strong>Duplicate.</strong> Press <kbd>⌘</kbd><kbd>D</kbd> to copy the selected rows. Each copy goes directly under its original, and the copies become the new selection.</li>
+      <li><strong>Delete.</strong> Click the red × at the end of a row, click <span class="manual-ui">Delete</span> in the selection bar, or press <kbd>⌘</kbd><kbd>⌫</kbd>. The forward-delete key (<kbd>fn</kbd><kbd>⌫</kbd> on a laptop) works too, without <kbd>⌘</kbd>.</li>
+    </ul>
+    <p>After a delete, a message such as <span class="manual-ui">Deleted 1 row</span> appears at the bottom of the window for five seconds. Click <span class="manual-ui">Undo</span> on it to bring the rows back.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/table-undo-toast.png" alt="Demo Setup after the Guitar Amp row was deleted. A message at the bottom center reads Deleted 1 row with an Undo link, and the toolbar shows Unsaved changes." loading="lazy" />
+    </figure>
+
+    <h2 id="warnings">Warnings</h2>
+    <p>Two kinds of yellow warning can appear inside a cell.</p>
+    <dl>
+      <dt><span class="manual-ui">duplicate tie line</span></dt>
+      <dd>Two or more rows share the same tie line number. The warning shows on every row involved. Change one of the numbers and it goes away. If you export anyway, the PDF puts a "!" in front of those tie line numbers so the clash is easy to spot on paper.</dd>
+      <dt><span class="manual-ui">Preset expected: …</span></dt>
+      <dd>You loaded a channel preset that names gear this studio doesn't have, such as <em>Preset expected: U 47 FET</em>. The row is added with that cell left empty. Pick something from the picker and the warning clears.</dd>
+    </dl>
+
+    <h2 id="undo-and-saving">Undo and saving</h2>
+    <h3>Undo and redo</h3>
+    <p>Press <kbd>⌘</kbd><kbd>Z</kbd> to undo and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>Z</kbd> to redo. The app keeps your last 100 steps. Undo covers rows and everything in them, the number of outboard columns, the header fields and session notes.</p>
+    <ul>
+      <li>Column choices (which columns are shown, and their order) aren't part of undo. Change them back in the <span class="manual-ui">Columns</span> menu.</li>
+      <li>While you're typing in a box, <kbd>⌘</kbd><kbd>Z</kbd> undoes your typing in that box first.</li>
+    </ul>
+
+    <h3>Autosave</h3>
+    <p>There's no Save button to remember. The app saves about a second after you stop typing, and at least every five seconds if you keep going. It also saves when you leave the setup or quit. Press <kbd>⌘</kbd><kbd>S</kbd> any time to save right away.</p>
+    <p>The save status sits in the toolbar, just right of the header fields:</p>
+    <ul>
+      <li><span class="manual-ui">Unsaved changes</span>: you've made a change that hasn't been written yet.</li>
+      <li><span class="manual-ui">Saving…</span>: it's being written now.</li>
+      <li><span class="manual-ui">Saved</span>, with a check mark: done. It shows for a couple of seconds, then disappears.</li>
+      <li><span class="manual-ui">Couldn't save — retrying</span>, in red: something went wrong. Keep working. The app tries again every 10 seconds and saves as soon as it can.</li>
+    </ul>
+    <p>Each setup also remembers which mode you left it in, so it reopens in Table Mode or Layout Mode just as you left it.</p>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual-quick-start.html"><small>Previous</small>Start here</a>
+      <a class="is-next" href="manual-exporting.html"><small>Next</small>Printing and exporting</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>

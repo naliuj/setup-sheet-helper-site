@@ -1098,3 +1098,59 @@ kbd {
   .manual-pager { flex-direction: column; }
   .manual-pager .is-next { margin-left: 0; }
 }
+
+/* Manual tables (the shortcut card, option lists) and the glossary. */
+.manual-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 0.92rem;
+}
+
+.manual-content th,
+.manual-content td {
+  text-align: left;
+  vertical-align: top;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--color-border);
+  color: #cfd5dd;
+}
+
+.manual-content th {
+  color: var(--color-text-dim);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.manual-content td:last-child { white-space: nowrap; }
+
+.manual-content td:first-child { white-space: normal; }
+
+.manual-content dl { margin: 16px 0; }
+
+.manual-content dt {
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 14px;
+}
+
+.manual-content dd {
+  margin: 4px 0 0;
+  color: #cfd5dd;
+}
+
+@media print {
+  .nav, .footer, .manual-toc, .manual-pager, .lightbox { display: none !important; }
+  .manual { display: block; padding: 0; }
+  body { background: #fff; color: #000; }
+  .manual-content p, .manual-content li, .manual-content td, .manual-content th, .manual-content dd { color: #000; }
+  kbd { background: #fff; color: #000; border-color: #888; }
+}
+
+@media (max-width: 620px) {
+  .manual-content table { font-size: 0.85rem; }
+  .manual-content th, .manual-content td { padding: 6px; }
+  .manual-content td:last-child { white-space: normal; }
+}

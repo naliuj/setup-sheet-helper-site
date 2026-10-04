@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The floor plan. Setup Sheet Helper Manual</title>
+<meta name="description" content="Place instruments, notes and sticky notes on the room's floor plan in Setup Sheet Helper's Layout Mode, and change the room layout a setup uses." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-layout-mode.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-layout-mode.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="The floor plan. Setup Sheet Helper Manual" />
+<meta property="og:description" content="Place instruments, notes and sticky notes on the room's floor plan in Setup Sheet Helper's Layout Mode, and change the room layout a setup uses." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The floor plan. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="Place instruments, notes and sticky notes on the room's floor plan in Setup Sheet Helper's Layout Mode, and change the room layout a setup uses." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "The floor plan. Setup Sheet Helper Manual",
+  "description": "Place instruments, notes and sticky notes on the room's floor plan in Setup Sheet Helper's Layout Mode, and change the room layout a setup uses.",
+  "url": "https://setupsheethelper.julianro.se/manual-layout-mode.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html">1. Start here</a></li>
+      <li><a href="manual-table-mode.html">2. Building the setup sheet</a></li>
+      <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
+      <li><a href="manual-layout-mode.html" aria-current="page">4. The floor plan</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#open-layout-mode">Opening Layout Mode</a></li>
+          <li><a href="#change-layout">Changing the room layout</a></li>
+          <li><a href="#place-instruments">Placing instruments</a></li>
+          <li><a href="#select">Selecting</a></li>
+          <li><a href="#move-resize-rotate">Moving, resizing and rotating</a></li>
+          <li><a href="#snapping">Snapping</a></li>
+          <li><a href="#edit-blocks">Editing, duplicating and deleting</a></li>
+          <li><a href="#notes">Text and sticky notes</a></li>
+          <li><a href="#zoom-pan">Zooming and panning</a></li>
+          <li><a href="#undo">Undo</a></li>
+          <li><a href="#pop-out">On a second screen</a></li>
+        </ol>
+      </li>
+      <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
+      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">7. Working faster</a></li>
+      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">9. Berklee features</a></li>
+      <li><a href="manual-settings.html">10. Settings reference</a></li>
+      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 4</p>
+    <h1>The floor plan</h1>
+    <p class="lede">Layout Mode puts the room's floor plan on screen. Drag instruments onto it, add notes, and the plan prints with the setup sheet so everyone knows where things go.</p>
+
+    <figure class="manual-shot">
+      <img src="assets/manual/layout-overview.png" alt="Demo Setup in Layout Mode. The palette on the left lists Notes (Text, Sticky note) and Instruments by category. The floor plan of The Ark shows Piano, Drums, Gobo, DI Box, Vocal Mic and Guitar Amp blocks, a piano closed sticky note, and a red arrow and circle drawn on top. Zoom controls, Markup, the eye button, Reset view and Snap sit at the top right." loading="lazy" />
+      <figcaption>Layout Mode: the palette on the left, the floor plan on the right.</figcaption>
+    </figure>
+
+    <h2 id="open-layout-mode">Opening Layout Mode</h2>
+    <p>Click <span class="manual-ui">Layout Mode</span> in the editor's toolbar, or press <kbd>⌘</kbd><kbd>L</kbd>. The button then reads <span class="manual-ui">Table Mode</span>; click it (or press <kbd>⌘</kbd><kbd>L</kbd> again) to go back to the sheet.</p>
+
+    <h3>When the room has no layout yet</h3>
+    <p>If neither the studio nor the setup has a floor plan, the app asks for one first, in a dialog called <span class="manual-ui">Room layout needed</span>.</p>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/layout-needed.png" alt="The Room layout needed dialog, with the accepted file formats listed and three buttons: Upload a Room Layout…, Continue with a Blank Sheet, and Cancel." loading="lazy" />
+    </figure>
+    <ul>
+      <li><span class="manual-ui">Upload a Room Layout…</span> lets you pick a floor plan file.</li>
+      <li><span class="manual-ui">Continue with a Blank Sheet</span> gives you a plain white page to work on.</li>
+      <li><span class="manual-ui">Cancel</span> stays in Table Mode.</li>
+    </ul>
+    <p>After you pick a file, the app asks where it belongs:</p>
+    <ul>
+      <li><span class="manual-ui">Save to Studio</span> makes it the studio's floor plan. Every setup in that studio uses it, including ones you make later.</li>
+      <li><span class="manual-ui">Just This Setup</span> keeps it for this setup only. Use this for a one-off arrangement, such as a room that's been rebuilt for a week.</li>
+    </ul>
+    <p><span class="manual-ui">Back</span> returns to the first question.</p>
+
+    <h3>Which files work</h3>
+    <p>A floor plan can be a PDF, PNG, JPEG, GIF, WebP, BMP or SVG file. For a PDF with more than one page, only the first page is used.</p>
+    <p>A PDF keeps its own page size. An image is scaled to fit a US Letter page: on its side (11 × 8.5 inches) for a wide or square image, upright for a tall one. A blank sheet is a Letter page on its side. This keeps blocks and notes a sensible size no matter how large or small the original image was.</p>
+
+    <h2 id="change-layout">Changing the room layout</h2>
+    <p>To swap the floor plan later, click <span class="manual-ui">Setup settings</span> (<kbd>⌘</kbd><kbd>G</kbd>) and open the <span class="manual-ui">Room Layout</span> tab. It shows which layout this setup uses: the studio's file, this setup's own file, a blank sheet, or <span class="manual-ui">No room layout yet</span>.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/layout-room-layout-settings.png" alt="Setup settings on the Room Layout tab. A card names the studio's PDF with the line The studio's layout, shared by its setups. Below are the buttons Upload a layout for this setup… and Use a blank sheet, the accepted formats, and a note that blocks, notes and markup stay where they are." loading="lazy" />
+    </figure>
+    <p>The buttons you see depend on what the setup uses now:</p>
+    <ul>
+      <li><span class="manual-ui">Upload a layout for this setup…</span> gives this setup its own floor plan. Once it has one, the button reads <span class="manual-ui">Replace this setup’s layout…</span>.</li>
+      <li><span class="manual-ui">Use a blank sheet</span> switches this setup to a blank page.</li>
+      <li><span class="manual-ui">Use the studio’s layout</span> goes back to the studio's shared plan. It appears when this setup has its own layout and the studio has one too.</li>
+      <li><span class="manual-ui">Remove this setup’s layout</span> appears instead when the studio has no layout of its own.</li>
+    </ul>
+    <p>Blocks, notes and markup stay where they are when the layout changes, so check them against the new plan. To change the layout for every setup in a studio, edit the studio (see <a href="manual-studios.html">Setting up your studio</a>).</p>
+
+    <h2 id="place-instruments">Placing instruments</h2>
+    <p>The palette on the left lists blocks by category: <span class="manual-ui">Vocals</span>, <span class="manual-ui">Drums</span>, <span class="manual-ui">Amps</span>, <span class="manual-ui">Keys</span>, <span class="manual-ui">Utility</span>, <span class="manual-ui">Horn Section</span> and <span class="manual-ui">String Section</span>. Click a category's name to fold it away or open it again. Type in <span class="manual-ui">Search…</span> to filter the list; matches show even inside folded categories.</p>
+    <ol class="manual-steps">
+      <li>
+        <h3>Drag a block from the palette</h3>
+        <p>As soon as you start dragging, the real block follows the pointer at its true size and the current zoom, so you can see exactly how big it will be.</p>
+      </li>
+      <li>
+        <h3>Move it over the plan</h3>
+        <p>Over the floor plan, the block stays inside the room and snaps into line with other blocks as you move (see <a href="#snapping">Snapping</a>). Hold <kbd>⌘</kbd> to place it freely.</p>
+      </li>
+      <li>
+        <h3>Let go</h3>
+        <p>The block lands exactly where the preview showed it, and it's selected so you can move or rotate it straight away. Press <kbd>Esc</kbd> before letting go to cancel the drag.</p>
+      </li>
+    </ol>
+    <p>You can also right-click an empty spot on the plan and choose <span class="manual-ui">Add Instrument</span>. That opens the custom block dialog (below), and the new block goes where you clicked.</p>
+
+    <h3>Custom blocks</h3>
+    <p>For anything the palette doesn't have, click <span class="manual-ui">+ Add custom block</span>. The dialog's description sums it up: <span class="manual-ui">Placed directly on the layout — not added to the sidebar.</span></p>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/layout-custom-block.png" alt="The Add custom block dialog with Cello typed as the title, a Color swatch, Text color set to Auto, a live preview of the block, an optional Musician name field, and Cancel and Add block buttons." loading="lazy" />
+    </figure>
+    <ul>
+      <li><strong>Title</strong> is the label on the block.</li>
+      <li><strong>Color</strong> and <strong>Text color</strong> set the fill and the label. The preview beside them shows the result.</li>
+      <li><strong>Musician name (optional)</strong> shows under the label, which is handy for a section of players.</li>
+    </ul>
+    <p>Click <span class="manual-ui">Add block</span>. A custom block is always a rectangle.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p>To add your own blocks to the palette, change their default colors, or make one a circle, click <span class="manual-ui">Manage palette…</span>. It opens <span class="manual-ui">Settings → Layout Palette</span> (see <a href="manual-settings.html#layout-palette">Settings reference</a>). A block's shape comes from the palette and can't be changed once it's on the plan.</p>
+    </div>
+
+    <h2 id="select">Selecting</h2>
+    <ul>
+      <li><strong>Click</strong> a block to select it. Click an empty part of the plan to deselect.</li>
+      <li><strong><kbd>⌘</kbd>-click</strong> adds a block to the selection, or takes it out.</li>
+      <li><strong>Drag across an empty area</strong> to draw a selection box. Anything it touches is selected.</li>
+      <li><kbd>⌘</kbd><kbd>A</kbd> selects everything on the plan. <kbd>Esc</kbd> clears the selection.</li>
+    </ul>
+    <p>The hint line in the bottom-left corner of the plan tells you what's possible right now, such as how many items are selected.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Power user</span>
+      <p><kbd>⌘</kbd><kbd>→</kbd> and <kbd>⌘</kbd><kbd>←</kbd> step through the blocks one at a time, in the order they were added, wrapping around at the end. Together with the arrow-key nudge below, you can arrange a plan without the mouse.</p>
+    </div>
+
+    <h2 id="move-resize-rotate">Moving, resizing and rotating</h2>
+    <p><strong>To move</strong> a block, drag it. It can't leave the room. For fine adjustments, press the arrow keys to nudge the selection 1 pixel, or hold <kbd>⇧</kbd> with an arrow key to move 10 pixels.</p>
+    <p><strong>To resize or rotate</strong>, select the block and use its handles. The squares on the corners and sides resize it. The handle sticking out from the top edge rotates it, and the rotation snaps at every 45°.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/layout-block-selected.png" alt="The Drums block selected on the floor plan, outlined in blue with eight square resize handles around it and a rotate handle above its top edge, between three Gobo blocks." loading="lazy" />
+      <figcaption>A selected block with its resize handles and, above it, the rotate handle.</figcaption>
+    </figure>
+    <p>A note has only left and right handles, because its height follows its text.</p>
+    <h3>Moving a group</h3>
+    <p>Select several items and drag any one of them; the whole selection moves with it. Each selected item keeps its own handles, and resizing or rotating one does the same to all of them.</p>
+
+    <h2 id="snapping">Snapping</h2>
+    <p>As you drag, a block lines up with the edges and centers of other items, and with the room's center lines. A magenta guide line shows what it has caught.</p>
+    <ul>
+      <li><strong>Hold <kbd>⌘</kbd> while dragging</strong> to move freely for that one drag. The hint line reminds you while a drag is snapping.</li>
+      <li><strong>Untick <span class="manual-ui">Snap</span></strong> at the top right of the plan to turn snapping off until you tick it again. The app remembers your choice.</li>
+    </ul>
+    <p>The <span class="manual-ui">Snap</span> checkbox doesn't affect rotation, which always snaps at 45° steps.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Power user</span>
+      <p>There's a <span class="manual-ui">Toggle Snapping</span> shortcut in <span class="manual-ui">Settings → Keybinds</span>. It has no key until you give it one.</p>
+      <p>On a Mac with a Force Touch trackpad, you feel a light tap when a block snaps into line, when a rotation snaps, and when a pinch zoom passes 100% or reaches its limit. Turn this off with <span class="manual-ui">Trackpad haptics</span> in <span class="manual-ui">Settings → Accessibility</span>.</p>
+    </div>
+
+    <h2 id="edit-blocks">Editing, duplicating and deleting</h2>
+    <p>Right-click a block for three choices:</p>
+    <ul>
+      <li><span class="manual-ui">Edit</span> opens the <span class="manual-ui">Edit block</span> dialog, where you can change the title, color, text color and musician name. Click <span class="manual-ui">Save</span>.</li>
+      <li><span class="manual-ui">Duplicate</span> copies the selection, a little down and to the right, and selects the copies.</li>
+      <li><span class="manual-ui">Delete</span> removes the block. If it's part of a selection, the whole selection goes.</li>
+    </ul>
+    <p><span class="manual-ui">Text color</span> can be <span class="manual-ui">Auto</span>, white, black or any swatch. Auto always picks a color you can read against the fill. If you choose one that's hard to read, a warning badge appears with its contrast ratio, such as 2.1:1. Long labels shrink to fit the block.</p>
+    <h3>Shortcuts</h3>
+    <ul>
+      <li><kbd>⌘</kbd><kbd>D</kbd> duplicates the selection.</li>
+      <li><kbd>⌘</kbd><kbd>⌫</kbd> deletes it. The forward-delete key (<kbd>fn</kbd><kbd>⌫</kbd> on a laptop) works on its own too.</li>
+    </ul>
+    <p>After a delete, a message such as <span class="manual-ui">Deleted 2 blocks</span> appears at the bottom of the window with an <span class="manual-ui">Undo</span> button.</p>
+    <p>The newest item is always on top. There are no bring-forward or send-back controls, so to put one block over another, add the top one last (or duplicate it and delete the original).</p>
+
+    <h2 id="notes">Text and sticky notes</h2>
+    <p>Notes are for anything a block can't say: "piano closed", a mic height, a reminder about a cable run. A <span class="manual-ui">Text</span> note is words on the plan with no background. A <span class="manual-ui">Sticky note</span> has a light yellow fill.</p>
+    <h3>Adding a note</h3>
+    <ul>
+      <li>Click <span class="manual-ui">Text</span> or <span class="manual-ui">Sticky note</span> at the top of the palette to put one in the middle of the view, or drag it onto the plan.</li>
+      <li>Right-click an empty spot and choose <span class="manual-ui">Add text here</span>. The note starts where you clicked.</li>
+      <li>Press <kbd>⌘</kbd><kbd>⇧</kbd><kbd>T</kbd>.</li>
+    </ul>
+    <p>Start typing straight away. <kbd>Return</kbd> starts a new line. To finish, press <kbd>Esc</kbd> or <kbd>⌘</kbd><kbd>Return</kbd>, click <span class="manual-ui">Done</span>, or click somewhere else. A note you leave empty is deleted.</p>
+    <p>To change a note's text later, double-click it, select it and press <kbd>Return</kbd>, or right-click it and choose <span class="manual-ui">Edit text</span>.</p>
+    <h3>The format bar</h3>
+    <p>When one note is selected, a format bar appears under it.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/layout-note-format.png" alt="The piano closed sticky note selected on the floor plan, with its format bar underneath: A− and A+ around the size 24, a B button for bold, a Fill swatch, Text set to Auto, and Edit text." loading="lazy" />
+    </figure>
+    <ul>
+      <li><span class="manual-ui">A−</span> and <span class="manual-ui">A+</span> step through the text sizes 10, 12, 14, 18, 24 and 32. New notes start at 24.</li>
+      <li><span class="manual-ui">B</span> turns bold on or off.</li>
+      <li><span class="manual-ui">Fill</span> sets the background: <span class="manual-ui">None</span> or a swatch. This is how a text note becomes a sticky note, and the other way round.</li>
+      <li><span class="manual-ui">Text</span> sets the text color, with the same <span class="manual-ui">Auto</span> option and contrast warning as blocks.</li>
+    </ul>
+
+    <h2 id="zoom-pan">Zooming and panning</h2>
+    <ul>
+      <li><strong>Scroll</strong> to zoom in and out around the pointer, or <strong>pinch</strong> on a trackpad. A pinch pauses briefly at 100%.</li>
+      <li><strong>Buttons:</strong> <span class="manual-ui">−</span> and <span class="manual-ui">+</span> at the top right, with the current zoom between them. <span class="manual-ui">Reset view</span> returns to 100%, where the whole plan fits.</li>
+      <li><strong>Keys:</strong> <kbd>⌘</kbd><kbd>⇧</kbd><kbd>=</kbd> zooms in, <kbd>⌘</kbd><kbd>⇧</kbd><kbd>−</kbd> zooms out, and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>0</kbd> resets the view.</li>
+    </ul>
+    <p>Zoom goes from 25% to 400%. To move around a zoomed-in plan, hold <kbd>Space</kbd> and drag. Scrolling always zooms rather than pans.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p><kbd>⌘</kbd><kbd>=</kbd> and <kbd>⌘</kbd><kbd>−</kbd> without <kbd>⇧</kbd> change the size of the whole app, not the plan. <a href="manual-settings.html">Settings reference</a> covers interface size.</p>
+    </div>
+
+    <h2 id="undo">Undo</h2>
+    <p><kbd>⌘</kbd><kbd>Z</kbd> undoes your last change on the plan, and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>Z</kbd> redoes it. Each drag, resize, rotation or edit is one step, and so is everything you type in one go in a note. The plan saves as you work, just like the sheet.</p>
+
+    <h2 id="pop-out">On a second screen</h2>
+    <p>The pop-out button in the toolbar opens the floor plan in its own window, so the sheet and the plan can sit on separate displays. While it's open, the main window's <span class="manual-ui">Layout Mode</span> button is turned off, and the pop-out button brings the window to the front instead. <a href="manual-power-features.html#pop-out">Working faster</a> covers it in full.</p>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual-exporting.html"><small>Previous</small>Printing and exporting</a>
+      <a class="is-next" href="manual-markup.html"><small>Next</small>Drawing on the plan</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>

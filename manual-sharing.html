@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sharing and backups. Setup Sheet Helper Manual</title>
+<meta name="description" content="Export and import Setup Sheet Helper studios and setups as files, download shared studios, and learn how the app backs up your work automatically." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-sharing.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-sharing.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="Sharing and backups. Setup Sheet Helper Manual" />
+<meta property="og:description" content="Export and import Setup Sheet Helper studios and setups as files, download shared studios, and learn how the app backs up your work automatically." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sharing and backups. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="Export and import Setup Sheet Helper studios and setups as files, download shared studios, and learn how the app backs up your work automatically." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Sharing and backups. Setup Sheet Helper Manual",
+  "description": "Export and import Setup Sheet Helper studios and setups as files, download shared studios, and learn how the app backs up your work automatically.",
+  "url": "https://setupsheethelper.julianro.se/manual-sharing.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html">1. Start here</a></li>
+      <li><a href="manual-table-mode.html">2. Building the setup sheet</a></li>
+      <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
+      <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
+      <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
+      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">7. Working faster</a></li>
+      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">9. Berklee features</a></li>
+      <li><a href="manual-settings.html">10. Settings reference</a></li>
+      <li><a href="manual-sharing.html" aria-current="page">11. Sharing and backups</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#two-kinds-of-file">Two kinds of file</a></li>
+          <li><a href="#exporting-studios">Exporting studios</a></li>
+          <li><a href="#importing-studios">Importing studios</a></li>
+          <li><a href="#exporting-setups">Exporting setups</a></li>
+          <li><a href="#importing-setups">Importing setups</a></li>
+          <li><a href="#import-problems">When an import doesn't work</a></li>
+          <li><a href="#online-library">The online studio library</a></li>
+          <li><a href="#safety-nets">Automatic safety nets</a></li>
+        </ol>
+      </li>
+      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 11</p>
+    <h1>Sharing and backups</h1>
+    <p class="lede">Studios and setups can be saved to a file, handed to another engineer, and imported on their Mac. This part covers both kinds of file, the online studio library, and the safety nets the app runs on its own.</p>
+
+    <h2 id="two-kinds-of-file">Two kinds of file</h2>
+    <p>Everything here lives in <span class="manual-ui">Settings → Import/Export</span>.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/settings-import-export.png" alt="Settings, Import/Export tab: a Studios section with Export studios, Import studios and Browse studios online buttons and a Browse downloadable studios link, and a Setups section with Export setups and Import setups buttons." loading="lazy" />
+    </figure>
+    <ul>
+      <li><strong>A studio file</strong> (<code>studios-export.json</code>) carries whole rooms: each studio's mics, outboard, preamps and room layout. Use it to share a room you've set up, or to move your studios to another Mac.</li>
+      <li><strong>A setup file</strong> (<code>setups-export.json</code>) carries setup sheets: every row, the column choices, session notes, and the setup's own room layout if it has one.</li>
+    </ul>
+    <p>One file can hold as many studios, or as many setups, as you like.</p>
+
+    <h2 id="exporting-studios">Exporting studios</h2>
+    <ol class="manual-steps">
+      <li>
+        <h3>Click Export studios…</h3>
+        <p>In <span class="manual-ui">Settings → Import/Export</span>, click <span class="manual-ui">Export studios…</span>. The <span class="manual-ui">Export Studios</span> screen lists your custom studios, in their folders.</p>
+      </li>
+      <li>
+        <h3>Tick the studios to include</h3>
+        <p>Tick each studio you want, or use <span class="manual-ui">Select all</span> and <span class="manual-ui">Deselect all</span>.</p>
+        <figure class="manual-shot">
+          <img src="assets/manual/sharing-export-studios.png" alt="The Export Studios screen with Select all and Deselect all buttons, The Record Co Studio A ticked, and an Export selected button." loading="lazy" />
+        </figure>
+      </li>
+      <li>
+        <h3>Save the file</h3>
+        <p>Click <span class="manual-ui">Export selected</span> and choose where to save. The file is named <code>studios-export.json</code> unless you change it. The app confirms with <span class="manual-ui">Exported to</span> and the file's location.</p>
+      </li>
+    </ol>
+    <p>Only studios you've made yourself can be exported. Berklee's rooms are already built into the app, so there's nothing to share.</p>
+
+    <h2 id="importing-studios">Importing studios</h2>
+    <ol class="manual-steps">
+      <li>
+        <h3>Pick the file</h3>
+        <p>Click <span class="manual-ui">Import studios…</span> and choose a studio file.</p>
+      </li>
+      <li>
+        <h3>Choose which studios to bring in</h3>
+        <p>The <span class="manual-ui">Import studios</span> screen lists every studio in the file, with its mic, outboard and preamp counts and whether it has a room layout. Everything starts ticked, except studios you already have.</p>
+      </li>
+      <li>
+        <h3>Click Import</h3>
+        <p>The button names how many you've chosen, such as <span class="manual-ui">Import 2 studios</span>. Back on the tab, a message lists what was imported.</p>
+      </li>
+    </ol>
+    <p>Imported studios land under <span class="manual-ui">New Setup From Studio Template</span> as custom studios, alongside the ones you already had. You can edit them like any other studio.</p>
+
+    <h3>Studios you already have</h3>
+    <p>If a studio in the file has the same name as one of yours, it's marked <span class="manual-ui">Already imported</span> and starts unticked, so re-importing a file never duplicates rooms by accident. You have two choices:</p>
+    <ul>
+      <li><strong>Skip it.</strong> Leave it unticked. The message afterward lists it as skipped.</li>
+      <li><strong>Import it anyway.</strong> Click <span class="manual-ui">Import as a copy</span>. The copy gets a number after its name, such as <em>Studio A (2)</em>, so you can tell the two apart.</li>
+    </ul>
+
+    <h2 id="exporting-setups">Exporting setups</h2>
+    <p>Click <span class="manual-ui">Export setups…</span>, tick the setups you want on the <span class="manual-ui">Export Setups</span> screen, then click <span class="manual-ui">Export selected</span> and choose where to save. The file is named <code>setups-export.json</code> unless you change it.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Tip</span>
+      <p>A setup file doesn't include the blocks, notes or markup on the floor plan. To hand someone the finished plan, export a PDF with the room layout included instead. <a href="manual-exporting.html#export-pdf">Part 3</a> covers PDF export.</p>
+    </div>
+
+    <h2 id="importing-setups">Importing setups</h2>
+    <p>A setup always belongs to a studio, so importing one means choosing which studio it goes into.</p>
+    <ol class="manual-steps">
+      <li>
+        <h3>Pick the file</h3>
+        <p>Click <span class="manual-ui">Import setups…</span> and choose a setup file.</p>
+      </li>
+      <li>
+        <h3>Choose a studio</h3>
+        <p>Under <span class="manual-ui">Import into</span>, pick the studio to file the setups under. Your custom studios are listed, plus Berklee's rooms if Berklee features are on.</p>
+      </li>
+      <li>
+        <h3>Choose the setups</h3>
+        <p>Under <span class="manual-ui">Setups to import</span>, tick the ones you want, or use <span class="manual-ui">Select all</span>.</p>
+      </li>
+      <li>
+        <h3>Click Import Selected</h3>
+        <p>The setups appear in your saved setups.</p>
+      </li>
+    </ol>
+    <p>Gear is matched by name against the studio you chose. A mic, outboard unit or preamp that the studio has is linked up as normal, with its in-use count. One it doesn't have comes in as plain text in the cell, so nothing is lost, but the app can't count it. Pick a studio with the same gear as the original for the best match.</p>
+
+    <h2 id="import-problems">When an import doesn't work</h2>
+    <ul>
+      <li><strong>The file came from a newer version of the app.</strong> The app refuses it and says the file was made by a newer version of Setup Sheet Helper. Update the app (see <a href="manual-help.html#updates">Part 13</a>) and import again.</li>
+      <li><strong>The file isn't a studio or setup file,</strong> or is damaged. The app says it couldn't read the file.</li>
+      <li><strong>The import fails partway.</strong> Imports are all or nothing. If anything goes wrong, nothing is changed, and you won't be left with half a studio or an empty setup.</li>
+    </ul>
+
+    <h2 id="online-library">The online studio library</h2>
+    <p>You don't always need a file. Engineers share their studios online, and you can download them straight into the app with <span class="manual-ui">Browse studios online…</span> on the Import/Export tab. Downloads go through the same import screen as a file, including the <span class="manual-ui">Already imported</span> check. <a href="manual-studios.html#online-library">Part 6</a> walks through it.</p>
+    <p>You can also browse the same studios in your web browser on the <a href="studio-downloads.html">Studio Downloads</a> page, which the <span class="manual-ui">Browse downloadable studios</span> link on the tab opens. Files you download there import with <span class="manual-ui">Import studios…</span>.</p>
+
+    <h2 id="safety-nets">Automatic safety nets</h2>
+    <p>The app protects your work without you doing anything:</p>
+    <ul>
+      <li><strong>A backup before updates.</strong> Before an update changes how your data is stored, the app copies your database to a <code>backups</code> folder. It keeps the five most recent copies.</li>
+      <li><strong>Saving on quit.</strong> Quitting saves any edits that haven't been saved yet, including in the pop-out Layout window.</li>
+      <li><strong>One copy at a time.</strong> Only one copy of the app can run. Opening it again brings the window that's already open to the front, so two copies can never overwrite each other's work.</li>
+      <li><strong>All-or-nothing saves and imports.</strong> A save or import either finishes completely or changes nothing.</li>
+    </ul>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Power user</span>
+      <p>The automatic backups live in <code>~/Library/Application Support/Setup Sheet Helper/backups</code>. They're a last resort, only made when an update changes your data. For your own backups, export your studios and setups to files every so often and keep them somewhere safe.</p>
+    </div>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual-settings.html"><small>Previous</small>Settings reference</a>
+      <a class="is-next" href="manual-shortcuts.html"><small>Next</small>Keyboard shortcuts</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>
