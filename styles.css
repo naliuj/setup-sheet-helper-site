@@ -791,3 +791,310 @@ input[type='checkbox']:checked {
     gap: 8px;
   }
 }
+
+/* Manual. One page per part, a sticky contents column on the left and a reading column on the
+   right. Same vocabulary as the rest of the site: 2px radius, flat 1px borders, accent for the
+   current item. Screenshots open in the shared lightbox (script.js). */
+.manual {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 96px;
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.manual-toc {
+  position: sticky;
+  top: 84px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  font-size: 0.9rem;
+}
+
+.manual-toc summary {
+  display: none;
+}
+
+.manual-toc-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  margin: 0 0 10px;
+}
+
+.manual-toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.manual-toc li a,
+.manual-toc li span {
+  display: block;
+  padding: 5px 10px;
+  border-left: 2px solid transparent;
+  color: var(--color-text-dim);
+  text-decoration: none;
+}
+
+.manual-toc li a:hover { color: var(--color-text); }
+
+.manual-toc li span { opacity: 0.55; }
+
+.manual-toc li a[aria-current='page'] {
+  color: var(--color-text);
+  border-left-color: var(--color-accent);
+}
+
+.manual-toc .manual-toc-sections a {
+  padding-left: 22px;
+  font-size: 0.85rem;
+}
+
+.manual-content {
+  max-width: 760px;
+  min-width: 0;
+}
+
+.manual-kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 6px;
+}
+
+.manual-content h1 {
+  font-size: 1.9rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+}
+
+.manual-content h2 {
+  font-size: 1.3rem;
+  margin: 48px 0 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+}
+
+.manual-content h3 {
+  font-size: 1.05rem;
+  margin: 28px 0 8px;
+}
+
+.manual-content p,
+.manual-content li {
+  color: #cfd5dd;
+}
+
+.manual-content a {
+  color: var(--color-accent);
+}
+
+.manual-content strong { color: var(--color-text); }
+
+.manual-content code,
+.manual-ui {
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+kbd {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0 6px;
+  border: 1px solid var(--color-border);
+  border-bottom-width: 2px;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  font: inherit;
+  font-size: 0.85em;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.manual-steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+}
+
+.manual-steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 36px;
+}
+
+.manual-steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.manual-steps > li > h3 { margin-top: 2px; }
+
+.manual-shot {
+  margin: 18px 0 8px;
+}
+
+.manual-shot img {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: zoom-in;
+}
+
+.manual-shot.is-dialog img { max-width: 440px; }
+
+.manual-shot figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+}
+
+/* Numbered markers laid over a screenshot, keyed to the list beneath it. Positions are
+   percentages of the image, so they stay put at any width. */
+.manual-annotated {
+  position: relative;
+}
+
+.manual-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 2px var(--color-bg);
+  pointer-events: none;
+}
+
+.manual-legend {
+  columns: 2;
+  column-gap: 32px;
+  padding-left: 1.4em;
+  margin-top: 16px;
+}
+
+.manual-legend li { break-inside: avoid; margin-bottom: 4px; }
+
+.manual-aside {
+  margin: 20px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-left: 2px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.manual-aside p { margin: 0; }
+
+.manual-aside-title {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+
+.manual-parts {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.manual-parts a,
+.manual-parts .is-soon {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-alt);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.manual-parts a:hover { border-color: var(--color-accent); }
+
+.manual-parts .is-soon { opacity: 0.55; }
+
+.manual-parts strong { display: block; }
+
+.manual-parts small { color: var(--color-text-dim); font-size: 0.85rem; }
+
+.manual-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+}
+
+.manual-pager a {
+  color: var(--color-text);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+}
+
+.manual-pager a:hover { border-color: var(--color-accent); }
+
+.manual-pager .is-next { margin-left: auto; text-align: right; }
+
+.manual-pager small { display: block; color: var(--color-text-dim); font-size: 0.75rem; }
+
+@media (max-width: 860px) {
+  .manual {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .manual-toc {
+    position: static;
+    max-height: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    padding: 12px 14px;
+  }
+  .manual-toc summary {
+    display: block;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .manual-toc:not([open]) > :not(summary) { display: none; }
+  .manual-toc-title { margin-top: 12px; }
+  .manual-legend { columns: 1; }
+}
+
+@media (max-width: 620px) {
+  .manual-marker { width: 18px; height: 18px; font-size: 0.65rem; }
+  .manual-pager { flex-direction: column; }
+  .manual-pager .is-next { margin-left: 0; }
+}

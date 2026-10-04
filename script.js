@@ -34,7 +34,7 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el))
 
-// Clicking a hero/showcase screenshot opens the lightbox at full size.
+// Clicking a hero, showcase or manual screenshot opens the lightbox at full size.
 const lightbox = document.getElementById('lightbox')
 const lightboxImg = document.getElementById('lightboxImg')
 const lightboxClose = document.getElementById('lightboxClose')
@@ -51,7 +51,7 @@ if (lightbox && lightboxImg && lightboxClose) {
     lightboxImg.src = ''
   }
 
-  document.querySelectorAll('.hero-image:not(.hero-icon) img, .showcase-image img').forEach((img) => {
+  document.querySelectorAll('.hero-image:not(.hero-icon) img, .showcase-image img, .manual-shot img').forEach((img) => {
     img.addEventListener('click', () => openLightbox(img))
   })
 
@@ -134,3 +134,8 @@ async function wireDownloadButtons() {
 }
 
 wireDownloadButtons()
+
+// Manual pages: the contents column sits above the article on narrow screens, so start it folded
+// there; on wider screens it's a sidebar and stays open (its summary is hidden by CSS).
+const manualToc = document.querySelector('.manual-toc')
+if (manualToc && window.matchMedia('(max-width: 860px)').matches) manualToc.open = false

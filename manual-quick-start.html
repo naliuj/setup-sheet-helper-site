@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Start here. Setup Sheet Helper Manual</title>
+<meta name="description" content="Get from a fresh install of Setup Sheet Helper to a printed setup sheet in five steps, plus a tour of the editor." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-quick-start.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=60817c13" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-quick-start.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="Start here. Setup Sheet Helper Manual" />
+<meta property="og:description" content="Get from a fresh install of Setup Sheet Helper to a printed setup sheet in five steps, plus a tour of the editor." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Start here. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="Get from a fresh install of Setup Sheet Helper to a printed setup sheet in five steps, plus a tour of the editor." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Start here. Setup Sheet Helper Manual",
+  "description": "Get from a fresh install of Setup Sheet Helper to a printed setup sheet in five steps, plus a tour of the editor.",
+  "url": "https://setupsheethelper.julianro.se/manual-quick-start.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html" aria-current="page">1. Start here</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#what-it-does">What Setup Sheet Helper does</a></li>
+          <li><a href="#first-launch">When you first open the app</a></li>
+          <li><a href="#first-setup">Your first setup in five steps</a></li>
+          <li><a href="#quick-setup">No studio yet?</a></li>
+          <li><a href="#editor-tour">A tour of the editor</a></li>
+        </ol>
+      </li>
+      <li><span title="Coming soon">2. Building the setup sheet</span></li>
+      <li><span title="Coming soon">3. Printing and exporting</span></li>
+      <li><span title="Coming soon">4. The floor plan</span></li>
+      <li><span title="Coming soon">5. Drawing on the plan</span></li>
+      <li><span title="Coming soon">6. Setting up your studio</span></li>
+      <li><span title="Coming soon">7. Working faster</span></li>
+      <li><span title="Coming soon">8. Organizing your work</span></li>
+      <li><span title="Coming soon">9. Berklee features</span></li>
+      <li><span title="Coming soon">10. Settings reference</span></li>
+      <li><span title="Coming soon">11. Sharing and backups</span></li>
+      <li><span title="Coming soon">12. Keyboard shortcuts</span></li>
+      <li><span title="Coming soon">13. Updates, help and troubleshooting</span></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 1</p>
+    <h1>Start here</h1>
+    <p class="lede">This part takes you from a fresh install to a printed setup sheet in about five minutes. Each step points to the part of the manual that covers it in depth.</p>
+
+    <h2 id="what-it-does">What Setup Sheet Helper does</h2>
+    <p>Setup Sheet Helper plans a recording session and prints it. A setup has three parts:</p>
+    <ul>
+      <li><strong>The setup sheet.</strong> One row per source, with its mic, 48V, outboard, channel, preamp, tie line and cue box. The app knows what gear the room has and how much of it is already in use, so nothing gets booked twice.</li>
+      <li><strong>The floor plan.</strong> Layout Mode puts the room's floor plan on screen. Drag instruments, notes and drawings onto it to show where everything goes.</li>
+      <li><strong>The PDF.</strong> The sheet and the floor plan print together, ready to hand to an assistant or tape to the console.</li>
+    </ul>
+    <figure class="manual-shot">
+      <img src="assets/screenshots/pdf-export.png" alt="A printed setup sheet with color-tinted row sections, mic assignments, 48V ticks, channel numbers and tie lines." loading="lazy" />
+      <figcaption>A printed setup sheet.</figcaption>
+    </figure>
+
+    <h2 id="first-launch">When you first open the app</h2>
+    <p>The first time it opens, the app asks <span class="manual-ui">Pre-load Berklee studios and gear?</span></p>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/quick-start-berklee-prompt.png" alt="The first-launch prompt asking whether to pre-load Berklee studios and gear, with No, start blank and Yes, pre-load Berklee buttons." loading="lazy" />
+    </figure>
+    <ul>
+      <li>Choose <span class="manual-ui">Yes, pre-load Berklee</span> if you work in Berklee's studios. Their buildings, rooms and gear lists are ready to use straight away.</li>
+      <li>Choose <span class="manual-ui">No, start blank</span> otherwise. You'll add your own studio, or start with a quick setup (below).</li>
+    </ul>
+    <p>You can change your mind at any time in <span class="manual-ui">Settings → General → Berklee features</span>.</p>
+
+    <h2 id="first-setup">Your first setup in five steps</h2>
+    <ol class="manual-steps">
+      <li>
+        <h3>Pick a studio</h3>
+        <p>On the home screen, the studios you can start from are under <span class="manual-ui">New Setup From Studio Template</span>. Click one. Berklee's rooms are inside the <span class="manual-ui">Berklee</span> folder, grouped by building.</p>
+        <figure class="manual-shot">
+          <img src="assets/manual/quick-start-home.png" alt="The home screen, with a Berklee folder and The Record Co Studio A under New Setup From Studio Template, and two saved setups below." loading="lazy" />
+          <figcaption>Studios at the top, your saved setups underneath.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <h3>Name the setup</h3>
+        <p>In the <span class="manual-ui">New setup</span> dialog, give the setup a name. The date starts as today. Engineer and Artist are optional, and so is the folder. Click <span class="manual-ui">Create setup</span>.</p>
+        <figure class="manual-shot is-dialog">
+          <img src="assets/manual/quick-start-new-setup.png" alt="The New setup dialog filled in with a name, date, engineer and artist, with a folder picker and Create setup button." loading="lazy" />
+        </figure>
+        <div class="manual-aside">
+          <span class="manual-aside-title">Tip</span>
+          <p>Set <span class="manual-ui">Default engineer name</span> in <span class="manual-ui">Settings → General</span> and every new setup fills in the Engineer field for you.</p>
+        </div>
+      </li>
+      <li>
+        <h3>Add your sources</h3>
+        <p>Click the <span class="manual-ui">Add a source</span> box at the top of the sheet, type a source such as <em>Kick In</em>, and press <kbd>Return</kbd>. The box stays ready for the next one, so you can type your whole input list without touching the mouse.</p>
+        <p>Rows appear in the order you add them. To move one, drag the handle at its left edge.</p>
+        <figure class="manual-shot">
+          <img src="assets/manual/quick-start-table.png" alt="A filled-in setup sheet in Table Mode: drums, piano, vocals, guitar and bass rows with mics, 48V, outboard, channels, tie lines and cue boxes, colored by section." loading="lazy" />
+          <figcaption>A setup sheet with its sources added and gear chosen.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <h3>Choose mics and other gear</h3>
+        <p>Click a row's <span class="manual-ui">Mic</span> cell. Gear is grouped by where it comes from, with <span class="manual-ui">This Studio</span> first, and then by manufacturer. Use the arrow keys or the mouse to find a model, or type in <span class="manual-ui">Search…</span>.</p>
+        <p>Each model shows how many are already taken, such as <span class="manual-ui">2/5 in use</span>. When every one is taken it's grayed out, so the same mic can't end up on two rows.</p>
+        <figure class="manual-shot">
+          <img src="assets/manual/quick-start-mic-picker.png" alt="The mic picker open on the Vocals row: This Studio, then a list of manufacturers, with AKG open showing C414 XLII 2/5 in use and C451B 0/2 in use." loading="lazy" />
+          <figcaption>Picking a mic. The counts stop the same mic from being booked twice.</figcaption>
+        </figure>
+        <p>Fill in <span class="manual-ui">Outboard</span> and <span class="manual-ui">Preamp</span> the same way, tick <span class="manual-ui">48V</span> where you need phantom power, and type the <span class="manual-ui">Channel</span>, <span class="manual-ui">Tie line</span> and <span class="manual-ui">Cue box</span> numbers.</p>
+        <div class="manual-aside">
+          <span class="manual-aside-title">Tip</span>
+          <p>To number a run of rows in one go, select them and use <span class="manual-ui">Number</span> in the selection bar. Part 2 covers it.</p>
+        </div>
+      </li>
+      <li>
+        <h3>Export the PDF</h3>
+        <p>Press <kbd>⌘</kbd><kbd>E</kbd>, or choose <span class="manual-ui">File → Export PDF…</span>. Choose what to include, click <span class="manual-ui">Export</span>, and pick where to save the file.</p>
+        <figure class="manual-shot is-dialog">
+          <img src="assets/manual/quick-start-export-pdf.png" alt="The Export to PDF dialog with Setup sheet, Room layout and Colored switches, column chips, and orientation and density menus." loading="lazy" />
+        </figure>
+        <p>That's a finished setup. There's no Save button to remember: the app saves as you work.</p>
+      </li>
+    </ol>
+
+    <h2 id="quick-setup">No studio yet?</h2>
+    <p>Click <span class="manual-ui">Start a quick setup →</span> on the home screen. You get a setup with no studio behind it. The gear cells become plain text boxes that suggest names as you type, drawn from every studio in the app.</p>
+    <p>A quick setup is good for a one-off session. For a room you work in often, set the studio up once and every new setup starts with its gear ready.</p>
+
+    <h2 id="editor-tour">A tour of the editor</h2>
+    <p>Here's what everything on the editor screen does.</p>
+    <figure class="manual-shot">
+      <div class="manual-annotated">
+        <img src="assets/manual/quick-start-table.png" alt="The setup editor in Table Mode with numbered markers on the toolbar buttons and the first row." loading="lazy" />
+          <span class="manual-marker" style="left:14.5%;top:15%">1</span>
+          <span class="manual-marker" style="left:46.9%;top:15%">2</span>
+          <span class="manual-marker" style="left:73.3%;top:15%">3</span>
+          <span class="manual-marker" style="left:81.9%;top:15%">4</span>
+          <span class="manual-marker" style="left:86.0%;top:15%">5</span>
+          <span class="manual-marker" style="left:94.6%;top:15%">6</span>
+          <span class="manual-marker" style="left:98.8%;top:15%">7</span>
+          <span class="manual-marker" style="left:65.5%;top:23.8%">8</span>
+          <span class="manual-marker" style="left:80.7%;top:23.8%">9</span>
+          <span class="manual-marker" style="left:90.2%;top:23.8%">10</span>
+          <span class="manual-marker" style="left:99.1%;top:23.8%">11</span>
+          <span class="manual-marker" style="left:4.5%;top:40.2%">12</span>
+      </div>
+    </figure>
+    <ol class="manual-legend">
+      <li><strong>Setup name, session date, Engineer and Artist.</strong> Click to edit them in place.</li>
+      <li><strong>Session notes.</strong> The icon lights up when the setup has notes. They print under the title.</li>
+      <li><strong>Setup settings.</strong> The room layout, gear borrowed for this session, and Berklee options.</li>
+      <li><strong>Layout Mode.</strong> Switches to the floor plan (<kbd>⌘</kbd><kbd>L</kbd>). On the floor plan it reads <span class="manual-ui">Table Mode</span> and takes you back.</li>
+      <li><strong>Pop-out.</strong> Opens the floor plan in its own window, for a second screen.</li>
+      <li><strong>Split View.</strong> Opens a second setup side by side.</li>
+      <li><strong>Keyboard shortcuts.</strong> Jumps to <span class="manual-ui">Settings → Keybinds</span>.</li>
+      <li><strong>Add a source.</strong> Type and press <kbd>Return</kbd>.</li>
+      <li><strong>Outboard columns.</strong> Adds or removes outboard slots on every row.</li>
+      <li><strong>Columns.</strong> Shows, hides and reorders this setup's columns.</li>
+      <li><strong>Presets.</strong> Loads or manages saved channel presets.</li>
+      <li><strong>Row handle.</strong> Drag to reorder. The link icons between rows pair two rows into a stereo pair.</li>
+    </ol>
+    <p>Save status appears in the toolbar just right of the header fields: <span class="manual-ui">Unsaved changes</span>, then <span class="manual-ui">Saving…</span>, then <span class="manual-ui">Saved</span>. If it ever reads <span class="manual-ui">Couldn't save — retrying</span>, keep working. The app tries again every 10 seconds and saves as soon as it can.</p>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual.html"><small>Back to</small>Contents</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>
