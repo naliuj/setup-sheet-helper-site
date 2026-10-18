@@ -167,7 +167,7 @@
       <dt>Channel</dt>
       <dd>The console channel, as a whole number from 1 up.</dd>
       <dt>Tie line</dt>
-      <dd>The tie line or wall-box input, also a whole number. Two rows with the same tie line get a warning (see <a href="#warnings">Warnings</a>).</dd>
+      <dd>The tie line or wall-box input. It takes a number, or a label such as <em>PB1</em> if that's how your patch bay names its lines. Two rows with the same tie line get a warning (see <a href="#warnings">Warnings</a>).</dd>
       <dt>Cue box</dt>
       <dd>Free text, so a stereo cue like <em>1-2</em> works as well as a single number.</dd>
       <dt>Polarity</dt>
@@ -251,7 +251,7 @@
     <p>Two kinds of yellow warning can appear inside a cell.</p>
     <dl>
       <dt><span class="manual-ui">duplicate tie line</span></dt>
-      <dd>Two or more rows share the same tie line number. The warning shows on every row involved. Change one of the numbers and it goes away. If you export anyway, the PDF puts a "!" in front of those tie line numbers so the clash is easy to spot on paper.</dd>
+      <dd>Two or more rows share the same tie line. Capitals and spaces don't count, so <em>pb1</em> and <em>PB1</em> clash. The warning shows on every row involved. Change one of them and it goes away. If you export anyway, the PDF puts a "!" in front of those tie lines so the clash is easy to spot on paper.</dd>
       <dt><span class="manual-ui">Preset expected: …</span></dt>
       <dd>You loaded a channel preset that names gear this studio doesn't have, such as <em>Preset expected: U 47 FET</em>. The row is added with that cell left empty. Pick something from the picker and the warning clears.</dd>
     </dl>
