@@ -71,6 +71,7 @@ const studios = files.map((file) => {
     bytes: fs.statSync(full).size,
     counts: totals,
     roomLayout: pack.studios.some((s) => s.roomLayoutFile),
+    patchbay: pack.studios.some((s) => s.patchbayFile),
     gear: pack.studios.map(gearKeywords).join(' ')
   }
 })
