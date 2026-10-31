@@ -86,6 +86,7 @@ if (listEl) {
     where.textContent = studio.city
     title.appendChild(where)
     if (studio.roomLayout) title.appendChild(tag('Room layout', 'is-accent'))
+    if (studio.patchbay) title.appendChild(tag('Patchbay', 'is-accent'))
 
     const meta = document.createElement('div')
     meta.className = 'studio-meta'
