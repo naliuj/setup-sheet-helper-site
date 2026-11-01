@@ -80,14 +80,15 @@
       </li>
       <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
       <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
-      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
-      <li><a href="manual-power-features.html">7. Working faster</a></li>
-      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
-      <li><a href="manual-berklee.html">9. Berklee features</a></li>
-      <li><a href="manual-settings.html">10. Settings reference</a></li>
-      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
-      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
-      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+      <li><a href="manual-patchbay.html">6. The patchbay</a></li>
+      <li><a href="manual-studios.html">7. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">8. Working faster</a></li>
+      <li><a href="manual-organizing.html">9. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">10. Berklee features</a></li>
+      <li><a href="manual-settings.html">11. Settings reference</a></li>
+      <li><a href="manual-sharing.html">12. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">13. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">14. Updates, help and troubleshooting</a></li>
     </ol>
   </details>
   <!-- /manual-toc -->
@@ -101,7 +102,7 @@
     <ol class="manual-steps">
       <li>
         <h3>Open the export dialog</h3>
-        <p>Press <kbd>⌘</kbd><kbd>E</kbd>, or choose <span class="manual-ui">File → Export PDF…</span>. This works from Table Mode and Layout Mode alike.</p>
+        <p>Press <kbd>⌘</kbd><kbd>E</kbd>, or choose <span class="manual-ui">File → Export PDF…</span>. This works from any mode.</p>
       </li>
       <li>
         <h3>Choose what to include</h3>
@@ -116,19 +117,20 @@
 
     <h2 id="pdf-options">The PDF options</h2>
     <figure class="manual-shot is-dialog">
-      <img src="assets/manual/quick-start-export-pdf.png" alt="The Export to PDF dialog. A PDF style settings link sits at the top right. Below are switches for Setup sheet, Room layout and Colored, a Columns to export box showing 8 of 10, from Source name through Notes, with Preamp and Notes marked empty, and Orientation and Density menus set to Portrait and Normal, with Cancel and Export buttons." loading="lazy" />
+      <img src="assets/manual/quick-start-export-pdf.png" alt="The Export to PDF dialog. A PDF style settings link sits at the top right. Below are switches for Setup sheet, Room layout, Patchbay and Colored, with a note that Colored keeps patch cables in color, a Columns to export box showing 8 of 10, from Source name through Notes, with Preamp and Notes marked empty, and Orientation and Density menus set to Portrait and Normal, with Cancel and Export buttons." loading="lazy" />
     </figure>
 
-    <h3>Setup sheet and Room layout</h3>
-    <p>Under <span class="manual-ui">What should the PDF include?</span>, switch on either or both:</p>
+    <h3>Setup sheet, Room layout and Patchbay</h3>
+    <p>Under <span class="manual-ui">What should the PDF include?</span>, switch on any of them:</p>
     <ul>
       <li><span class="manual-ui">Setup sheet</span>: the title, details and the table of sources.</li>
       <li><span class="manual-ui">Room layout</span>: the floor plan from Layout Mode, on a page of its own at the end. This switch only appears when the setup has a room layout (the studio's, its own, or a blank sheet). See <a href="manual-layout-mode.html">Part 4</a>.</li>
+      <li><span class="manual-ui">Patchbay</span>: the studio's patchbay drawing with this setup's cables, on a page of its own after the room layout, followed by a list of every cable. This switch only appears when the studio has a patchbay drawing. See <a href="manual-patchbay.html#printing">Part 6</a>.</li>
     </ul>
-    <p>At least one has to be on. With both off, <span class="manual-ui">Export</span> is grayed out.</p>
+    <p>At least one has to be on. With all of them off, <span class="manual-ui">Export</span> is grayed out.</p>
 
     <h3>Colored</h3>
-    <p>With <span class="manual-ui">Colored</span> on, rows are tinted with the colors you gave them, and blocks on the floor plan keep their colors. Turn it off when you're printing in black and white. The app then makes the pages read well in gray, as described in <a href="#black-and-white">Black-and-white printing</a>.</p>
+    <p>With <span class="manual-ui">Colored</span> on, rows are tinted with the colors you gave them, blocks on the floor plan keep their colors, and patch cables keep theirs. Turn it off when you're printing in black and white. The app then makes the pages read well in gray, as described in <a href="#black-and-white">Black-and-white printing</a>.</p>
 
     <h3>Columns to export</h3>
     <p>Each chip is one column of the sheet. A filled chip goes in the PDF; a dashed one is left out. The count at the top right, such as <span class="manual-ui">8 of 10</span>, tells you how many are going in.</p>
@@ -194,15 +196,17 @@
       <li>Markup prints dark, whatever its color. Highlighter strokes print as a see-through gray band.</li>
       <li>Hidden markup is left off, just as it is in color.</li>
     </ul>
+    <p>On the patchbay page, the drawing and every cable print in gray. The cable list still names each cable's color.</p>
     <p>None of this changes the plan on screen. It applies only to the exported page.</p>
 
     <h2 id="export-spreadsheet">Exporting a spreadsheet</h2>
     <p>Press <kbd>⌘</kbd><kbd>⇧</kbd><kbd>E</kbd>, or choose <span class="manual-ui">File → Export Spreadsheet…</span>, to save the sheet as an Excel workbook (.xlsx). It opens in Excel, Numbers and Google Sheets.</p>
     <figure class="manual-shot is-dialog">
-      <img src="assets/manual/export-spreadsheet.png" alt="The Export to Spreadsheet dialog with a Room layout switch turned off and its description, a Columns to export box showing 8 of 10, from Source name through Notes, with Preamp and Notes marked empty, and Cancel and Export buttons." loading="lazy" />
+      <img src="assets/manual/export-spreadsheet.png" alt="The Export to Spreadsheet dialog with a Room layout switch turned off and a Patchbay switch turned on, each with its description, a Columns to export box showing 8 of 10, from Source name through Notes, with Preamp and Notes marked empty, and Cancel and Export buttons." loading="lazy" />
     </figure>
     <ul>
       <li><strong><span class="manual-ui">Room layout</span></strong> adds the floor plan as a picture on a second sheet. As the dialog says, it's an image, not data. The switch only appears when the setup has a room layout, starts off, and remembers your choice.</li>
+      <li><strong><span class="manual-ui">Patchbay</span></strong> adds a sheet listing the patch cables, with the patchbay drawing as a picture below. The switch only appears when the studio has a patchbay drawing, starts off, and remembers your choice.</li>
       <li><strong><span class="manual-ui">Columns to export</span></strong> works exactly as in the PDF dialog, and the two share the same choices for each setup.</li>
     </ul>
     <div class="manual-aside">
@@ -219,6 +223,7 @@
       <li>A bold header row that stays in place as you scroll.</li>
       <li>Row colors at full strength, with the text color picked so it stays readable. Spreadsheets always keep row colors; there's no black-and-white option.</li>
       <li>If you included the room layout, a second sheet called <em>Room layout</em> with the floor plan in color, at its true print size.</li>
+      <li>If you included the patchbay, a sheet called <em>Patchbay</em> listing each cable's number, start, end and color, grouped by strip, with the drawing and its cables as a picture below.</li>
     </ul>
     <p>If the setup has no room layout, or the pop-out window doesn't answer, the spreadsheet is still saved without the picture, and the toolbar message says the sheet was skipped.</p>
 

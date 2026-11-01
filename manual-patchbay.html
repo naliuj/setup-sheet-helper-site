@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The patchbay. Setup Sheet Helper Manual</title>
+<meta name="description" content="Draw patch cables on the studio's patchbay drawing in Patchbay Mode, and print the patch with a list of every cable, in Setup Sheet Helper." />
+<link rel="canonical" href="https://setupsheethelper.julianro.se/manual-patchbay.html" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+
+<meta name="theme-color" content="#14161a" />
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://setupsheethelper.julianro.se/manual-patchbay.html" />
+<meta property="og:site_name" content="Setup Sheet Helper" />
+<meta property="og:title" content="The patchbay. Setup Sheet Helper Manual" />
+<meta property="og:description" content="Draw patch cables on the studio's patchbay drawing in Patchbay Mode, and print the patch with a list of every cable, in Setup Sheet Helper." />
+<meta property="og:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The patchbay. Setup Sheet Helper Manual" />
+<meta name="twitter:description" content="Draw patch cables on the studio's patchbay drawing in Patchbay Mode, and print the patch with a list of every cable, in Setup Sheet Helper." />
+<meta name="twitter:image" content="https://setupsheethelper.julianro.se/assets/og-image.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "The patchbay. Setup Sheet Helper Manual",
+  "description": "Draw patch cables on the studio's patchbay drawing in Patchbay Mode, and print the patch with a list of every cable, in Setup Sheet Helper.",
+  "url": "https://setupsheethelper.julianro.se/manual-patchbay.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Setup Sheet Helper",
+    "url": "https://setupsheethelper.julianro.se/"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon-64.png" alt="" class="brand-icon" />Setup Sheet Helper</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#showcase">Showcase</a>
+      <a href="studio-downloads.html">Studio Downloads</a>
+      <a href="manual.html" class="is-active">Manual</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#download">Download</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="manual">
+  <!-- manual-toc -->
+  <details class="manual-toc" open>
+    <summary>Contents</summary>
+    <p class="manual-toc-title"><a href="manual.html">Manual</a></p>
+    <ol>
+      <li><a href="manual-quick-start.html">1. Start here</a></li>
+      <li><a href="manual-table-mode.html">2. Building the setup sheet</a></li>
+      <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
+      <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
+      <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
+      <li><a href="manual-patchbay.html" aria-current="page">6. The patchbay</a>
+        <ol class="manual-toc-sections">
+          <li><a href="#open-patchbay-mode">Opening Patchbay Mode</a></li>
+          <li><a href="#draw-cables">Drawing a cable</a></li>
+          <li><a href="#select-cables">Selecting cables</a></li>
+          <li><a href="#edit-cables">Changing and deleting cables</a></li>
+          <li><a href="#zoom-pan">Zooming and panning</a></li>
+          <li><a href="#undo">Undo</a></li>
+          <li><a href="#printing">Printing the patch</a></li>
+          <li><a href="#good-to-know">Good to know</a></li>
+        </ol>
+      </li>
+      <li><a href="manual-studios.html">7. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">8. Working faster</a></li>
+      <li><a href="manual-organizing.html">9. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">10. Berklee features</a></li>
+      <li><a href="manual-settings.html">11. Settings reference</a></li>
+      <li><a href="manual-sharing.html">12. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">13. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">14. Updates, help and troubleshooting</a></li>
+    </ol>
+  </details>
+  <!-- /manual-toc -->
+
+  <article class="manual-content">
+    <p class="manual-kicker">Part 6</p>
+    <h1>The patchbay</h1>
+    <p class="lede">Patchbay Mode puts the studio's patchbay drawing on screen. Draw a cable from jack to jack for every patch the session needs, and the patch prints with the setup sheet, with a list of every cable.</p>
+
+    <figure class="manual-shot">
+      <img src="assets/manual/patchbay-overview.png" alt="Demo Setup in Patchbay Mode. The toolbar switch reads Table, Layout and Patchbay, with Patchbay selected. The studio's patchbay drawing fills the canvas, with red, blue, green and orange cables running from the studio tie lines at the top to the microphone lines, and a yellow cable running down the page. Cable color swatches, a Sag slider, zoom buttons showing 100% and Reset view sit at the top right." loading="lazy" />
+      <figcaption>Patchbay Mode: the studio's patchbay drawing, with this setup's cables on it.</figcaption>
+    </figure>
+
+    <h2 id="open-patchbay-mode">Opening Patchbay Mode</h2>
+    <p>The editor's toolbar has a switch with three buttons: <span class="manual-ui">Table</span>, <span class="manual-ui">Layout</span> and <span class="manual-ui">Patchbay</span>. Click <span class="manual-ui">Patchbay</span> to open the drawing, and <span class="manual-ui">Table</span> to go back to the sheet.</p>
+    <p><span class="manual-ui">Toggle Patchbay Mode</span> has no shortcut until you give it one in <span class="manual-ui">Settings → Keybinds</span>. It switches between Patchbay Mode and Table Mode. <kbd>⌘</kbd><kbd>L</kbd> still goes to Layout Mode, from Patchbay Mode too.</p>
+
+    <h3>Where the drawing comes from</h3>
+    <p>The patchbay drawing belongs to the studio, so every setup in that studio uses the same one. Each setup has its own cables.</p>
+    <ul>
+      <li><strong>Berklee rooms</strong> come with their patchbay drawings, except Studio A76, which doesn't have one yet.</li>
+      <li><strong>Your own studios</strong> get one in the studio editor. See <a href="manual-studios.html#patchbay">The studio's patchbay</a>.</li>
+    </ul>
+    <p>If the studio has no drawing yet, Patchbay Mode says <span class="manual-ui">This studio doesn't have a patchbay drawing yet.</span> Click <span class="manual-ui">Upload patchbay PDF…</span> and pick the file. It becomes the studio's drawing.</p>
+    <p>The drawing has to be a PDF. The app reads the jack labels from the text in the PDF, so a drawing exported from a drawing or CAD program works best. A scanned drawing has no text to read. You can still draw cables on it, but they won't snap to jacks, and the hint at the bottom says <span class="manual-ui">No jacks could be read from this drawing — cables can go anywhere</span>.</p>
+
+    <h2 id="draw-cables">Drawing a cable</h2>
+    <ol class="manual-steps">
+      <li>
+        <h3>Pick a color</h3>
+        <p>Click one of the swatches at the top right: Red, Blue, Green, Yellow, Orange, Purple, Black, Gray or White. The <span class="manual-ui">Sag</span> slider next to them sets how far the cable droops between its ends. The app remembers both for the next cable.</p>
+      </li>
+      <li>
+        <h3>Connect two jacks</h3>
+        <p>Drag from one jack to another and let go. Or click one jack, then click the other. Each end snaps onto a jack when you're close to one. Hover a jack to see its name and the strip it's on.</p>
+      </li>
+    </ol>
+    <p>While a cable follows the pointer, move toward the edge of the canvas and the view scrolls that way, so you can reach a row that's off screen. If you let go outside the canvas, the cable stays on the pointer: click a jack to finish it, or press <kbd>Esc</kbd> to drop it. <kbd>Esc</kbd> also drops a cable you started with a click.</p>
+
+    <h2 id="select-cables">Selecting cables</h2>
+    <ul>
+      <li><strong>Click a cable</strong> to select it. <kbd>⌘</kbd>-click adds or removes one.</li>
+      <li><strong>Drag on empty space</strong> to draw a box. Every cable it crosses is selected. Hold <kbd>⌘</kbd> or <kbd>⇧</kbd> to add them to what's already selected.</li>
+      <li><strong><kbd>⌘</kbd><kbd>A</kbd></strong> selects every cable, and <kbd>Esc</kbd> clears the selection.</li>
+    </ul>
+    <p>Hover any cable to see where it goes, such as <span class="manual-ui">AA225 → A7 (MICROPHONE LINES) · Blue</span>. The far end's strip is named when it's different from the near end's.</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/patchbay-cables.png" alt="Patchbay Mode zoomed to 373% on the top of the drawing. Red cables run from studio tie lines AA213 to AA218 down to microphone lines A1 to A6, blue cables from AA225 and AA226 to A7 and A8, plus a green and an orange cable. One blue cable is selected: it has a pale outline and a white handle at each end, and a tooltip reads AA225 → A7 (MICROPHONE LINES) · Blue. The toolbar shows the Blue swatch picked, the Sag slider and a red Delete button." loading="lazy" />
+      <figcaption>A selected cable has a handle at each end. Hovering it names both ends.</figcaption>
+    </figure>
+
+    <h2 id="edit-cables">Changing and deleting cables</h2>
+    <ul>
+      <li><strong>Color and sag.</strong> With cables selected, the swatches and the <span class="manual-ui">Sag</span> slider change those cables instead of the next one. With several selected, the toolbar says how many.</li>
+      <li><strong>Re-patching.</strong> Drag a white end handle of a selected cable to another jack.</li>
+      <li><strong>Deleting.</strong> Click <span class="manual-ui">Delete</span> in the toolbar, or press <kbd>Del</kbd> or <kbd>⌘</kbd><kbd>⌫</kbd>.</li>
+    </ul>
+
+    <h2 id="zoom-pan">Zooming and panning</h2>
+    <ul>
+      <li><strong>Scroll</strong> to zoom in and out around the pointer, or <strong>pinch</strong> on a trackpad.</li>
+      <li><strong>Buttons:</strong> <span class="manual-ui">−</span> and <span class="manual-ui">+</span> at the top right, with the current zoom between them. <span class="manual-ui">Reset view</span> returns to 100%, where the whole drawing fits.</li>
+      <li><strong>Keys:</strong> the Layout Mode zoom keys work here too. <kbd>⌘</kbd><kbd>⇧</kbd><kbd>=</kbd> zooms in, <kbd>⌘</kbd><kbd>⇧</kbd><kbd>−</kbd> zooms out, and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>0</kbd> resets the view.</li>
+    </ul>
+    <p>Zoom goes from 25% to 400%. To move around, hold <kbd>Space</kbd> and drag, or drag with the middle mouse button.</p>
+
+    <h2 id="undo">Undo</h2>
+    <p><kbd>⌘</kbd><kbd>Z</kbd> undoes your last cable change, and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>Z</kbd> redoes it. Drawing, re-patching, recoloring and deleting are one step each, and so is one drag of the <span class="manual-ui">Sag</span> slider. Cables save as you work, just like the sheet.</p>
+
+    <h2 id="printing">Printing the patch</h2>
+    <p>Switch on <span class="manual-ui">Patchbay</span> in the <span class="manual-ui">Export to PDF</span> dialog. The switch only appears when the studio has a patchbay drawing. The PDF then ends with:</p>
+    <ul>
+      <li><strong>The drawing</strong> with your cables on it, on a page of its own at the drawing's real size. A large patchbay drawing makes a large page, so print it scaled to fit.</li>
+      <li><strong>A list called Patch cables</strong>, with one row per cable: its number, where it starts, where it ends and its color. Rows are grouped under the name of the strip each cable starts on. An end that isn't on a jack reads <span class="manual-ui">Unlabeled point</span>.</li>
+    </ul>
+    <p>With <span class="manual-ui">Colored</span> off, the drawing and cables print in gray, and the list still names each cable's color. The spreadsheet export has a <span class="manual-ui">Patchbay</span> switch too. <a href="manual-exporting.html">Part 3</a> covers both.</p>
+
+    <h2 id="good-to-know">Good to know</h2>
+    <ul>
+      <li>Duplicating a setup copies its cables. A studio template doesn't keep them.</li>
+      <li>In Split View, each side has its own Patchbay Mode and its own cables.</li>
+      <li>Patchbay Mode has no pop-out window. Only Layout Mode does.</li>
+      <li>If the studio's drawing is replaced, cables stay where they are. Ends that land on a jack of the new drawing take its name. If the drawing is removed, the cables are kept but hidden until a drawing is uploaded again. See <a href="manual-studios.html#patchbay">The studio's patchbay</a>.</li>
+      <li>A setup file includes its cables. See <a href="manual-sharing.html">Part 12</a>.</li>
+    </ul>
+
+    <nav class="manual-pager" aria-label="Manual pages">
+      <a href="manual-markup.html"><small>Previous</small>Drawing on the plan</a>
+      <a class="is-next" href="manual-studios.html"><small>Next</small>Setting up your studio</a>
+    </nav>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<footer class="footer">
+  <p>Setup Sheet Helper, built with Electron.</p>
+  <p class="footer-credits">Created by Julian Rose &middot; Icon by Regan Kulig <a href="https://www.instagram.com/gagekaymusic" target="_blank" rel="noopener">@gagekaymusic</a> &middot; <a href="https://paypal.me/julianrose27" target="_blank" rel="noopener">Donate (If you want)</a></p>
+  <p class="footer-credits">Built with AI-assisted development.</p>
+</footer>
+
+<script src="script.js?v=17f90f6f"></script>
+</body>
+</html>
