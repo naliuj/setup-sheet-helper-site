@@ -71,31 +71,33 @@
       <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
       <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
       <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
-      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
-      <li><a href="manual-power-features.html">7. Working faster</a></li>
-      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
-      <li><a href="manual-berklee.html">9. Berklee features</a></li>
-      <li><a href="manual-settings.html">10. Settings reference</a></li>
-      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
-      <li><a href="manual-shortcuts.html" aria-current="page">12. Keyboard shortcuts</a>
+      <li><a href="manual-patchbay.html">6. The patchbay</a></li>
+      <li><a href="manual-studios.html">7. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">8. Working faster</a></li>
+      <li><a href="manual-organizing.html">9. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">10. Berklee features</a></li>
+      <li><a href="manual-settings.html">11. Settings reference</a></li>
+      <li><a href="manual-sharing.html">12. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html" aria-current="page">13. Keyboard shortcuts</a>
         <ol class="manual-toc-sections">
           <li><a href="#changing-shortcuts">Changing shortcuts</a></li>
           <li><a href="#app-and-file">App and File</a></li>
           <li><a href="#edit">Edit</a></li>
           <li><a href="#table-mode">Table Mode</a></li>
           <li><a href="#layout-mode">Layout Mode</a></li>
+          <li><a href="#patchbay-mode">Patchbay Mode</a></li>
           <li><a href="#markup-tools">Markup tools</a></li>
           <li><a href="#fixed-keys">Fixed keys</a></li>
           <li><a href="#two-zooms">Two kinds of zoom</a></li>
         </ol>
       </li>
-      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+      <li><a href="manual-help.html">14. Updates, help and troubleshooting</a></li>
     </ol>
   </details>
   <!-- /manual-toc -->
 
   <article class="manual-content">
-    <p class="manual-kicker">Part 12</p>
+    <p class="manual-kicker">Part 13</p>
     <h1>Keyboard shortcuts</h1>
     <p class="lede">Every shortcut in the app on one page, with its default keys. To keep a copy by the console, print this page with <kbd>⌘</kbd><kbd>P</kbd> in your browser. The site's menus and footer are left off the printout.</p>
 
@@ -127,11 +129,12 @@
         <tr><td>Export PDF…</td><td><kbd>⌘</kbd><kbd>E</kbd></td></tr>
         <tr><td>Export Spreadsheet…</td><td><kbd>⌘</kbd><kbd>⇧</kbd><kbd>E</kbd></td></tr>
         <tr><td>Toggle Layout/Table Mode</td><td><kbd>⌘</kbd><kbd>L</kbd></td></tr>
+        <tr><td>Toggle Patchbay Mode</td><td>Not set</td></tr>
       </tbody>
     </table>
 
     <h2 id="edit">Edit</h2>
-    <p>These work in both Table Mode and Layout Mode, acting on rows or on blocks.</p>
+    <p>These work in Table Mode and Layout Mode, acting on rows or on blocks. Undo, Redo, Delete Selection and Clear Selection work on cables in Patchbay Mode too.</p>
     <table class="manual-table">
       <thead>
         <tr><th scope="col">Edit</th><th scope="col">Default</th></tr>
@@ -179,6 +182,17 @@
     </table>
     <p>Select Next Block and Select Previous Block go through blocks in the order they were added, and wrap around at the end. Toggle Snapping and Show/Hide Markup have no key until you give them one. The pop-out Layout window responds to most of these, plus undo, redo, duplicate and delete. See <a href="manual-layout-mode.html">Part 4</a>.</p>
 
+    <h2 id="patchbay-mode">Patchbay Mode</h2>
+    <table class="manual-table">
+      <thead>
+        <tr><th scope="col">Patchbay</th><th scope="col">Default</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Delete Selected Cables</td><td><kbd>Del</kbd></td></tr>
+      </tbody>
+    </table>
+    <p>Zoom In, Zoom Out and Reset View from the Layout table work in Patchbay Mode too. <kbd>Esc</kbd> drops a cable you're drawing. See <a href="manual-patchbay.html">Part 6</a>.</p>
+
     <h2 id="markup-tools">Markup tools</h2>
     <p>These single letters only work while markup is on (<kbd>⌘</kbd><kbd>⇧</kbd><kbd>M</kbd>, or the <span class="manual-ui">Markup</span> button), so they never get in the way of typing. See <a href="manual-markup.html">Part 5</a>.</p>
     <table class="manual-table">
@@ -204,7 +218,7 @@
         <tr><th scope="col">Everywhere</th><th scope="col">Keys</th></tr>
       </thead>
       <tbody>
-        <tr><td>Select all: every row in Table Mode, every block in Layout Mode, or all the text in a box you're typing in</td><td><kbd>⌘</kbd><kbd>A</kbd></td></tr>
+        <tr><td>Select all: every row in Table Mode, every block in Layout Mode, every cable in Patchbay Mode, or all the text in a box you're typing in</td><td><kbd>⌘</kbd><kbd>A</kbd></td></tr>
         <tr><td>Cut, copy and paste text</td><td><kbd>⌘</kbd><kbd>X</kbd> <kbd>⌘</kbd><kbd>C</kbd> <kbd>⌘</kbd><kbd>V</kbd></td></tr>
         <tr><td>Move through a gear picker, open a group, back out, pick</td><td><kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> <kbd>←</kbd> <kbd>Return</kbd></td></tr>
       </tbody>
@@ -260,7 +274,7 @@
     <p>Interface zoom makes the whole app larger or smaller, from 80% to 200%, in every window. It's the same setting as the interface size in <span class="manual-ui">Settings → Accessibility</span>, it's remembered between launches, and its keys are fixed.</p>
     <table class="manual-table">
       <thead>
-        <tr><th scope="col">Layout zoom (Layout Mode only)</th><th scope="col">Default</th></tr>
+        <tr><th scope="col">Layout zoom (Layout and Patchbay Mode)</th><th scope="col">Default</th></tr>
       </thead>
       <tbody>
         <tr><td>Zoom In (Layout)</td><td><kbd>⌘</kbd><kbd>⇧</kbd><kbd>=</kbd></td></tr>
@@ -268,7 +282,7 @@
         <tr><td>Reset Layout View</td><td><kbd>⌘</kbd><kbd>⇧</kbd><kbd>0</kbd></td></tr>
       </tbody>
     </table>
-    <p>Layout zoom only moves in and out of the floor plan, from 25% to 400%, and leaves the rest of the app alone. These are the Zoom In, Zoom Out and Reset View actions from the Layout table, so you can change them in Settings. In the menu bar they're under <span class="manual-ui">Edit</span>. You can also zoom the floor plan with the scroll wheel or by pinching on a trackpad.</p>
+    <p>Layout zoom only moves in and out of the floor plan or the patchbay drawing, from 25% to 400%, and leaves the rest of the app alone. These are the Zoom In, Zoom Out and Reset View actions from the Layout table, so you can change them in Settings. In the menu bar they're under <span class="manual-ui">Edit</span>. You can also zoom either one with the scroll wheel or by pinching on a trackpad.</p>
 
     <nav class="manual-pager" aria-label="Manual pages">
       <a href="manual-sharing.html"><small>Previous</small>Sharing and backups</a>

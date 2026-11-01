@@ -71,8 +71,9 @@
       <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
       <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
       <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
-      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
-      <li><a href="manual-power-features.html" aria-current="page">7. Working faster</a>
+      <li><a href="manual-patchbay.html">6. The patchbay</a></li>
+      <li><a href="manual-studios.html">7. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html" aria-current="page">8. Working faster</a>
         <ol class="manual-toc-sections">
           <li><a href="#channel-presets">Channel presets</a></li>
           <li><a href="#studio-templates">Studio templates</a></li>
@@ -84,18 +85,18 @@
           <li><a href="#duplicating">Duplicating a setup</a></li>
         </ol>
       </li>
-      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
-      <li><a href="manual-berklee.html">9. Berklee features</a></li>
-      <li><a href="manual-settings.html">10. Settings reference</a></li>
-      <li><a href="manual-sharing.html">11. Sharing and backups</a></li>
-      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
-      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+      <li><a href="manual-organizing.html">9. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">10. Berklee features</a></li>
+      <li><a href="manual-settings.html">11. Settings reference</a></li>
+      <li><a href="manual-sharing.html">12. Sharing and backups</a></li>
+      <li><a href="manual-shortcuts.html">13. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">14. Updates, help and troubleshooting</a></li>
     </ol>
   </details>
   <!-- /manual-toc -->
 
   <article class="manual-content">
-    <p class="manual-kicker">Part 7</p>
+    <p class="manual-kicker">Part 8</p>
     <h1>Working faster</h1>
     <p class="lede">None of these features are needed to make a setup sheet. Each one saves time once you're making them often. Read the sections that match how you work and skip the rest.</p>
 
@@ -125,14 +126,14 @@
     <p>The preset's rows are added to the end of the sheet. Nothing already there is replaced.</p>
     <p>Gear is matched by name against the studio you're in. If this studio doesn't have a model the preset names, that cell is left empty and shows a <span class="manual-ui">Preset expected:</span> badge with the missing model's name, so you know what to swap in.</p>
     <h3>Managing presets</h3>
-    <p>Choose <span class="manual-ui">Presets → Manage presets…</span>, or <span class="manual-ui">Manage channel presets…</span> in <span class="manual-ui">Settings → General</span>. You can file presets in folders, drag them into order, change a name or description with <span class="manual-ui">Edit</span>, and delete one or several at once. It works like the other managers in <a href="manual-organizing.html#managers">Part 8</a>.</p>
+    <p>Choose <span class="manual-ui">Presets → Manage presets…</span>, or <span class="manual-ui">Manage channel presets…</span> in <span class="manual-ui">Settings → General</span>. You can file presets in folders, drag them into order, change a name or description with <span class="manual-ui">Edit</span>, and delete one or several at once. It works like the other managers in <a href="manual-organizing.html#managers">Part 9</a>.</p>
 
     <h2 id="studio-templates">Studio templates</h2>
     <p>If you track the same kind of session in the same room again and again, save the input list as a starting point. Choose <span class="manual-ui">File → Save as Studio…</span> or press <kbd>⌘</kbd><kbd>⇧</kbd><kbd>S</kbd>. Give it a name, pick a folder if you like, and click <span class="manual-ui">Save studio</span>.</p>
     <p>Despite the name, this doesn't make a new room with its own gear. It saves the row list for the room you're in. What's kept and what's cleared:</p>
     <ul>
       <li><strong>Kept:</strong> the source names in their order, which columns are shown and in what order, the number of outboard columns, and your export column choices.</li>
-      <li><strong>Cleared:</strong> mics, 48V, outboard, preamps, channels, tie lines, cue boxes, polarity, notes, row colors and stereo links. The floor plan isn't saved either.</li>
+      <li><strong>Cleared:</strong> mics, 48V, outboard, preamps, channels, tie lines, cue boxes, polarity, notes, row colors and stereo links. The floor plan and patch cables aren't saved either.</li>
     </ul>
     <p>The template appears under <span class="manual-ui">New Setup From Studio Template</span> on the home screen as a card labeled <span class="manual-ui">Gear list</span>. Click it and a new setup opens straight away with those rows, named after the template and dated today. Rename it in the header.</p>
     <div class="manual-aside">
@@ -168,7 +169,7 @@
     </figure>
     <ul>
       <li>Each setup keeps its own choices. Templates and duplicates take them along.</li>
-      <li><span class="manual-ui">Reset to my defaults</span> brings back the columns set in <span class="manual-ui">Settings → Columns</span>, which is also what new setups start with. <a href="manual-settings.html">Part 10</a> covers it.</li>
+      <li><span class="manual-ui">Reset to my defaults</span> brings back the columns set in <span class="manual-ui">Settings → Columns</span>, which is also what new setups start with. <a href="manual-settings.html">Part 11</a> covers it.</li>
       <li>Column changes can't be undone with <kbd>⌘</kbd><kbd>Z</kbd>. Switch a column back on to undo hiding it.</li>
       <li>A hidden column starts switched off when you export. <a href="manual-exporting.html">Part 3</a> explains the export column choices.</li>
     </ul>
@@ -203,7 +204,7 @@
         </figure>
       </li>
     </ol>
-    <p>Each side is a complete editor with its own header, Table and Layout Mode, gear, undo history and saving. Keyboard shortcuts act on the side you clicked last. Drag the divider between them to change how much room each gets; the app remembers where you leave it.</p>
+    <p>Each side is a complete editor with its own header, Table, Layout and Patchbay Mode, gear, undo history and saving. Keyboard shortcuts act on the side you clicked last. Drag the divider between them to change how much room each gets; the app remembers where you leave it.</p>
     <figure class="manual-shot">
       <img src="assets/manual/faster-split-view.png" alt="Split View with Demo Setup on the left and Orchestral Date, Cues 1-8 on the right, both in Layout Mode, each with its own header, palette and floor plan. Home / Split View is at the top left and Close Split View at the top right." loading="lazy" />
       <figcaption>Two setups side by side, each working on its own.</figcaption>
@@ -212,11 +213,11 @@
     <p>Split View isn't available while the Layout window is popped out (below), and you can't split again from inside Split View.</p>
 
     <h2 id="pop-out">Pop-out Layout window</h2>
-    <p>With a second display, you can keep the setup sheet on one screen and the floor plan on the other. Click the pop-out button beside <span class="manual-ui">Layout Mode</span> in the toolbar (a square with an arrow). Layout Mode opens in its own window. Drag it to the other display.</p>
+    <p>With a second display, you can keep the setup sheet on one screen and the floor plan on the other. Click the pop-out button beside the <span class="manual-ui">Table</span>, <span class="manual-ui">Layout</span> and <span class="manual-ui">Patchbay</span> switch in the toolbar (a square with an arrow). Layout Mode opens in its own window. Drag it to the other display.</p>
     <p>The window has the palette, the floor plan and its own save status. Layout shortcuts work there, along with undo, duplicate and delete. Close it and your changes are saved.</p>
     <p>While it's open:</p>
     <ul>
-      <li>The main window stays in Table Mode, and its <span class="manual-ui">Layout Mode</span> button is grayed out.</li>
+      <li>The main window can't show Layout Mode: its <span class="manual-ui">Layout</span> button is grayed out. Table Mode and Patchbay Mode still work.</li>
       <li><span class="manual-ui">Split View</span> is turned off.</li>
       <li>Clicking the pop-out button again brings the window to the front.</li>
     </ul>
@@ -239,7 +240,7 @@
         <p>The <span class="manual-ui">Duplicate setup</span> dialog starts with the name <em>Copy of</em> followed by the original's name, and the same date, engineer, artist and folder. Change what you need and click <span class="manual-ui">Duplicate</span>.</p>
       </li>
     </ol>
-    <p>The copy has every row with its gear and numbers, the same columns, the session notes, and the floor plan with its blocks, notes and markup. If the original had its own room layout, the copy gets its own copy of that file. From then on the two setups are separate, and changing one never touches the other.</p>
+    <p>The copy has every row with its gear and numbers, the same columns, the session notes, the floor plan with its blocks, notes and markup, and the patch cables. If the original had its own room layout, the copy gets its own copy of that file. From then on the two setups are separate, and changing one never touches the other.</p>
 
     <nav class="manual-pager" aria-label="Manual pages">
       <a href="manual-studios.html"><small>Previous</small>Setting up your studio</a>

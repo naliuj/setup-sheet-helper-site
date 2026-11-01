@@ -49,6 +49,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://setupsheethelper.julianro.se/manual-patchbay.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://setupsheethelper.julianro.se/manual-studios.html</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>

@@ -19,6 +19,7 @@ const PARTS = [
   { file: 'manual-exporting.html', title: 'Printing and exporting', blurb: 'PDF and spreadsheet exports, black-and-white printing and PDF styles.' },
   { file: 'manual-layout-mode.html', title: 'The floor plan', blurb: 'Room layouts, placing instruments, notes, snapping and zoom in Layout Mode.' },
   { file: 'manual-markup.html', title: 'Drawing on the plan', blurb: 'Markup with a pen, mouse or drawing tablet.' },
+  { file: 'manual-patchbay.html', title: 'The patchbay', blurb: 'Patchbay drawings, patch cables and printing the patch.' },
   { file: 'manual-studios.html', title: 'Setting up your studio', blurb: 'Studios, gear inventories, spreadsheet import and the online library.' },
   { file: 'manual-power-features.html', title: 'Working faster', blurb: 'Presets, templates, stereo pairs, Split View and the pop-out window.' },
   { file: 'manual-organizing.html', title: 'Organizing your work', blurb: 'The home screen, folders and the managers.' },

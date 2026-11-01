@@ -71,12 +71,13 @@
       <li><a href="manual-exporting.html">3. Printing and exporting</a></li>
       <li><a href="manual-layout-mode.html">4. The floor plan</a></li>
       <li><a href="manual-markup.html">5. Drawing on the plan</a></li>
-      <li><a href="manual-studios.html">6. Setting up your studio</a></li>
-      <li><a href="manual-power-features.html">7. Working faster</a></li>
-      <li><a href="manual-organizing.html">8. Organizing your work</a></li>
-      <li><a href="manual-berklee.html">9. Berklee features</a></li>
-      <li><a href="manual-settings.html">10. Settings reference</a></li>
-      <li><a href="manual-sharing.html" aria-current="page">11. Sharing and backups</a>
+      <li><a href="manual-patchbay.html">6. The patchbay</a></li>
+      <li><a href="manual-studios.html">7. Setting up your studio</a></li>
+      <li><a href="manual-power-features.html">8. Working faster</a></li>
+      <li><a href="manual-organizing.html">9. Organizing your work</a></li>
+      <li><a href="manual-berklee.html">10. Berklee features</a></li>
+      <li><a href="manual-settings.html">11. Settings reference</a></li>
+      <li><a href="manual-sharing.html" aria-current="page">12. Sharing and backups</a>
         <ol class="manual-toc-sections">
           <li><a href="#two-kinds-of-file">Two kinds of file</a></li>
           <li><a href="#exporting-studios">Exporting studios</a></li>
@@ -88,14 +89,14 @@
           <li><a href="#safety-nets">Automatic safety nets</a></li>
         </ol>
       </li>
-      <li><a href="manual-shortcuts.html">12. Keyboard shortcuts</a></li>
-      <li><a href="manual-help.html">13. Updates, help and troubleshooting</a></li>
+      <li><a href="manual-shortcuts.html">13. Keyboard shortcuts</a></li>
+      <li><a href="manual-help.html">14. Updates, help and troubleshooting</a></li>
     </ol>
   </details>
   <!-- /manual-toc -->
 
   <article class="manual-content">
-    <p class="manual-kicker">Part 11</p>
+    <p class="manual-kicker">Part 12</p>
     <h1>Sharing and backups</h1>
     <p class="lede">Studios and setups can be saved to a file, handed to another engineer, and imported on their Mac. This part covers both kinds of file, the online studio library, and the safety nets the app runs on its own.</p>
 
@@ -105,8 +106,8 @@
       <img src="assets/manual/settings-import-export.png" alt="Settings, Import/Export tab: a Studios section with Export studios, Import studios and Browse studios online buttons and a Browse downloadable studios link, and a Setups section with Export setups and Import setups buttons." loading="lazy" />
     </figure>
     <ul>
-      <li><strong>A studio file</strong> (<code>studios-export.json</code>) carries whole rooms: each studio's mics, outboard, preamps and room layout. Use it to share a room you've set up, or to move your studios to another Mac.</li>
-      <li><strong>A setup file</strong> (<code>setups-export.json</code>) carries setup sheets: every row, the column choices, session notes, and the setup's own room layout if it has one.</li>
+      <li><strong>A studio file</strong> (<code>studios-export.json</code>) carries whole rooms: each studio's mics, outboard, preamps, room layout and patchbay drawing. Use it to share a room you've set up, or to move your studios to another Mac.</li>
+      <li><strong>A setup file</strong> (<code>setups-export.json</code>) carries setup sheets: every row, the column choices, session notes, the setup's own room layout if it has one, and its patch cables.</li>
     </ul>
     <p>One file can hold as many studios, or as many setups, as you like.</p>
 
@@ -158,7 +159,7 @@
     <p>Click <span class="manual-ui">Export setups…</span>, tick the setups you want on the <span class="manual-ui">Export Setups</span> screen, then click <span class="manual-ui">Export selected</span> and choose where to save. The file is named <code>setups-export.json</code> unless you change it.</p>
     <div class="manual-aside">
       <span class="manual-aside-title">Tip</span>
-      <p>A setup file doesn't include the blocks, notes or markup on the floor plan. To hand someone the finished plan, export a PDF with the room layout included instead. <a href="manual-exporting.html#export-pdf">Part 3</a> covers PDF export.</p>
+      <p>A setup file doesn't include the blocks, notes or markup on the floor plan. To hand someone the finished plan, export a PDF with the room layout included instead. Patch cables do come along in a setup file. <a href="manual-exporting.html#export-pdf">Part 3</a> covers PDF export.</p>
     </div>
 
     <h2 id="importing-setups">Importing setups</h2>
@@ -185,13 +186,13 @@
 
     <h2 id="import-problems">When an import doesn't work</h2>
     <ul>
-      <li><strong>The file came from a newer version of the app.</strong> The app refuses it and says the file was made by a newer version of Setup Sheet Helper. Update the app (see <a href="manual-help.html#updates">Part 13</a>) and import again.</li>
+      <li><strong>The file came from a newer version of the app.</strong> The app refuses it and says the file was made by a newer version of Setup Sheet Helper. Update the app (see <a href="manual-help.html#updates">Part 14</a>) and import again.</li>
       <li><strong>The file isn't a studio or setup file,</strong> or is damaged. The app says it couldn't read the file.</li>
       <li><strong>The import fails partway.</strong> Imports are all or nothing. If anything goes wrong, nothing is changed, and you won't be left with half a studio or an empty setup.</li>
     </ul>
 
     <h2 id="online-library">The online studio library</h2>
-    <p>You don't always need a file. Ready-made studios are available online, and you can download them straight into the app with <span class="manual-ui">Browse studios online…</span> on the Import/Export tab. Downloads go through the same import screen as a file, including the <span class="manual-ui">Already imported</span> check. <a href="manual-studios.html#online-library">Part 6</a> walks through it.</p>
+    <p>You don't always need a file. Ready-made studios are available online, and you can download them straight into the app with <span class="manual-ui">Browse studios online…</span> on the Import/Export tab. Downloads go through the same import screen as a file, including the <span class="manual-ui">Already imported</span> check. <a href="manual-studios.html#online-library">Part 7</a> walks through it.</p>
     <p>You can also browse the same studios in your web browser on the <a href="studio-downloads.html">Studio Downloads</a> page, which the <span class="manual-ui">Browse downloadable studios</span> link on the tab opens. Files you download there import with <span class="manual-ui">Import studios…</span>.</p>
 
     <h2 id="safety-nets">Automatic safety nets</h2>
