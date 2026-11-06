@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://setupsheethelper.julianro.se/manual-patchbay.html" />
 <link rel="icon" href="assets/favicon-32.png" type="image/png" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+<link rel="stylesheet" href="styles.css?v=23fbcc2b" />
 
 <meta name="theme-color" content="#14161a" />
 
@@ -77,6 +77,7 @@
           <li><a href="#draw-cables">Drawing a cable</a></li>
           <li><a href="#select-cables">Selecting cables</a></li>
           <li><a href="#edit-cables">Changing and deleting cables</a></li>
+          <li><a href="#plug-style">Rings or solid plugs</a></li>
           <li><a href="#zoom-pan">Zooming and panning</a></li>
           <li><a href="#undo">Undo</a></li>
           <li><a href="#printing">Printing the patch</a></li>
@@ -101,7 +102,7 @@
     <p class="lede">Patchbay Mode puts the studio's patchbay drawing on screen. Draw a cable from jack to jack for every patch the session needs, and the patch prints with the setup sheet, with a list of every cable.</p>
 
     <figure class="manual-shot">
-      <img src="assets/manual/patchbay-overview.png" alt="Demo Setup in Patchbay Mode. The toolbar switch reads Table, Layout and Patchbay, with Patchbay selected. The studio's patchbay drawing fills the canvas, with red, blue, green and orange cables running from the studio tie lines at the top to the microphone lines, and a yellow cable running down the page. Cable color swatches, a Sag slider, zoom buttons showing 100% and Reset view sit at the top right." loading="lazy" />
+      <img src="assets/manual/patchbay-overview.png" alt="Demo Setup in Patchbay Mode. The toolbar switch reads Table, Layout and Patchbay, with Patchbay selected. The studio's patchbay drawing fills the canvas. Red, purple and blue cables run from the studio tie lines at the top to the microphone lines, green, orange and red cables run from tie lines on the right down to the line inputs, and a red and a blue cable run down the page to an LA2A. Small rings sit around each connected jack. Cable color swatches, a Sag slider, a Rings and Solid switch with Rings picked, zoom buttons showing 100% and Reset view sit at the top right." loading="lazy" />
       <figcaption>Patchbay Mode: the studio's patchbay drawing, with this setup's cables on it.</figcaption>
     </figure>
 
@@ -137,18 +138,22 @@
       <li><strong>Drag on empty space</strong> to draw a box. Every cable it crosses is selected. Hold <kbd>⌘</kbd> or <kbd>⇧</kbd> to add them to what's already selected.</li>
       <li><strong><kbd>⌘</kbd><kbd>A</kbd></strong> selects every cable, and <kbd>Esc</kbd> clears the selection.</li>
     </ul>
-    <p>Hover any cable to see where it goes, such as <span class="manual-ui">AA225 → A7 (MICROPHONE LINES) · Blue</span>. The far end's strip is named when it's different from the near end's.</p>
+    <p>Hover any cable to see where it goes, such as <span class="manual-ui">AA218 → A9 (MICROPHONE LINES) · Blue</span>. The far end's strip is named when it's different from the near end's.</p>
     <figure class="manual-shot">
-      <img src="assets/manual/patchbay-cables.png" alt="Patchbay Mode zoomed to 373% on the top of the drawing. Red cables run from studio tie lines AA213 to AA218 down to microphone lines A1 to A6, blue cables from AA225 and AA226 to A7 and A8, plus a green and an orange cable. One blue cable is selected: it has a pale outline and a white handle at each end, and a tooltip reads AA225 → A7 (MICROPHONE LINES) · Blue. The toolbar shows the Blue swatch picked, the Sag slider and a red Delete button." loading="lazy" />
+      <img src="assets/manual/patchbay-cables.png" alt="Patchbay Mode zoomed to 293% on the top of the drawing. Red, purple and blue cables run from studio tie lines AA213 to AA218 down to microphone lines A4 to A9, a green cable runs from AA202 to A17, and green, orange and red cables run from AA231 to AA234 down to line inputs D21 to D24. Each cable end is a ring around its jack, so the jack numbers still show. One blue cable is selected: it has a pale outline and a ring handle at each end, and a tooltip reads AA218 → A9 (MICROPHONE LINES) · Blue. The toolbar shows the Blue swatch picked, the Sag slider, a red Delete button and the Rings and Solid switch." loading="lazy" />
       <figcaption>A selected cable has a handle at each end. Hovering it names both ends.</figcaption>
     </figure>
 
     <h2 id="edit-cables">Changing and deleting cables</h2>
     <ul>
       <li><strong>Color and sag.</strong> With cables selected, the swatches and the <span class="manual-ui">Sag</span> slider change those cables instead of the next one. With several selected, the toolbar says how many.</li>
-      <li><strong>Re-patching.</strong> Drag a white end handle of a selected cable to another jack.</li>
+      <li><strong>Re-patching.</strong> Drag an end handle of a selected cable to another jack.</li>
       <li><strong>Deleting.</strong> Click <span class="manual-ui">Delete</span> in the toolbar, or press <kbd>Del</kbd> or <kbd>⌘</kbd><kbd>⌫</kbd>.</li>
     </ul>
+
+    <h2 id="plug-style">Rings or solid plugs</h2>
+    <p>Each cable end is drawn as a ring around its jack, so the jack's label still reads through it. The cable meets the ring on the side it comes from, and the cable itself is slightly see-through, so the rows it hangs across stay readable.</p>
+    <p>The <span class="manual-ui">Rings</span> and <span class="manual-ui">Solid</span> switch on the toolbar changes the look. <span class="manual-ui">Solid</span> draws each end as a filled plug on top of the jack. The switch changes every cable in every setup, and exports print the style you picked.</p>
 
     <h2 id="zoom-pan">Zooming and panning</h2>
     <ul>
@@ -156,7 +161,7 @@
       <li><strong>Buttons:</strong> <span class="manual-ui">−</span> and <span class="manual-ui">+</span> at the top right, with the current zoom between them. <span class="manual-ui">Reset view</span> returns to 100%, where the whole drawing fits.</li>
       <li><strong>Keys:</strong> the Layout Mode zoom keys work here too. <kbd>⌘</kbd><kbd>⇧</kbd><kbd>=</kbd> zooms in, <kbd>⌘</kbd><kbd>⇧</kbd><kbd>−</kbd> zooms out, and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>0</kbd> resets the view.</li>
     </ul>
-    <p>Zoom goes from 25% to 400%. To move around, hold <kbd>Space</kbd> and drag, or drag with the middle mouse button.</p>
+    <p>Zoom goes from 25% to 400%. A moment after you zoom in, the drawing sharpens to match, so small jack labels stay crisp. To move around, hold <kbd>Space</kbd> and drag, or drag with the middle mouse button.</p>
 
     <h2 id="undo">Undo</h2>
     <p><kbd>⌘</kbd><kbd>Z</kbd> undoes your last cable change, and <kbd>⌘</kbd><kbd>⇧</kbd><kbd>Z</kbd> redoes it. Drawing, re-patching, recoloring and deleting are one step each, and so is one drag of the <span class="manual-ui">Sag</span> slider. Cables save as you work, just like the sheet.</p>
