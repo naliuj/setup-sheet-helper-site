@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://setupsheethelper.julianro.se/manual-sharing.html" />
 <link rel="icon" href="assets/favicon-32.png" type="image/png" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-<link rel="stylesheet" href="styles.css?v=8ccac06e" />
+<link rel="stylesheet" href="styles.css?v=23fbcc2b" />
 
 <meta name="theme-color" content="#14161a" />
 
@@ -107,7 +107,7 @@
     </figure>
     <ul>
       <li><strong>A studio file</strong> (<code>studios-export.json</code>) carries whole rooms: each studio's mics, outboard, preamps, room layout and patchbay drawing. Use it to share a room you've set up, or to move your studios to another Mac.</li>
-      <li><strong>A setup file</strong> (<code>setups-export.json</code>) carries setup sheets: every row, the column choices, session notes, the setup's own room layout if it has one, and its patch cables.</li>
+      <li><strong>A setup file</strong> (<code>setups-export.json</code>) carries setup sheets: every row, the column choices, session notes, the setup's own room layout if it has one (or its blank sheet), the blocks, notes and markup on its floor plan, and its patch cables.</li>
     </ul>
     <p>One file can hold as many studios, or as many setups, as you like.</p>
 
@@ -159,7 +159,7 @@
     <p>Click <span class="manual-ui">Export setups…</span>, tick the setups you want on the <span class="manual-ui">Export Setups</span> screen, then click <span class="manual-ui">Export selected</span> and choose where to save. The file is named <code>setups-export.json</code> unless you change it.</p>
     <div class="manual-aside">
       <span class="manual-aside-title">Tip</span>
-      <p>A setup file doesn't include the blocks, notes or markup on the floor plan. To hand someone the finished plan, export a PDF with the room layout included instead. Patch cables do come along in a setup file. <a href="manual-exporting.html#export-pdf">Part 3</a> covers PDF export.</p>
+      <p>A setup file brings the whole floor plan along: blocks, notes, markup and patch cables. If the setup uses the studio's layout, the file doesn't include that drawing, so the plan lands on whichever layout the receiving studio has. To hand someone a finished plan they can print straight away, export a PDF with the room layout included. <a href="manual-exporting.html#export-pdf">Part 3</a> covers PDF export.</p>
     </div>
 
     <h2 id="importing-setups">Importing setups</h2>
