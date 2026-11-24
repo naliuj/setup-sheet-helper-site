@@ -77,6 +77,7 @@
           <li><a href="#selecting-rows">Selecting rows</a></li>
           <li><a href="#selection-bar">The selection bar</a></li>
           <li><a href="#reordering">Moving, duplicating and deleting</a></li>
+          <li><a href="#bands">Bands</a></li>
           <li><a href="#warnings">Warnings</a></li>
           <li><a href="#undo-and-saving">Undo and saving</a></li>
         </ol>
@@ -122,11 +123,11 @@
     <h2 id="adding-sources">Adding sources</h2>
     <p>Each row of the sheet is one source: a mic, a DI, a line input. There are three ways to add one.</p>
     <ul>
-      <li><strong>Type and press <kbd>Return</kbd>.</strong> Click the <span class="manual-ui">Add a source</span> box above the sheet, type a name such as <em>Lead Vocal</em>, and press <kbd>Return</kbd> (or click <span class="manual-ui">Add source</span>). The box clears and stays ready, so you can type a whole input list in one go.</li>
+      <li><strong>Type and press <kbd>Return</kbd>.</strong> Click the <span class="manual-ui">Add a source</span> box above the sheet (it stays in view as you scroll), type a name such as <em>Lead Vocal</em>, and press <kbd>Return</kbd> (or click <span class="manual-ui">Add source</span>). The box clears and stays ready, so you can type a whole input list in one go.</li>
       <li><strong>Press <kbd>⌘</kbd><kbd>N</kbd>.</strong> This adds an empty row that you can name afterward.</li>
       <li><strong>Double-click blank space</strong> below the table, or the message on an empty sheet. This also adds an empty row.</li>
     </ul>
-    <p>New rows go to the bottom of the sheet. To rename a source, click its <span class="manual-ui">Source name</span> cell and type.</p>
+    <p>New rows go to the bottom of the active band. On a sheet without bands, that's the bottom of the sheet. <a href="#active-band">The active band</a> explains how to pick one. To rename a source, click its <span class="manual-ui">Source name</span> cell and type.</p>
 
     <h2 id="choosing-gear">Choosing gear</h2>
     <p>The <span class="manual-ui">Mic</span>, <span class="manual-ui">Preamp</span> and <span class="manual-ui">Outboard</span> cells each open a picker. Click the cell to open it.</p>
@@ -144,11 +145,12 @@
       <li><span class="manual-ui">Personal Gear Locker</span>: your own gear, from <span class="manual-ui">Settings → Personal Gear Locker</span>. It's offered in every studio.</li>
       <li><span class="manual-ui">Faculty Reserve</span>: Berklee's faculty pool, when the setup has it switched on.</li>
     </ol>
-    <p>Inside each group, gear is listed by manufacturer. Point at a manufacturer to see its models, then click one.</p>
+    <p>Inside each group, gear is listed by manufacturer. Point at a manufacturer to see its models, sorted by model number, then click one. A manufacturer's name is matched without regard to capitals, so dbx and DBX share one submenu.</p>
 
     <h3>Finding a model quickly</h3>
     <ul>
       <li><strong>Search.</strong> Start typing in the <span class="manual-ui">Search…</span> box at the top of the picker. Results replace the browsing list. If the same model is stocked in more than one place, it appears once with the combined count, and the studio's own copies are used first.</li>
+      <li><strong>Type.</strong> With a Mic, Preamp or Outboard cell focused but closed, type a letter or number. The picker opens with that character in the <span class="manual-ui">Search…</span> box.</li>
       <li><strong>Keyboard.</strong> Use <kbd>↑</kbd> and <kbd>↓</kbd> to move, <kbd>→</kbd> to open a group, <kbd>←</kbd> to back out, and <kbd>Return</kbd> to pick.</li>
       <li><strong><span class="manual-ui">No Mic</span></strong> (or <span class="manual-ui">No Preamp</span>, <span class="manual-ui">No Outboard</span>) empties the cell.</li>
       <li><strong><span class="manual-ui">Custom…</span></strong> lets you type any name, for gear that isn't on any list. Enter it under <span class="manual-ui">Gear name</span> and click <span class="manual-ui">Save</span>. A custom name isn't counted against anything.</li>
@@ -239,14 +241,97 @@
 
     <h2 id="reordering">Moving, duplicating and deleting</h2>
     <ul>
-      <li><strong>Move.</strong> Drag a row by its grip handle. If you drag one of several selected rows, the whole selection moves together. Dragging either row of a stereo pair moves both.</li>
-      <li><strong>Duplicate.</strong> Press <kbd>⌘</kbd><kbd>D</kbd> to copy the selected rows. Each copy goes directly under its original, and the copies become the new selection.</li>
+      <li><strong>Move.</strong> Drag a row by its grip handle. If you drag one of several selected rows, the whole selection moves together. Dragging either row of a stereo pair moves both. A row dropped between the two halves of a pair lands past the pair: below it when you drag down, above it when you drag up.</li>
+      <li><strong>Duplicate.</strong> Press <kbd>⌘</kbd><kbd>D</kbd> to copy the selected rows. Each block of selected rows is copied right below itself, and the copies become the new selection. A copy never lands between the two rows of a stereo pair. A pair copied whole becomes a new pair, and a copy of one half goes below the pair, unlinked.</li>
       <li><strong>Delete.</strong> Click the red × at the end of a row, click <span class="manual-ui">Delete</span> in the selection bar, or press <kbd>⌘</kbd><kbd>⌫</kbd>. The forward-delete key (<kbd>fn</kbd><kbd>⌫</kbd> on a laptop) works too, without <kbd>⌘</kbd>.</li>
     </ul>
     <p>After a delete, a message such as <span class="manual-ui">Deleted 1 row</span> appears at the bottom of the window for five seconds. Click <span class="manual-ui">Undo</span> on it to bring the rows back.</p>
     <figure class="manual-shot">
       <img src="assets/manual/table-undo-toast.png" alt="Demo Setup after the Guitar Amp row was deleted. A message at the bottom center reads Deleted 1 row with an Undo link, and the toolbar shows Unsaved changes." loading="lazy" />
     </figure>
+
+    <h2 id="bands">Bands</h2>
+    <p>A setup sheet can hold several bands, played one after another in the same session. Each band starts with a divider row, and its rows run below it until the next divider.</p>
+
+    <h3 id="band-dividers">The divider row</h3>
+    <p>The divider has three boxes for the band's name, its start time and its notes. Type in any of them. The name and start time head the band in the PDF and in the spreadsheet (see <a href="manual-exporting.html#export-bands">Bands in exports</a>).</p>
+    <figure class="manual-shot">
+      <img src="assets/manual/table-bands.png" alt="Table Mode on Demo Setup with three bands, in the dark theme. The Early set divider at 7:00 pm is folded and shows 8 rows. The Late set divider at 9:30 pm, with the notes Horns join for the second set, is the active band, marked by an accent bar on its left edge, and its rows follow it. Its divider shows 4 changes from Early set, 1 removed. The Encore divider at 11:00 pm sits below them and shows 1 change from Late set." width="1600" height="857" loading="lazy" />
+      <figcaption>Early set is folded. Late set is the active band, and its divider counts its changes from Early set.</figcaption>
+    </figure>
+    <ul>
+      <li><strong>The fold arrow</strong> hides the band's rows and leaves the divider with a count, such as <span class="manual-ui">6 rows</span>. Click it again to show the rows.</li>
+      <li><strong>The ⋯ button</strong> opens the band's options.</li>
+    </ul>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/table-band-options.png" alt="The ⋯ menu open on the Late set divider, with four items: Show only this band, Changeover…, Merge into previous band, and Remove band… in red at the bottom." width="830" height="380" loading="lazy" />
+    </figure>
+    <table class="manual-table">
+      <thead>
+        <tr><th scope="col">Option</th><th scope="col">What it does</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="manual-ui">Show only this band</span></td><td>Shows this band alone. A banner above the table reads <span class="manual-ui">Showing only</span> with the band's name, and its <span class="manual-ui">Show all bands</span> button brings the others back.</td></tr>
+        <tr><td><span class="manual-ui">Changeover…</span></td><td>Opens <a href="#changeover-panel">the changeover panel</a> for this band. Shown on every band except the first.</td></tr>
+        <tr><td><span class="manual-ui">Merge into previous band</span></td><td>Removes this divider, so its rows join the band before. Shown on every band except the first.</td></tr>
+        <tr><td><span class="manual-ui">Remove divider</span></td><td>Removes the divider from a sheet with one band. The rows stay. Shown when the sheet has one band.</td></tr>
+        <tr><td><span class="manual-ui">Remove band…</span></td><td>Removes the band and all its rows after you confirm. You can undo it right after. Shown when the sheet has two or more bands.</td></tr>
+      </tbody>
+    </table>
+
+    <h3 id="active-band">The active band</h3>
+    <p>The active band is the one new rows go into. Its divider has an accent bar along the left edge. Click the bar, outside its buttons, to make that band active. Clicking into one of its boxes does the same.</p>
+    <p>New rows, and the rows of a loaded channel preset, go to the bottom of the active band. Until you pick a band, they go to the band you're showing alone, or else to the last band.</p>
+
+    <h3 id="bands-menu">The bands menu</h3>
+    <p>Click the stack icon in the Table Mode toolbar to open the bands menu. It lists every band in order with its start time. A check mark shows the active band.</p>
+    <ul>
+      <li><strong>Pick a band.</strong> Click its name. That band becomes active, and the table scrolls to its divider.</li>
+      <li><strong>Reorder.</strong> Drag a band by its grip handle. Its divider and rows move together, every band unfolds, and the change marks are worked out again for the new order.</li>
+      <li><strong><span class="manual-ui">Show changes between bands</span>.</strong> A switch that appears when the sheet has two or more bands. It turns the change marks in the table on or off. The exports have their own setting.</li>
+      <li><strong><span class="manual-ui">Show all bands</span>.</strong> Appears while the table shows one band. Click it to show every band again.</li>
+      <li><strong><span class="manual-ui">Add band</span>.</strong> Opens the choice described below.</li>
+    </ul>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/table-bands-menu.png" alt="The bands menu open on Demo Setup. It lists Early set at 7:00 pm, Late set at 9:30 pm with a check mark as the active band, and Encore at 11:00 pm, each with a grip handle. Below the list are the Show changes between bands switch, turned on, and Add band." width="584" height="484" loading="lazy" />
+    </figure>
+
+    <h3 id="adding-a-band">Adding a band</h3>
+    <p>Choose <span class="manual-ui">Add band</span> in the bands menu. Then choose where the new band starts.</p>
+    <ul>
+      <li><strong><span class="manual-ui">Copy of</span> a band.</strong> The new band gets a copy of every row in that band, with the same gear, channels, tie lines and cue boxes. The choices list the bands from last to first. A sheet without bands offers <span class="manual-ui">Copy of this setup</span> instead.</li>
+      <li><strong><span class="manual-ui">Blank band</span>.</strong> The new band starts with no rows.</li>
+    </ul>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/table-add-band-choices.png" alt="The bands menu on its add step, under the heading Start the new band from. It lists Copy of Encore, Copy of Late set and Copy of Early set, with Blank band below them." width="556" height="450" loading="lazy" />
+    </figure>
+    <p>The new divider goes after the last band and becomes the active band, and the table scrolls to it. Its name is Band 2, Band 3 and so on until you rename it. A sheet without bands first gets a divider named <span class="manual-ui">Band 1</span> above its existing rows.</p>
+    <div class="manual-aside">
+      <span class="manual-aside-title">Shortcut</span>
+      <p><kbd>⌘</kbd><kbd>B</kbd> opens the bands menu on its add step. You can change the key under <span class="manual-ui">Edit</span> in <a href="manual-settings.html#keybinds"><span class="manual-ui">Settings → Keybinds</span></a>. It works in Table Mode.</p>
+    </div>
+
+    <h3 id="band-changes">Changes between bands</h3>
+    <p>Each band after the first is compared with the band before it. A row is matched to the row it was copied from, so a rename or a move keeps the match.</p>
+    <p>With <span class="manual-ui">Show changes between bands</span> on, which is the default, the table marks what changed:</p>
+    <ul>
+      <li><strong>A changed cell</strong> has an amber tint and an amber line under it. Its old value shows under the new one, struck through. The marks cover the <span class="manual-ui">Source name</span>, <span class="manual-ui">Mic</span>, <span class="manual-ui">48V</span>, <span class="manual-ui">Outboard</span>, <span class="manual-ui">Channel</span>, <span class="manual-ui">Preamp</span>, <span class="manual-ui">Tie line</span>, <span class="manual-ui">Cue box</span> and <span class="manual-ui">Polarity</span> columns.</li>
+      <li><strong>A new row</strong> has a <em>+</em> before its source name. It has no match in the band before.</li>
+      <li><strong>Hover a marked cell</strong> to read the whole row's change, such as <em>Fiddle (ch 3): mic KM184 → SM81; 48V off → on</em>.</li>
+    </ul>
+    <figure class="manual-shot">
+      <img src="assets/manual/table-change-marks.png" alt="Late set on Demo Setup, under the pinned toolbar. The Snare mic is Beta 57A, with SM-57 struck through beneath it in amber. The Lead vocal source name has Vocal struck through beneath it in amber. Tenor Sax and Trumpet are new rows, marked with a plus sign. The divider reads 4 changes from Early set, 1 removed." width="1600" height="700" loading="lazy" />
+      <figcaption>Changed cells are amber, with the old value struck through under the new one. New rows start with +.</figcaption>
+    </figure>
+    <p>A band's divider shows a button such as <span class="manual-ui">4 changes from Early set, 1 removed</span>. It counts the rows with a patch change, the new rows and the removed rows. Removed rows are listed here and in the changeover panel.</p>
+
+    <h3 id="changeover-panel">The changeover panel</h3>
+    <p>The panel lists what to change between the band before and this one. Open it with <span class="manual-ui">Changeover…</span> in a band's ⋯ menu, or click the change count on its divider.</p>
+    <p>The panel is titled <span class="manual-ui">Changeover to</span> and the band's name. It has three sections: <span class="manual-ui">Re-patch</span>, <span class="manual-ui">Add</span> and <span class="manual-ui">Remove</span>. Only sections with entries appear. A band with the same patch as the band before shows <span class="manual-ui">Same patch as the band before.</span></p>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/table-changeover-panel.png" alt="The panel titled Changeover to Late set. Re-patch lists Snare (ch 2): mic SM-57 to Beta 57A. Add lists Add Tenor Sax (ch 9): U 47 FET, TL 9, and Add Trumpet (ch 10): R-121, TL 10. Remove lists Remove Upright Bass (ch 5). Close and Print… buttons sit at the bottom." width="1100" height="656" loading="lazy" />
+    </figure>
+    <p>Click <span class="manual-ui">Print…</span> to save the changeover as a one-page PDF. If the sheet has unsaved changes, the app saves it first. If that save fails, the panel shows <span class="manual-ui">Couldn't save the sheet, so nothing was printed.</span> Otherwise, choose where to save the file. Close the panel with <span class="manual-ui">Close</span> or <kbd>Esc</kbd>.</p>
 
     <h2 id="warnings">Warnings</h2>
     <p>Two kinds of yellow warning can appear inside a cell.</p>
