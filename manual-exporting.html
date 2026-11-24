@@ -75,6 +75,7 @@
           <li><a href="#pdf-contents">What's in the PDF</a></li>
           <li><a href="#black-and-white">Black-and-white printing</a></li>
           <li><a href="#export-spreadsheet">Exporting a spreadsheet</a></li>
+          <li><a href="#export-bands">Bands in exports</a></li>
           <li><a href="#pdf-style">PDF style settings</a></li>
         </ol>
       </li>
@@ -226,6 +227,47 @@
       <li>If you included the patchbay, a sheet called <em>Patchbay</em> listing each cable's number, start, end and color, grouped by strip, with the drawing and its cables as a picture below.</li>
     </ul>
     <p>If the setup has no room layout, or the pop-out window doesn't answer, the spreadsheet is still saved without the picture, and the toolbar message says the sheet was skipped.</p>
+
+    <h2 id="export-bands">Bands in exports</h2>
+    <p>A setup with bands gets two extra options in both export dialogs. They appear only for a setup with bands, and your choices are remembered for the next export.</p>
+
+    <h3 id="band-layout">Band layout</h3>
+    <p>The <span class="manual-ui">Bands</span> menu sets how the bands are laid out:</p>
+    <table class="manual-table">
+      <thead>
+        <tr><th scope="col">Choice</th><th scope="col">In the PDF</th><th scope="col">In the spreadsheet</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="manual-ui">Continuous</span></td><td>One table. Each band starts with a shaded heading row showing its name and start time, with its notes under it.</td><td>One sheet. Each band starts with a bold heading row, with its notes in italics under it.</td></tr>
+        <tr><td><span class="manual-ui">New page per band</span> (PDF) or <span class="manual-ui">A sheet per band</span> (spreadsheet)</td><td>Each band starts a new page, with its name, start time and notes above the column headings.</td><td>Each band gets its own sheet, named after the band.</td></tr>
+      </tbody>
+    </table>
+    <p>In the PDF dialog, the Bands menu is grayed out while Setup sheet is off.</p>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/export-pdf-bands.png" alt="The Export to PDF dialog for Demo Setup. Setup sheet, Room layout and Colored are on, and Patchbay is off. Columns to export shows 6 of 10. Bands is set to New page per band, and Mark changes between bands is on." width="860" height="1356" loading="lazy" />
+    </figure>
+
+    <h3 id="mark-changes">Mark changes between bands</h3>
+    <p>Turn on <span class="manual-ui">Mark changes between bands</span> to mark changes in the export the way the table marks them. It's on by default. Each export dialog has its own switch, and the one in the table's bands menu affects only the table.</p>
+    <figure class="manual-shot is-dialog">
+      <img src="assets/manual/export-spreadsheet-bands.png" alt="The Export to Spreadsheet dialog for Demo Setup. Room layout and Patchbay are off. Bands is set to A sheet per band, Mark changes between bands is on, and Columns to export shows 6 of 10." width="860" height="1096" loading="lazy" />
+    </figure>
+
+    <h3 id="change-marks-in-files">What the marks look like</h3>
+    <table class="manual-table">
+      <thead>
+        <tr><th scope="col">Mark</th><th scope="col">In the PDF</th><th scope="col">In the spreadsheet</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Changed cell</td><td>Bold, on a gray fill, with <em>*</em> after the value. The old value prints below it in smaller gray text, struck through.</td><td>Bold, on a gray fill, with <em>*</em> after the value.</td></tr>
+        <tr><td>New row</td><td>A <em>+</em> and a space before the source name.</td><td>A <em>+</em> and a space before the source name.</td></tr>
+        <tr><td>Band note</td><td>An italic gray line under the band's last row, such as <em>Removed: OH R (ch 3) · * changed from Jazz Trio</em>.</td><td>The same line in italics, under the band's last row.</td></tr>
+      </tbody>
+    </table>
+    <p>The band note lists the band's removed rows first. It adds <em>* changed from</em> and the band before's name when any row changed. In the PDF's 48V column, the check mark stays and the <em>*</em> follows it.</p>
+    <!-- screenshot: pdf-band-changes.png - A printed setup sheet page for Demo Setup with two bands and Mark changes between bands on. One changed cell is bold on a gray fill with * after it, and the old value sits under it in smaller gray text, struck through. One source name starts with +, and the band's italic gray note line is printed under its last row. -->
+    <!-- screenshot: spreadsheet-band-changes.png - The same two-band Demo Setup in a spreadsheet app, showing a bold gray changed cell with * after the value, a source name starting with +, and the italic note row under the band's last row. Name the app in the caption. -->
+    <p>The changeover page is printed from the changeover panel. See <a href="manual-table-mode.html#changeover-panel">Part 2</a>.</p>
 
     <h2 id="pdf-style">PDF style settings</h2>
     <p>The look of the table is set once in <span class="manual-ui">Settings → PDF Layout</span> and applies to every PDF you export. Open it from the Settings button, or from the <span class="manual-ui">PDF style settings</span> link in the export dialog.</p>
